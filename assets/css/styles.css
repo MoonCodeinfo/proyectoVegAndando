@@ -89,3 +89,72 @@ html,
       }
 
     /*=============== REUSABLE CSS CLASSES ===============*/
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+@media only screen and (min-width: 600px) {
+    .logo{
+        width: 250px;
+        height: 100px;
+        position: absolute;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+    }
+    .logo img{
+        width: 250px;
+    }
+    .sidebar{
+        width: 250px;
+        height: 100vh;
+        top: 0;left: 0;
+        background: rgba(255, 255, 255, .6);
+        position: absolute;
+    }
+    .text-box{
+        transform: rotate(-90deg);
+        position: absolute;
+        top: 45%;
+        text-align: center;
+    }
+    .text-box h1{
+        font-size: 28px;
+        font-weight: 100;
+    }
+    .text-box h4{
+        margin: 7px 0 10px;
+    }
+    .line{
+        width: 80px;
+        height: 1px;
+        margin: auto;
+        background: #000;
+    }
+    .content{
+        color: #fff;
+        position: absolute;
+        right: 200px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .content h1{
+        font-size: 100px;
+    }
+    .content p{
+        margin: 10px 0 40px;
+    }
+    }
+
