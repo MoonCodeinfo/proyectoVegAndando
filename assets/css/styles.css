@@ -1,52 +1,3 @@
-/*=============== GOOGLE FONTS ===============*/
-/* @import url('https://fonts.googleapis.com/css2?family=Joan&display=swap');
-font-family: 'Joan', serif; */
-
-/* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
-font-family: 'Dancing Script', cursive; */
-
-/* @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-font-family: 'Righteous', cursive; */
-
-/*=============== VARIABLES CSS ===============*/
-:root {
-
-    /*========== COLORS ==========*/
-    /*Color mode HSL(hue, saturation, lightness)*/
-
-    /*========== Testing de colores ==========*/
-    --jelly-bean-blue: hsl(191, 34%, 41%);
-    --diamond: hsl(185, 100%, 87%);
-    --medium-electric-blue: hsl(201, 100%, 28%);
-    --emerald: hsl(146, 45%, 56%);
-    --white-text: hsl(0, 0%, 100%);
-
-    /*========== Dark Theme ==========*/
-
-    /*========== Light Theme ==========*/
-
-    /*========== Font and typography ==========*/
-    /*.5rem = 8px | 1rem = 16px ...*/
-    /* --body-font: 'Poppins', sans-serif;
-    --biggest-font-size: 1.75rem;
-    --h1-font-size: 1.5rem;
-    --h2-font-size: 1.25rem;
-    --h3-font-size: 1rem;
-    --normal-font-size: .938rem;
-    --small-font-size: .813rem;
-    --smaller-font-size: .75rem;
-    --tiny-font-size: .625rem; */
-
-    /*========== Font weight ==========*/
-    /* --font-medium: 500;
-    --font-semibold: 600; */
-
-    /*========== z index ==========*/
-    /* --z-tooltip: 10;
-    --z-fixed: 100;
-    --z-modal: 1000; */
-} 
-
 /* Responsive typography */
 @media screen and (min-width: 968px) {
     /* :root {
@@ -90,6 +41,24 @@ html,
 
     /*=============== REUSABLE CSS CLASSES ===============*/
 
+
+    main {
+        /* font-family: 'Inter', sans-serif; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .box {
+        background: blue;
+        /* border-radius: 0 0 15px 15px; */
+        /* position: absolute; */
+        width: 375px;
+        height: auto;
+    }
 
 
 

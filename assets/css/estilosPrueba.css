@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Call-The-Font:: font-family: 'Roboto', sans-serif; */
+
+/*=============== GOOGLE FONTS ===============*/
+/* @import url('https://fonts.googleapis.com/css2?family=Joan&display=swap');
+font-family: 'Joan', serif; */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+font-family: 'Dancing Script', cursive; */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+font-family: 'Righteous', cursive; */
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+
+    /*========== COLORS ==========*/
+    /*Color mode HSL(hue, saturation, lightness)*/
+
+    /*========== Testing de colores ==========*/
+    --jelly-bean-blue: hsl(191, 34%, 41%);
+    --diamond: hsl(185, 100%, 87%);
+    --medium-electric-blue: hsl(201, 100%, 28%);
+    --emerald: hsl(146, 45%, 56%);
+    --white-text: hsl(0, 0%, 100%);
+
+    /*========== Dark Theme ==========*/
+
+    /*========== Light Theme ==========*/
+
+    /*========== Font and typography ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    /* --body-font: 'Poppins', sans-serif;
+    --biggest-font-size: 1.75rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+    --tiny-font-size: .625rem; */
+
+    /*========== Font weight ==========*/
+    /* --font-medium: 500;
+    --font-semibold: 600; */
+} 
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.nth_ctr_cnt{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body{
+    background-color: #252D38;
+    font-family: 'Roboto', sans-serif;
+}
+
+main{
+    max-width: 360px;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+.nth_firts_AGdarVaje{
+    
+    width:-webkit-fill-available;
+    box-sizing: border-box;
+  
+}
+
+.nth_firts_AGdarVaje video{
+   max-width: 360px;
+    background-size: cover;
+    
+}
+
+   
+    
+/* video{
+    width: -webkit-fill-available;
+    
+} */
+
+.nth_ins_box{
+    position:absolute;
+    flex-direction: column;
+/*     width: 100%;
+    height: 65px;
+    margin-bottom: 20px; */
+}
+.nth_ins_box h2{
+    font-size: 30px;
+    font-weight:800;
+    color:#fff;
+    margin-bottom: 10px;
+}
+.nth_ins_box img{
+    width: 160px;
+}
+
+.nth_Logo_1{
+    position: absolute;
+    top: 30px;
+    width: 200px;
+
+}
+
+.nth_secn_AGdarVaje{
+    width: -webkit-fill-available;
+    flex-direction: column;
+}
+.nth_link_AGdarVaje{
+    width: -webkit-fill-available;
+    justify-content: flex-start;
+    margin: 10px 0 20px 0;
+
+}
+.nth_link_AGdarVaje h3{
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 15px;
+    padding: 0 20px 0 30px;
+}
+.nth_link_AGdarVaje h3::before{
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 58px;
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.nth_link_AGdarVaje a{
+    color: #858585;
+    font-weight: 300;
+    font-size: 15px;
+}
+.nth_info_AGdarVaje{
+   padding: 0 20px 0 20px;
+}
+.nth_info1_AGdarVaje{
+    width: 50%;
+    height: 60px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-left: 20px;
+}
+.nth_info2_AGdarVaje{
+    width: 50%;
+    padding: 0 10px 0 10px;
+}
+
+.nth_info1_AGdarVaje h4{
+ color: #FFC107;
+ font-size: 20px;
+ font-weight: 500;
+}
+.nth_iccinfo_AGdarVaje{
+    flex-direction: row;
+}
+.nth_iccinfo_AGdarVaje img{
+    width: 18px;
+    margin-right: 9px;
+}
+.nth_iccinfo_AGdarVaje p{
+    color: #858585;
+    margin-right: 15px;
+    
+}
+
+.nth_info2_AGdarVaje p{
+    font-size: 13px;
+    color: #858585;
+    text-align: justify;
+}
+
+
+/* .nth_btn_AGdarVaje::before{
+    content: '';
+    position: absolute;
+    left: 25px;
+    width: 270px;
+    height: 50px;
+    background-color: #FFC107;
+    border-radius: 50px;
+   
+} */
+
+.nth_btn_AGdarVaje{
+    margin: 30px 0 30px 0;
+    overflow: hidden;
+    width: 270px;
+    height: 50px;
+   /*  background-color: #FFC107; */
+    border-radius: 50px;
+    outline: 3px solid #fff;
+
+}
+.nth_btn1_AGdarVaje{
+    position: absolute;
+    width: 270px;
+    height: 50px;
+    background-color: #FFC107;
+    border-radius: 50px;
+}
+.nth_btn2_AGdarVaje{
+    position: absolute;
+    right: 30px;
+    width: 270px;
+    height: 50px;
+    background-color: #252D38;
+    border-radius: 50px;
+    outline: 3px solid #fff;
+} 
+
+.nth_firts_AGdarVaje a{
+    position: absolute;
+    color: #fff;
+    font-size: 21px;
+    font-weight: 900;
+    padding-left: 10px;
+    width: 270px;
+    height: 50px;
+}
+
+.nth_btn_AGdarVaje a img{
+    position: absolute;
+    top: 10px;
+    left: 244px;
+    transform: rotate(180deg);
+
+}
+
+/* .button-33 {
+    background-color: #c2fbd7;
+    border-radius: 100px;
+    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+    color: green;
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    position: absolute;
+  }
+  
+  .button-33:hover {
+    box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+  }
+ */
+/* =========== @Media Querys============ */
+/* ========Agendar Viaje Section======== */
+
+/* @media only screen and (min-width: 290px) {
+    .nth_ins_box{
+        position:absolute;
+        top:344px;
+        justify-content: none;
+    }
+  }
+
+@media only screen and (min-width: 350px) {
+    .nth_ins_box{
+        position:absolute;
+        top:371px;
+        justify-content: none;
+    }
+  }
+
+@media only screen and (min-width: 380px) {
+    .nth_ins_box{
+        position:absolute;
+        top:416px;
+        justify-content: none;
+    }
+  }
+  
+
+@media only screen and (min-width: 360px) {
+    main{
+        max-width: 500px;
+    
+    }
+  }
+ */
+
+  /* ========End @Media Querys======== */
