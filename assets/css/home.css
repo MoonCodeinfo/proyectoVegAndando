@@ -1,0 +1,36 @@
+body{
+    background-color: var(--dark-blue);
+    color:#fff;
+    font-family: 'Roboto', sans-serif;
+}
+main{
+    flex-direction: column;
+
+}
+
+.home-section {
+   width: 100%;
+   flex-direction: column;
+   z-index: 10;
+}
+
+#Stree-coco{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+#Stree-coco1{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+#sol{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+#coco{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
