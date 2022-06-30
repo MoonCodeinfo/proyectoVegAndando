@@ -1,6 +1,7 @@
 
 main {
     flex-direction: column;
+    height: 1200px;
 }
 
 .box_pay_descripton {
