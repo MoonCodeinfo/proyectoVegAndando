@@ -43,11 +43,9 @@ a{
 
 /*=============== CENTER CONTENT ===============*/
 .center_content{
-
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 /*=============== CENTER CONTENT ===============*/
