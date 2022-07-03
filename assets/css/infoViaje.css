@@ -3,7 +3,6 @@ body{
 }
 
 main{
-    /* max-width: 500px; */
     height: 100vh;
     flex-direction: column;
 }
