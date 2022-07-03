@@ -24,12 +24,8 @@ main{
 .heroImage img{
     position: absolute;
     border-radius: 0 0 75px 75px;
-    width: -webkit-fill-available;
+    
     top: -280px;
-}
-
-.rating {
-    margin-top: 30px;
 }
 
 .travel_title h2{
@@ -46,19 +42,19 @@ main{
     flex-direction: column;
 }
 
-.schedule_button{
-    display: flex;
+.schedule_button {
     justify-content: space-evenly;
     margin: 28px 0 28px 0;
-    width: 210px;
-    height: 30px;
-    /* background-color: #FFC107; */
+    width: 230px;
+    height: 42px;
     border-radius: 50px;
-    outline: 2px solid #fff;
+    outline: 3px solid #fff;
 }
+
 .schedule_icon {
     width: 20px;
     height: 20px;
+    margin-right: 5px;
 }
 .schedule_button a{
     color: #fff;
@@ -110,72 +106,19 @@ main{
  }
 
  .travel_circles {
-    width: 400px;
-    height: 400px;
-    position: absolute;
-    top: 300px;
+    width: 500px;
+    height: 500px;
     border-radius: 50%;
     background: #FFC107;
  }
  .travel_circles::after {
     content: '';
     position: absolute;
-    width: 400px;
-    height: 400px;
+    width: 515px;
+    height: 500px;
     border-radius: 50%;
     background: #2A384A;
-    top: 10px;
-    right: 5px;
+    top: 293px;
+    left: -13px;
+    transform: rotate(36deg);
  }
-
- .center_circles {
-    display: flex;
-    justify-content: center;
-    height: 100px;
-    width: 250px;
- }
-
-
-.date_info {
-    position: absolute;
-    flex-direction: column;
-}
-.date_info .travel_date_title {
-    color: #fff;
-}
-.date_info img {
-    height: 25px;
-    width: 25px;
-}
-.date_info .travel_date {
-    font-size: 36px;
-    color: #fff;
-}
-
-/*=============== COUNTDOWN ===============*/
-.coming_soon, .title {
-    flex-direction: column;
-}
-.coming_soon .title h2 {
-    font-size: 18px;
-    margin: 0 0 8px 0;
-}
-
-.coming_soon {
-    color: #fff;
-}
-
-.countdown {
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-    gap: 12px;
-}
-
-.day,
-.hour,
-.minute,
-.second {
-    font-size: 18px;
-    color: #FFC107;
-}
