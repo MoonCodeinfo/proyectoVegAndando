@@ -72,6 +72,9 @@ main{
     font-weight: 900;
     text-decoration: none;
 }
+.second_button {
+    top: 350px;
+}
 
 .travel_description{
     position: relative;
