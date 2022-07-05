@@ -15,17 +15,21 @@ main{
 }
 
 .heroImage{
-    position: relative;
+    /* REVISAR CON ENGEL ESTOS ESTILOS CREO QUE NO SON NECESARIOS */
+    /* position: relative;  */
     width: 100%;
-    height: 300px;
+    height: 75%;
     box-sizing: border-box;
 }
-
 .heroImage img{
     position: absolute;
     border-radius: 0 0 75px 75px;
     width: -webkit-fill-available;
-    top: -280px;
+    top: 0;
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .rating {
