@@ -8,27 +8,32 @@
 Iniciamos con 320px de resolucion 
 // */
 body{
-    /* position: fixed; */
+ /*    position: fixed; */
     width:100%;
-    height: 100vh;
+    /* height: 5600px; */
     color:#fff;
     font-family: 'Roboto', sans-serif;
     box-sizing: content-box;
 }
 
-main{
+main{ 
+    max-width: 320px;
    flex-direction: column;
    
 }
 
 .home_section {
     position: relative;
-    top: 227px;
-    transform: translate(0px, 150%);
+    /* top: 63px;
+    transform: translate(0px, 170%); */
     width: 100%;
-    height: 800px;
+    height: 700px;
     flex-direction: column;
     
+}
+.home_minibox{
+    width: 100%;
+    flex-direction: column;
 }
 
 
@@ -48,9 +53,10 @@ h3{
 #Stree-coco {
     position: absolute;
     top: 526px;
-    width: 250px;
-    left:60%;
+    left: 38%;
     transform: translate(60%, 0%);
+    width: 123px;
+    
 }
 #Stree-coco1 {
     position: absolute;
@@ -68,7 +74,7 @@ h3{
 #coco {
     position: absolute;
     top: 98px;
-    left: 298px;
+    left: 192px;
     width: 68px;
   
 }
@@ -91,12 +97,12 @@ h3{
 
 .icon_section_home{
     position: relative;
-    top: 384px;
-    transform: translate(0px, 700%);
+    /* top: 384px;
+    transform: translate(0px, 700%); */
     width: 85%;
-    height: 150px;
+    height: 77px;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 15px;
     
 }
 .icon_select{
@@ -116,13 +122,13 @@ h3{
 
 .text_icon_home{
     position: absolute;
-    top: 130px;
+    top: 85px;
 }
 /* .icon_select img{
    width: 200px;
 } */
 .icon_select p{
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 100;
 }
 
@@ -131,8 +137,8 @@ h3{
 
 .frase_section{
     position: relative;
-    top: 100px;
-    transform: translate(0px, 700%);
+    top: 55px;
+    /* transform: translate(0px, 700%); */
     width: 100%;
     height: 200px;
     background-color: #4b321e;
@@ -141,15 +147,15 @@ h3{
 
 .frase_section .img_frase_1{
     position: absolute;
-    top: -21px;
-    left: -104px;
-    width: 175px;
+    top: -18px;
+    left: -82px;
+    width: 144px; 
 }
 
 .frase_section .img_frase_2{
     position: absolute;
-    top: 159px;
-    left: 309px;
+    top: 184px;
+    left: 230px;
 }
 .frase_section .img_frase_3{
     position: absolute;
@@ -168,8 +174,7 @@ h3{
 /* =========== New Travel Section ============ */
 .new_travel_contain {
     position: relative;
-    top: 411px;
-    transform: translate(0px, 200%);
+    top: 463px;
     width: 100%;
     flex-direction: column;
     margin-bottom: 50px;
@@ -264,10 +269,11 @@ h3{
 }
 .rate_contain{
     position: relative;
-    top: 250px;
-    transform: translate(0px, 200%);
+    top: 463px;
+    /* top: 250px;
+    transform: translate(0px, 200%); */
     width: 100%;
-    height: 900px;
+    height: 670px;
     flex-direction: column;
     margin-bottom: 50px;
 }
@@ -295,30 +301,30 @@ h3{
 }
 .circle_rate{
     position: absolute;
-    top: 150px;
-    left: -66px;
-    width: 160px;
-    height: 160px;
+    top: 178px;
+    left: -7px;
+    width: 89px;
+    height: 89px;
     background-color: #FFCA2C;
     border-radius: 50%;
 }
 .circle_rate::before{
     content: '';
     position: absolute;
-    top: 416px;
-    left: 386px;
-    width: 160px;
-    height: 160px;
+    top: -161px;
+    left: 301px;
+    width: 10px;
+    height: 10px;
     background-color: #FFCA2C;
     border-radius: 50%;
 }
 .circle_rate::after{
     content: '';
     position: absolute;
-    top: 238px;
-    left: 264px;
-    width: 50px;
-    height: 50px;
+    top: 255px;
+    left: 157px;
+    width: 130px;
+    height: 130px;
     background-color: #FFCA2C;
     border-radius: 50%;
 }
@@ -326,14 +332,14 @@ h3{
 /* =========== Footer ============ */
 footer{
     position: relative;
-    top: -37px;
-    transform: translate(0px, 300%);
+    top: 200px;
+    /* top: -37px;
+    transform: translate(0px, 300%); */
     height: 700px;
     /* background-color: var(--light-blue); */
     
 }
 
-/* =========== Footer ============ */
 
 /* =========== @Media Querys============ */
 /* ========       Home          ======== */
@@ -341,113 +347,70 @@ footer{
 /* @media only screen and (max-width: 700px) {
   
 } */
-@media only screen and (max-width: 320px) {
+
+@media only screen and (min-width: 425px) {
+
+
+}
+
+@media only screen and (max-width: 390px) {
+
+
+}
+
+/* @media only screen and (max-width: 320px) {
+    body{
+        max-width: 320px;
+    }
+
+    main{
+        max-width: 320px;
+    }
+
+    .home_section {
+        top: 200px;
+        transform: translate(0px, 150%);
+    }
+
+    .home_minibox{
+        width: 320px;
+        flex-direction: column;
+    }
+
     #Stree-coco {
-        top: 464px;
+        top: 462px;
+        left: 100px;
+        width: 68px;
     }
     #Stree-coco1 {
         top: 361px;
     }
     #coco {
-    left: 246px;
+        top: 45px;
+        left: 148px;
 
     }
-    
-}
-@media only screen and (max-width: 370px) {
-    
 
-    .home_section {
-     
-        height: 700px;
-    }
-    
-    h3{
-        top: 160px;
-        font-size: 18px;
-       
-    }
-    h4{
-        font-size: 14px;
-        margin-bottom: 40px;
-    }
 
-    #Stree-coco {
-        top: 462px;
-        left: 40%;
-        transform: translate(60%, 0%);
-        width: 143px;
+    .icon_section_home{
+        width: 65%;
+        gap:15px;
     }
-    #Stree-coco1 {
-        top: 385px;
-        left: -90px;
-        width: 181px;
+    .icon_select {
+        width: 50px;
+        height: 50px;
     }
-    #sol {
-        top: -52px;
-        left: -45px;
-        width: 130px;
-      
+    .icon_select img {
+        width: 30px;
+        
     }
-    #coco {
-        top: 65px;
-        left: 278px;
-        width: 46px;
-      
-    }
-    .link_conocemas {
-        width: 83px;
-        height: 27px;
-        border: solid 2px #fff;
-
-    }
-    a{
+    .icon_select p {
         font-size: 10px;
-        
+        font-weight: 100;
     }
-    .img_home {
-        width:80%;
+    .text_icon_home {
+        position: absolute;
+        top: 101px;
     }
-
-
     
-}
-
-@media only screen and (min-width: 371px) {
-    
-
-    #Stree-coco {
-        top: 613px;
-        left: 153px;
-        transform: translate(40%, 0%);
-        width: 186px;
-        
-    }
-    #Stree-coco1 {
-        top: 487px;
-       
-    }
-    #coco {
-        
-        left: 325px;
-    }
-        
-    h3{
-        top: 177px;
-        font-size: 18px;
-       
-    }
-
-  }
-
-@media only screen and (min-width: 425px) {
-    #Stree-coco {
-        top: 613px;
-        left:60%;
-        transform: translate(60%, 0%);
-        
-    }
-    .link_conocemas {
-        left: 145px;
-    }
-  }
+} */
