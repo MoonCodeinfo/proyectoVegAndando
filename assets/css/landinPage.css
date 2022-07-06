@@ -1,54 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-/* Call-The-Font:: font-family: 'Roboto', sans-serif; */
-
-/*=============== GOOGLE FONTS ===============*/
-/* @import url('https://fonts.googleapis.com/css2?family=Joan&display=swap');
-font-family: 'Joan', serif; */
-
-/* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
-font-family: 'Dancing Script', cursive; */
-
-/* @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-font-family: 'Righteous', cursive; */
-
 /*=============== VARIABLES CSS ===============*/
-:root {
+:root{
+    --dark-blue:#252D38;
+    --light-blue:#2A384A;
+    --vega-yellow:#FFCA2C;
+}
 
-    /*========== COLORS ==========*/
-    /*Color mode HSL(hue, saturation, lightness)*/
-
-    /*========== Testing de colores ==========*/
-    --jelly-bean-blue: hsl(191, 34%, 41%);
-    --diamond: hsl(185, 100%, 87%);
-    --medium-electric-blue: hsl(201, 100%, 28%);
-    --emerald: hsl(146, 45%, 56%);
-    --white-text: hsl(0, 0%, 100%);
-
-    /*========== Dark Theme ==========*/
-
-    /*========== Light Theme ==========*/
-
-    /*========== Font and typography ==========*/
-    /*.5rem = 8px | 1rem = 16px ...*/
-    /* --body-font: 'Poppins', sans-serif;
-    --biggest-font-size: 1.75rem;
-    --h1-font-size: 1.5rem;
-    --h2-font-size: 1.25rem;
-    --h3-font-size: 1rem;
-    --normal-font-size: .938rem;
-    --small-font-size: .813rem;
-    --smaller-font-size: .75rem;
-    --tiny-font-size: .625rem; */
-
-    /*========== Font weight ==========*/
-    /* --font-medium: 500;
-    --font-semibold: 600; */
-} 
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-/* Call-The-Font:: font-family: 'Roboto', sans-serif; */
 
 *{
     padding: 0;
@@ -57,35 +15,35 @@ font-family: 'Righteous', cursive; */
 }
 
 
-
 body{
-    /* background-color: rgb(9, 80, 26); */
+    position: fixed;
     font-family: 'Roboto', sans-serif;
+    width: 100%;
 }
 
 main{
-    max-width: 320px;
+    max-width: 100%;
+    height: 100vh;
     box-sizing: border-box;
+    flex-direction: column;
     
-}
-.img-backgrund{
-    width:-webkit-fill-available;
-}
-.img-backgrund img{
-    position: absolute;
-}
-
-.nth_firts_AGdarVaje{
-    width: 100%;
-    box-sizing: border-box;
     
 }
 
-.nth_Logo_1{
-    position: absolute;
-    top: 230px;
-    width: 200px;
+.landing_logo {
+    width: 80%;
+    margin-bottom: 30px;
+}
 
+.landing_bottom{
+    width: 150px;
+    height: 60px;
+    border-radius: 15px;
+    background-color: var(--vega-yellow);
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    border: solid 3px #fff;
 }
 
 video{
@@ -93,7 +51,7 @@ video{
    width:100%;
     /* object-fit: cover; */
     position: fixed;
-    opacity: 0.5;
+    opacity: 0.2;
     left: 0;
     right: 0;
     /* top: 0; */
