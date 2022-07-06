@@ -1,7 +1,3 @@
-body{
-    font-family: 'Roboto', sans-serif;
-}
-
 main{
     height: 100vh;
     flex-direction: column;
@@ -16,7 +12,6 @@ main{
 
 .heroImage{
     /* REVISAR CON ENGEL ESTOS ESTILOS CREO QUE NO SON NECESARIOS */
-    /* position: relative;  */
     width: 100%;
     height: 75%;
     box-sizing: border-box;
@@ -33,13 +28,9 @@ main{
 }
 
 .rating {
-    position: relative;
     margin-top: 30px;
 }
 
-.travel_title {
-    position: relative;
-}
 .travel_title h2{
     font-size: 30px;
     font-weight:800;
@@ -50,13 +41,11 @@ main{
 }
 
 .travel_info{
-    position: relative;
     width: -webkit-fill-available;
     flex-direction: column;
 }
 
 .schedule_button{
-    position: relative;
     display: flex;
     justify-content: space-evenly;
     margin: 28px 0 28px 0;
@@ -77,17 +66,14 @@ main{
     text-decoration: none;
 }
 .second_button {
-    top: 350px;
-    margin: 0 0 550px 0;
+    margin-top: 350px;
 }
 
 .travel_description{
-    position: relative;
     display: flex;
     flex-direction: column;
  }
  .travel_description_text{
-    position: relative;
      width: 75%;
  }
  .travel_description_text p{
@@ -96,7 +82,6 @@ main{
      text-align: justify;
  }
  .travel_description_price{
-    position: relative;
     width: 50%;
     height: 60px;
     margin: 28px 0 10px 0;
@@ -107,7 +92,6 @@ main{
     font-weight: 500;
 }
  .travel_free_pack {
-    position: relative;
     width: 70%;
  }
  .travel_free_pack p {
@@ -116,7 +100,6 @@ main{
  }
 
  .travel_adds {
-    position: relative;
     display: flex;
     gap: 10px;
     margin: 28px 0 32px 0;
@@ -127,15 +110,11 @@ main{
     border-radius: 50px;
     outline: 2px solid #FFC107;
  }
- .item {
-    position: relative;
- }
 
  .travel_circles {
     width: 400px;
     height: 400px;
     position: absolute;
-    top: 300px;
     border-radius: 50%;
     background: #FFC107;
  }
@@ -176,7 +155,6 @@ main{
 
 /*=============== COUNTDOWN ===============*/
 .coming_soon, .title {
-    position: relative;
     flex-direction: column;
 }
 .coming_soon .title h2 {
