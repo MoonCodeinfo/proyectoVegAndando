@@ -65,7 +65,7 @@ a{
 /*=============== BUTTONS ===============*/
 .regular_button {
     justify-content: space-evenly;
-    margin: 28px 0 28px 0;
+    /* margin: 28px 0 28px 0; */
     width: 230px;
     height: 42px;
     border-radius: 50px;
