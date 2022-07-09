@@ -1,17 +1,39 @@
 :root{
-    --dark-blue:#252D38;
-    --light-blue:#2A384A;
-    --vega-yellow:#FFCA2C;
-}
+    /* =========== Lights Colors ========== */
+    
+    --light-base:#E8E8E8;
+    --light-grey:#A4A4A4;
+    --very-light-grey:#DADADA;
+    
+    
+    /* =========== Basic Colors ========== */
+        
+        --vega-cofee:#41332B;
+        --vega-yellow:#FFCA2C;
+        --vega-red:#DF4949;
+        --vega-green:#5F9032;
+        --vega-light-blue:#267D97;
+    
+    /* =========== Dark Colors ========== */
+    
+        --dark-blue:#252D38;
+        --dark-light-blue:#2A384A;
+        --very-dark-blue:#0A192E;
+        --dark-grey-old:#252D38;
+        --dark-grey-middle:#2C3644;
+        --dark-grey-little:#474C54;
+        
+    }
 
 /* // 
 ================Nota=============
 Iniciamos con 320px de resolucion 
 // */
+
+
+
 body{
- /*    position: fixed; */
     width:100%;
-    /* height: 5600px; */
     color:#fff;
     font-family: 'Roboto', sans-serif;
     box-sizing: content-box;
@@ -24,9 +46,6 @@ main{
 }
 
 .home_section {
-   /*  position: relative; */
-    /* top: 63px;
-    transform: translate(0px, 170%); */
     width: 100%;
     height: 700px;
     flex-direction: column;
@@ -53,8 +72,7 @@ main{
 #Stree-coco {
     position: absolute;
     top: 526px;
-    left: 38%;
-    transform: translate(60%, 0%);
+    right: 0;
     width: 123px;
     
 }
@@ -81,7 +99,6 @@ main{
 
 
 .link_conocemas {
-    /* position: absolute; */
     width: 144px;
     height: 45px;
     background-color: var(--dark-blue);
@@ -95,8 +112,6 @@ main{
 
 /* =========== New Travel Section ============ */
 .new_travel_contain {
-    /*  position: relative; */
-     /* top: 463px; */
      width: 100%;
      flex-direction: column;
      margin:80px 0 50px 0;
@@ -105,7 +120,6 @@ main{
      content: '';
      position: absolute;
      top: 703px;
-     /* left: 45px; */
      width: 60%;
      height: 2px;
      background-color: #fff;
@@ -114,15 +128,11 @@ main{
      content: '';
      position: absolute;
      top: 723px;
-     /* left: 45px; */
      width: 40%;
      height: 2px;
      background-color: #fff;
  }
  .new_travel_contain h2{
-    /*  position: absolute;
-     top: -62px;
-     left: 30px; */
      font-size: 22px;
      font-weight: 300;
      margin-bottom: 20px;
@@ -132,7 +142,6 @@ main{
      padding-left: 10px;
  }
  .new_travel_section{
-    /*  position: relative; */
      width: 100%;
  }
  
@@ -163,7 +172,6 @@ main{
      border-radius: 20px;
      box-sizing: content-box;
      z-index: 10;
- 
  }
  
  .travel_box a{
@@ -187,17 +195,10 @@ main{
  .last_card{
      margin-right: 24px;
  }
- /* .travel_rate{
-     width: 40px;
- } */
-
 
 /* =========== frase_section ============ */
 
 .frase_section{
-   /*  position: relative; */
-  /*   top: 55px; */
-    /* transform: translate(0px, 700%); */
     width: 100%;
     height: 200px;
     background-color: #4b321e;
@@ -235,9 +236,6 @@ main{
 /* =========== Icon Section============ */
 
 .icon_section_home{
-    /*  position: relative; */
-     /* top: 384px;
-     transform: translate(0px, 700%); */
      width: 85%;
      height: 500px;
      flex-wrap: wrap;
@@ -265,9 +263,7 @@ main{
      position:absolute;
      top: 2030px;
  }
- /* .icon_select img{
-    width: 200px;
- } */
+
  .icon_select p{
      font-size: 12px;
      font-weight: 100;
@@ -279,10 +275,6 @@ main{
     background-color: var(--light-blue);
 }
 .rate_contain{
-   /*  position: relative; */
-    /* top: 463px; */
-    /* top: 250px;
-    transform: translate(0px, 200%); */
     width: 100%;
     height: 670px;
     flex-direction: column;
@@ -307,12 +299,11 @@ main{
     margin-bottom: 4px;
 }
 .img_travel_box1 {
-        /* background-size: cover; */
-        width: 145px;
-        margin: 7px 5px 14px 5px;
-        border-radius: 13px;
-       
+    width: 145px;
+    margin: 7px 5px 14px 5px;
+    border-radius: 13px;     
 }
+
 .circle_rate{
     position: absolute;
     top: 2335px;
@@ -323,6 +314,7 @@ main{
     background-color: var(--vega-yellow);
     border-radius: 50%;
 }
+
 .circle_rate::before{
     content: '';
     position: absolute;
@@ -333,86 +325,22 @@ main{
     background-color: var(--vega-yellow);
     border-radius: 50%;
 }
+
 .circle_rate::after{
     content: '';
     position: absolute;
     top: 240px;
     left: 259px;
-    
     width: 130px;
     height: 130px;
     background-color: var(--vega-yellow);
     border-radius: 50%;
 }
 
-/* =========== Footer ============ */
-footer{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-   flex-direction: column;
-    height: 750px;
-    
-}
-.sub_email{
-    width: 80%;
-    flex-direction: column;
-}
-.sub_email a{
-    width: 150px;
-    height: 60px;
-    border-radius: 15px;
-    background-color: var(--vega-yellow);
-    margin-top: 10px;
-    font-size: 20px;
-    font-weight: 600;
-}
-.sub_email p{
-    text-align: center;
-    font-weight: 100;
-    margin-bottom: 20px;
-}
-.socialmedia_footer{
-    flex-direction: column;
-}
-.socialmedia_footer h2{
-    font-size: 20px;
-    margin-bottom: 25px;
-    font-weight: 300;
-}
 
-.social_icon {
-    gap: 20px;
-}
-
-.copy_right{
-    width: 80%;
-    flex-direction: column;
-    margin-bottom: 70px;
-
-}
-.copy_right p{
-    text-align: center;
-    font-size: 12px;
-    font-weight: 100;
-    line-height: 18px;
-    
-}
-.copy_right p span{
-    font-weight: 300;
-   
-   color: var(--vega-yellow);
-}
-.logo_footer{
-    width: 80%;
-    margin-bottom: 20px;
-}
 /* =========== @Media Querys============ */
 /* ========       Home          ======== */
 
-/* @media only screen and (max-width: 700px) {
-  
-} */
 
 @media only screen and (min-width: 375px) {
 
@@ -430,9 +358,9 @@ footer{
         width: 53px;
     }
 
-    #Stree-coco {
-        left: 47%;
-    }
+  /*   #Stree-coco {
+        left: 41%;
+    } */
 
     /* =============New Travel Section======= */
 
@@ -445,8 +373,6 @@ footer{
     .new_travel_contain::before {
         top: 734px;
     }
-
-
 
     /* ============= frase Section======= */
 
@@ -499,11 +425,11 @@ footer{
     #Stree-coco1 {
         top: 497px;
     }
-
+/* 
     #Stree-coco {
         top: 610px;
         left: 54%;
-    }
+    } */
 
     /* =============New Travel Section======= */
 
@@ -587,11 +513,11 @@ footer{
         width: 345px;
     }
 
-    #Stree-coco {
+  /*   #Stree-coco {
         top: 901px;
         left: 60%;
         width: 191px;
-    }
+    } */
 
     /* =============New Travel Section======= */
 
