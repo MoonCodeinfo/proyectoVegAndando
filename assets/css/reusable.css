@@ -8,17 +8,37 @@
 
 
 :root{
-    --dark-blue:#252D38;
-    --light-blue:#2A384A;
-    --vega-yellow:#FFCA2C;
-}
+    /* =========== Lights Colors ========== */
+    
+    --light-base:#E8E8E8;
+    --light-grey:#A4A4A4;
+    --very-light-grey:#DADADA;
+    
+    
+    /* =========== Basic Colors ========== */
+        
+        --vega-cofee:#41332B;
+        --vega-yellow:#FFCA2C;
+        --vega-red:#DF4949;
+        --vega-green:#5F9032;
+        --vega-light-blue:#267D97;
+    
+    /* =========== Dark Colors ========== */
+    
+        --dark-blue:#252D38;
+        --dark-light-blue:#2A384A;
+        --very-dark-blue:#0A192E;
+        --dark-grey-old:#252D38;
+        --dark-grey-middle:#2C3644;
+        --dark-grey-little:#474C54;
+        
+    }
 
 body{
     background-color: var(--dark-blue);
     font-family: 'Roboto', sans-serif;
     width: 100%;
 }
-
 
 a{
     text-decoration: none;
@@ -60,6 +80,7 @@ a{
     height: 80px;
     margin-top: 202px;
 }
+
 .rating h3{
     color: #ffffff;
     font-weight: 300;

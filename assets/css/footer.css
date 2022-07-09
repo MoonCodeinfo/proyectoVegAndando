@@ -1,0 +1,91 @@
+:root{
+    /* =========== Lights Colors ========== */
+    
+    --light-base:#E8E8E8;
+    --light-grey:#A4A4A4;
+    --very-light-grey:#DADADA;
+    
+    
+    /* =========== Basic Colors ========== */
+        
+        --vega-cofee:#41332B;
+        --vega-yellow:#FFCA2C;
+        --vega-red:#DF4949;
+        --vega-green:#5F9032;
+        --vega-light-blue:#267D97;
+    
+    /* =========== Dark Colors ========== */
+    
+        --dark-blue:#252D38;
+        --dark-light-blue:#2A384A;
+        --very-dark-blue:#0A192E;
+        --dark-grey-old:#252D38;
+        --dark-grey-middle:#2C3644;
+        --dark-grey-little:#474C54;
+        
+    }
+
+
+
+/* =========== Footer ============ */
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   flex-direction: column;
+    height: 750px;
+    
+}
+.sub_email{
+    width: 80%;
+    flex-direction: column;
+}
+.sub_email a{
+    width: 150px;
+    height: 60px;
+    border-radius: 15px;
+    background-color: var(--vega-yellow);
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.sub_email p{
+    text-align: center;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+.socialmedia_footer{
+    flex-direction: column;
+}
+.socialmedia_footer h2{
+    font-size: 20px;
+    margin-bottom: 25px;
+    font-weight: 300;
+}
+
+.social_icon {
+    gap: 20px;
+}
+
+.copy_right{
+    width: 80%;
+    flex-direction: column;
+    margin-bottom: 70px;
+
+}
+.copy_right p{
+    text-align: center;
+    font-size: 12px;
+    font-weight: 100;
+    line-height: 18px;
+    
+}
+.copy_right p span{
+    font-weight: 300;
+   
+   color: var(--vega-yellow);
+}
+.logo_footer{
+    width: 80%;
+    margin-bottom: 20px;
+}
