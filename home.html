@@ -10,11 +10,44 @@
     <link rel="stylesheet" href="./assets/css/home.css">
     <link rel="icon" type="image/x-icon" href="./assets/imagenes/favicon_io/favicon.ico">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <title>Home</title>
+    <title>Inicio | VegAndando</title>
 </head>
 <body class="center_content" > <!-- class="center_content width-aviable" -->
-
+    
 <main class="center_content width-aviable top_margin">
+
+    <!-- ========== MENU ========== -->
+    <nav class="nav container center_content">
+        <div class="nav__menu">
+            <ul class="nav_list">
+
+                <li class="nav__item">
+                    <a href="./home.html" class="nav__link active-link">
+                        <i class='bx bx-home-alt'></i>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="./blog.html" target="_blank" class="nav__link">
+                        <i class='bx bx-book'></i>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="https://www.google.com/calendar" target="_blank" class="nav__link">
+                        <i class='bx bxs-calendar'></i>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="" class="nav__link">
+                        <i class='bx bx-menu'></i>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
 
     <section class="home_section center_content width-aviable ">
         <img  id="Stree-coco" src="./assets/imagenes/svg+/mata de coco - grey.svg" alt="">
@@ -28,8 +61,8 @@
         <div class="home_minibox center_content">
             <h3>Welcome To</h3>
         <img class="img_home center_content" src="./assets/imagenes/logos/colorLogo.svg" alt=""> 
-        <h4>Turismo | Excurciones | Viajes</h4>
-        <a class="link_conocemas center_content"href="#"> Conoce Más </a>
+        <h4>Te acompañamos a explorar los rincones más bellos de nuestra República Dominicana</h4>
+        <a class="link_conocemas center_content" href="./blog.html" target="_blank">Visita nuestro blog</a>
         </div>
     </section>
 
@@ -40,7 +73,7 @@
     <div class="new_travel_section center_content top_margin ">
         <div class="travel_contain_slider">
             <div class="travel_box">
-                <a class="center_content " href="./infoViaje.html" target="_blank"> 
+                <a class="center_content" href="./infoViaje.html" target="_blank"> 
                 <img class="img_travel_box" src="./assets/imagenes/png/160x160.png" alt="">
                 <h4>Puerto Plata</h4>
                 <img class="travel_rate" src="./assets/imagenes/svg+/rate.svg" alt="">
@@ -122,7 +155,7 @@
     
         <section class="frase_section center_content top_margin">
             <img class="img_frase_1" src="./assets/imagenes/svg+/bloqueador.svg" alt="">
-            <p>Te acompañamos  a explorar los rincones mas bellos de la República Dominicana</p>
+            <p>Te acompañamos  a explorar los rincones mas bellos de la República Dominicana para vivir las mejores experiencias.</p>
             <img class="img_frase_2" src="./assets/imagenes/svg+/chancletas.svg" alt="">
             <img class="img_frase_3" src="./assets/imagenes/svg+/star.svg" alt="">
         </section>
@@ -133,22 +166,21 @@
         <a href="#">
         <div class="icon_select center_content icon_1">
             <img src="./assets/imagenes/svg+/viajero.svg" alt="">
-            <p class="text_icon_home" >Nuestros Viajes</p>
+            <p class="text_icon_home">Nuestros Viajes</p>
         </div>
         </a>
-        <a href="#">    
+        <a href="./blog.html" target="_blank">    
         <div class="icon_select center_content">
             <img src="./assets/imagenes/svg+/bolg.svg" alt="">
-            <p class="text_icon_home" >Blog</p>
+            <p class="text_icon_home">Blog</p>
         </div>
         </a>
-        <a href="#">        
+        <a href="https://api.whatsapp.com/send?phone=18294544509&text=Hola%20%F0%9F%99%8C%20quiero%20mas%20informaci%C3%B3n%20sobre%20sus%20excursiones" target="_blank">        
         <div class="icon_select center_content icon_3">
             <img src="./assets/imagenes/svg+/call.svg" alt="">
-            <p class="text_icon_home" >Contactanos</p>
+            <p class="text_icon_home">Contáctanos</p>
         </div>
         </a>
-
     </section>
 
 
@@ -212,64 +244,31 @@
        <div class="socialmedia_footer center_content">
             <h2>Social Media</h2>
             <div class="social_icon center_content">
-             <a href="#">
+             <!-- <a href="#">
                  <img src="./assets/imagenes/svg+/Social Media/facebook.svg" alt="">
-             </a>
-             <a href="#">
+             </a> -->
+             <a href="https://www.instagram.com/vegandandord/" target="_blank">
                     <img src="./assets/imagenes/svg+/Social Media/instagram.svg" alt="">
              </a>
-             <a href="#">
+             <a href="https://api.whatsapp.com/send?phone=18294544509&text=Hola%20%F0%9F%99%8C%20quiero%20mas%20informaci%C3%B3n%20sobre%20sus%20excursiones" target="_blank">
                     <img src="./assets/imagenes/svg+/Social Media/whatsapp.svg" alt="">
               </a>
-              <a href="#">
+              <!-- <a href="#">
                      <img src="./assets/imagenes/svg+/Social Media/twitter.svg" alt="">
-              </a>
-              <a href="#">
+              </a> -->
+              <!-- <a href="#">
                      <img src="./assets/imagenes/svg+/Social Media/youtube.svg" alt="">
-              </a>
+              </a> -->
               </div>
        </div>
         <div class="copy_right center_content">
             <img class="logo_footer" src="./assets/imagenes/logos/lightLogo.svg" alt="">
 
-            <p>Copyright ©  2022 VegAndando. <span>By Moonco</span>  Todos los derechos reservados</p>
+            <p>Copyright © 2022 VegAndando. <span>By Moonco</span>  Todos los derechos reservados</p>
         </div>
     </footer>
 
 </main>
-        
-<!-- ========== MENU ========== -->
-                 <nav class="nav container center_content">
-                    <div class="nav__menu">
-                        <ul class="nav_list">
-        
-                            <li class="nav__item">
-                                <a href="#home" class="nav__link active-link">
-                                    <i class='bx bx-home-alt'></i>
-                                </a>
-                            </li>
-        
-                            <li class="nav__item">
-                                <a href="#about" class="nav__link">
-                                    <i class='bx bx-user'></i>
-                                </a>
-                            </li>
-        
-                            <li class="nav__item">
-                                <a href="#skills" class="nav__link">
-                                    <i class='bx bx-book' ></i>
-                                </a>
-                            </li>
-        
-                            <li class="nav__item">
-                                <a href="#contact" class="nav__link">
-                                    <i class='bx bx-message-square-detail' ></i>
-                                </a>
-                            </li>
-        
-                        </ul>
-                    </div>
-                </nav>
      
  <script src="./assets/js/menuMobile.js"></script>
     

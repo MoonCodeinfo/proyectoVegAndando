@@ -10,9 +10,9 @@
 :root{
     /* =========== Lights Colors ========== */
     
-    --light-base:#E8E8E8;
-    --light-grey:#A4A4A4;
-    --very-light-grey:#DADADA;
+        --light-base:#E8E8E8;
+        --light-grey:#A4A4A4;
+        --very-light-grey:#DADADA;
     
     
     /* =========== Basic Colors ========== */
@@ -22,6 +22,8 @@
         --vega-red:#DF4949;
         --vega-green:#5F9032;
         --vega-light-blue:#267D97;
+        --white: #fff;
+        --black: #000;
     
     /* =========== Dark Colors ========== */
     
@@ -31,6 +33,7 @@
         --dark-grey-old:#252D38;
         --dark-grey-middle:#2C3644;
         --dark-grey-little:#474C54;
+        --dark-grey-text: #858585;
         
     }
 

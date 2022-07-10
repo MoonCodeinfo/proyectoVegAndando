@@ -1,11 +1,9 @@
 /*=============== VARIABLES CSS ===============*/
 :root {
-  --first-hue: 207;
-  --sat: 90%;
-  --lig: 72%;
-  --second-hue: 219;
-  --title-color: hsl(var(--second-hue), 15%, 95%);
-  --text-color: hsl(var(--second-hue), 8%, 75%);
+  --first-hue: 45;
+  --sat: 100%;
+  --lig: 59%;
+  --light-blue: 219;
 }
 
 /*=============== BASE ===============*/
@@ -15,80 +13,35 @@ ul {
 
 a {
   text-decoration: none;
+  
 }
-
-.home {
-    height: 400px;
-}
-
-.about {
-    height: 400px;
-}
-
-.skills {
-    height: 400px;
-}
-
-.work {
-    height: 400px;
-}
-
-.contact {
-    height: 800px;
+i {
+  color: var(--white);
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
-  max-width: 968px;
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-.grid {
-  display: grid;
-  gap: 1.25rem;
-}
-
-.section {
-  padding: 4.5rem 0 1rem;
+ z-index: 100;
 }
 
 /*=============== HEADER & NAV===============*/
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: var(--body-color);
-  z-index: var(--z-fixed);
-  transition: .4s; /* for light mode animation */
-}
-
 .nav {
-  height: var(--header-height);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.nav__logo {
-  color: var(--first-color);
-  font-weight: var(--font-medium);
-  transition: .4s;
-}
-.nav__logo:hover {
-  color: var(--first-color-alt);
-}
-
 .nav__menu {
   position: fixed;
   bottom: 1rem;
-  background-color: hsla(var(--second-hue), 32%, 16%, .8);
+  background-color: var(--very-dark-blue);
   width: 90%;
   border-radius: 4rem;
-  padding: 1rem 2.25rem;
+  padding: 1rem 3.25rem;
   backdrop-filter: blur(10px);
   transition: .4s; /* for light mode animation */
+  left: 25px;
+  z-index: 100;
 }
 
 .nav_list {
@@ -98,18 +51,26 @@ a {
 }
 
 .nav__link {
-  color: var(--text-color);
+  color: var(--white);
   font-size: 1.25rem;
   padding: .4rem;
   display: flex;
   border-radius: 5rem;
+  transition: .4s ease-in-out;
+}
+
+.nav__link:hover {
+  background: linear-gradient(180deg,
+              hsla(var(--first-hue), var(--sat), var(--lig)), 
+              hsla(var(--first-hue), var(--sat), var(--lig))
+              );
 }
 
 /* Active link */
 .active-link {
   background: linear-gradient(180deg,
-              hsla(var(--first-hue), var(--sat), var(--lig), 1), 
-              hsla(var(--first-hue), var(--sat), var(--lig), .2)
+              hsla(var(--first-hue), var(--sat), var(--lig)), 
+              hsla(var(--first-hue), var(--sat), var(--lig))
               );
   box-shadow: 0 0 16px hsla(var(--first-hue), var(--sat), var(--lig), .4);
   color: var(--title-color);
@@ -127,7 +88,7 @@ a {
 /* For medium devices */
 @media screen and (min-width: 576px) {
   .nav__menu {
-    width: 328px;
+    width: 380px;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -148,7 +109,7 @@ a {
     margin-left: auto;
     margin-right: auto;
   }
-  .nav {
+  /* .nav {
     height: calc(var(--header-height) + 1rem);
-  }
+  } */
 }

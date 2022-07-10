@@ -1,6 +1,6 @@
 const typed = new Typed('.typed', {
 	strings: [
-		'<i class="text_landing_js">Excurción</i>',
+		'<i class="text_landing_js">Excursión</i>',
 		'<i class="text_landing_js">Viaje</i>',
 		'<i class="text_landing_js">Tour</i>',
 		'<i class="text_landing_js">Gira</i>'
