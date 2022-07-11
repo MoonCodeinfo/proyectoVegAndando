@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="./assets/css/reusable.css">
     <link rel="stylesheet" href="./assets/css/infoViaje.css">
     <link rel="stylesheet" href="./assets/css/menuMobile.css">
+    <link rel="stylesheet" href="./assets/css/swiper.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <title>La Romana | VegAndando</title>
 </head>
@@ -51,8 +53,18 @@
         <img class="logo center_content" src="./assets/imagenes/logos/lightLogo.svg" alt="logo vegandando">
 
         <section class="heroImage center_content width-aviable">
+
+                     <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./assets/imagenes/svg+/heroImage.svg" alt=""></div>
+          <div class="swiper-slide"><img src="./assets/imagenes/svg+/heroImage.svg" alt=""></div>
+          <div class="swiper-slide"><img src="./assets/imagenes/svg+/heroImage.svg" alt=""></div>
+          <div class="swiper-slide"><img src="./assets/imagenes/svg+/heroImage.svg" alt=""></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
             
-            <img src="./assets/imagenes/svg+/heroImage.svg" alt="">
         </section>
 
         <section class="center_content travel_info">
@@ -168,8 +180,10 @@
 
     </main>
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/countdown.js"></script>
     <script src="./assets/js/menuMobile.js"></script>
+    <script src="./assets/js/swiper.js"></script>
 
 </body>
 </html>
