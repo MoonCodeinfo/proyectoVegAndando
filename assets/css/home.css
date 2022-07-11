@@ -39,6 +39,9 @@ main{
     font-size: 20px;
     font-weight: 100;
     margin-bottom: 60px;
+    font-size: 20px;
+    text-align: center;
+
 }
 #Stree-coco {
     position: absolute;
@@ -68,13 +71,25 @@ main{
   
 }
 
+.link_to_blog{
+    flex-direction: column;
+    width: 100%;
+    margin-top: 40px;
+}
 
+.link_to_blog p{
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 20px;
+    
+}
 .link_conocemas {
     width: 144px;
     height: 45px;
-    background-color: var(--dark-blue);
+    /* background-color: var(--dark-blue);
     border: solid 3px var(--white);
-    border-radius: 45px;
+    border-radius: 45px; */
+    font-size: 20px;
     
 }
 .img_home {
