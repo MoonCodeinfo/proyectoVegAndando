@@ -4,17 +4,22 @@ main {
 
 .box_pay_descripton {
     height: 325px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 0 50px 0 50px;
+  /*  background: rgba(255, 255, 255, 0.1);
+     border-radius: 0 50px 0 50px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
-    border: 1px solid rgba(255, 255, 255, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.37); */
 }
-
+.box_text{
+    text-align: center;
+    flex-direction: column;
+    max-width: 80%;
+}
 .box_text h2 {
     font-size: 22px;
     color:#fff;
+    margin-bottom: 10px;
 }
 .box_text p {
     font-size: 14px;

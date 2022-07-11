@@ -46,19 +46,21 @@ main{
 }
 
 .schedule_button{
-    display: flex;
-    justify-content: space-evenly;
-    margin: 28px 0 28px 0;
-    width: 210px;
-    height: 30px;
-    /* background-color: var(--vega-yellow); */
-    border-radius: 50px;
-    outline: 2px solid var(--white);
+    width: 189px;
+    height: 39px;
+    margin: 20px;
+
 }
+
 .schedule_icon {
     width: 20px;
     height: 20px;
 }
+
+.btn_last{
+    margin-top: 450PX;
+}
+
 .schedule_button a{
     color: var(--white);
     font-size: 22px;

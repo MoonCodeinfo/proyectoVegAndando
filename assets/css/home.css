@@ -29,8 +29,8 @@ main{
 
 
 .home_minibox h3{
-    position: absolute;
-    top: 226px;
+   /*  position: absolute;
+    top: 226px; */
     font-size: 25px;
     font-weight: 100;
    
@@ -41,6 +41,7 @@ main{
     margin-bottom: 60px;
     font-size: 20px;
     text-align: center;
+    max-width: 80%;
 
 }
 #Stree-coco {
@@ -65,9 +66,9 @@ main{
 }
 #coco {
     position: absolute;
-    top: 98px;
-    left: 192px;
-    width: 68px;
+    top: 66px;
+    right: 8%;
+    width: 52px;
   
 }
 
@@ -340,7 +341,7 @@ main{
 
     #coco {
         top: 79px;
-        left: 295px;
+        right: 8%;
         width: 53px;
     }
 
@@ -405,7 +406,7 @@ main{
 
     #coco {
         top: 91px;
-        left: 328px;
+        right: 8%;
     }
 
     #Stree-coco1 {
