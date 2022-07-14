@@ -4,33 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/reusable.css">
-    <link rel="stylesheet" href="/assets/css/infoViaje.css">
-    <title>La Romana</title>
+    <link rel="stylesheet" href="./assets/css/reusable.css">
+    <link rel="stylesheet" href="./assets/css/infoViaje.css">
+    <link rel="stylesheet" href="./assets/css/menuMobile.css">
+    <link rel="stylesheet" href="./assets/css/swiper.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="icon" type="image/x-icon" href="./assets/imagenes/png/Icono Logo VegAndando.png">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>La Romana | VegAndando</title>
 </head>
 <body>
 
     <main class="width-aviable">
-        <img class="logo center_content" src="assets/imagenes/logos/lightLogo.svg" alt="logo vegandando">
+        
+        <img class="logo center_content" src="./assets/imagenes/logos/lightLogo.svg" alt="logo vegandando">
 
         <section class="heroImage center_content width-aviable">
+
+                     <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./assets/imagenes/svg+/heroImage.svg" alt=""></div>
+          <div class="swiper-slide"><img src="./assets/imagenes/png/manantial beata.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./assets/imagenes/png/manantial el corazon.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./assets/imagenes/png/manantial paula.jpg" alt=""></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
             
-            <img src="assets/imagenes/svg+/heroImage.svg" alt="">
         </section>
 
         <section class="center_content travel_info">
             <div class="rating center_content">
                 <h3>Valoración</h3> 
-                <img src="assets/imagenes/svg+/starRate.svg" alt="">
+                <img src="./assets/imagenes/svg+/starRate.svg" alt="">
             </div>
 
             <div class="travel_title center_content">
                 <h2>La Romana Beach</h2>
            </div>
 
-        <div class="schedule_button center_content">
+        <div class="schedule_button regular_button center_content">
             <!-- Si es necesario, agregar esta clase, que estaba en el diseño anterior ------- nth_btn2_AGdarVaje -->
-            <a href="payMethod.html" ><img class="schedule_icon" src="/assets/imagenes/svg+/scheduleIcon.svg" alt="schedule icon">Agendar viaje</a>
+            <a href="payMethod.html" ><img class="schedule_icon" src="./assets/imagenes/svg+/scheduleIcon.svg" alt="schedule icon">Agendar viaje</a>
         </div>
 
         <div class="travel_description center_content">
@@ -39,7 +56,7 @@
             </div>
 
             <div class="travel_description_price center_content">
-                <p> <span><img src="/assets/imagenes/svg+/wallet.svg" alt=""></span> RD $1,500PP</p>
+                <p> <span><img src="./assets/imagenes/svg+/wallet.svg" alt=""></span> RD $1,500PP</p>
             </div>
 
             <div class="travel_free_pack center_content">
@@ -47,9 +64,9 @@
             </div>
 
             <div class="travel_adds center_content">
-                <span class="item center_content"><img src="/assets/imagenes/svg+/food.svg" alt="food icon"></span>
-                <span class="item center_content"><img src="/assets/imagenes/svg+/bed.svg" alt="bed icon"></span>
-                <span class="item center_content"><img src="/assets/imagenes/svg+/shower.svg" alt="shower icon"></span>
+                <span class="item center_content"><img src="./assets/imagenes/svg+/food.svg" alt="food icon"></span>
+                <span class="item center_content"><img src="./assets/imagenes/svg+/bed.svg" alt="bed icon"></span>
+                <span class="item center_content"><img src="./assets/imagenes/svg+/shower.svg" alt="shower icon"></span>
             </div>
 
             <section class="">
@@ -57,7 +74,7 @@
                     <div class="travel_circles"></div>
                 </div>
                 <div class="date_info center_content">
-                    <h3 class="travel_date_title"><span><img src="/assets/imagenes/svg+/calendar.svg" alt=""></span> Fecha del viaje</h3>
+                    <h3 class="travel_date_title"><span><img src="./assets/imagenes/svg+/calendar.svg" alt=""></span> Fecha del viaje</h3>
                     <div class="line"></div>
                     <p class="travel_date">10/03/2022</p>
                     <div class="line"></div>
@@ -88,15 +105,85 @@
                     </section>
                 </div>
             </section>
-            <div class="schedule_button second_button center_content">
+            <div class="schedule_button regular_button center_content btn_last">
                 <!-- Si es necesario, agregar esta clase, que estaba en el diseño anterior ------- nth_btn2_AGdarVaje -->
                 <a href="payMethod.html" ><img class="schedule_icon" src="./assets/imagenes/svg+/scheduleIcon.svg" alt="schedule icon">Agendar viaje</a>
             </div>
         </div>
-        </section>
-    </main>
 
-    <script src="assets/js/countdown.js"></script>
+        </section>
+
+        <footer class="width-aviable top_margin center_content">
+            <div class="sub_email center_content">
+                <p>Recibiras notificaciones <br> directamente por tu email</p>
+                <a class="sub_email_buttom center_content" href="#">Registrate</a>
+            </div>
+           
+           <div class="socialmedia_footer center_content">
+                <h2>Social Media</h2>
+                <div class="social_icon center_content">
+                 <!-- <a href="#">
+                     <img src="./assets/imagenes/svg+/Social Media/facebook.svg" alt="">
+                 </a> -->
+                 <a href="https://www.instagram.com/vegandandord/" target="_blank">
+                        <img src="./assets/imagenes/svg+/Social Media/instagram.svg" alt="">
+                 </a>
+                 <a href="https://api.whatsapp.com/send?phone=18294544509&text=Hola%20%F0%9F%99%8C%20quiero%20mas%20informaci%C3%B3n%20sobre%20sus%20excursiones" target="_blank">
+                        <img src="./assets/imagenes/svg+/Social Media/whatsapp.svg" alt="">
+                  </a>
+                  <!-- <a href="#">
+                         <img src="./assets/imagenes/svg+/Social Media/twitter.svg" alt="">
+                  </a> -->
+                  <!-- <a href="#">
+                         <img src="./assets/imagenes/svg+/Social Media/youtube.svg" alt="">
+                  </a> -->
+                  </div>
+           </div>
+            <div class="copy_right center_content">
+                <img class="logo_footer" src="./assets/imagenes/logos/lightLogo.svg" alt="">
+    
+                <p>Copyright © 2022 VegAndando. <span>By Moonco</span>  Todos los derechos reservados</p>
+            </div>
+        </footer>
+
+    </main>
+        <!-- ========== MENU ========== -->
+        <nav class="nav container center_content">
+            <div class="nav__menu">
+                <ul class="nav_list">
+    
+                    <li class="nav__item">
+                        <a href="./home.html" class="nav__link">
+                            <i class='bx bx-home-alt'></i>
+                        </a>
+                    </li>
+    
+                    <li class="nav__item">
+                        <a href="./blog.html" target="_blank" class="nav__link">
+                            <i class='bx bx-book'></i>
+                        </a>
+                    </li>
+    
+                    <li class="nav__item">
+                        <a href="https://www.google.com/calendar" target="_blank" class="nav__link">
+                            <i class='bx bxs-calendar'></i>
+                        </a>
+                    </li>
+    
+                    <li class="nav__item">
+                        <a href="" class="nav__link active-link">
+                            <i class='bx bx-menu'></i>
+                        </a>
+                    </li>
+    
+                </ul>
+            </div>
+        </nav>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/countdown.js"></script>
+    <script src="./assets/js/menuMobile.js"></script>
+    <script src="./assets/js/swiper.js"></script>
 
 </body>
 </html>

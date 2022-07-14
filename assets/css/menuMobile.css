@@ -1,0 +1,115 @@
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --first-hue: 45;
+  --sat: 100%;
+  --lig: 59%;
+  --light-blue: 219;
+}
+
+/*=============== BASE ===============*/
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  
+}
+i {
+  color: var(--white);
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+ z-index: 100;
+}
+
+/*=============== HEADER & NAV===============*/
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__menu {
+  position: fixed;
+  bottom: 1rem;
+  background-color: var(--very-dark-blue);
+  width: 90%;
+  border-radius: 4rem;
+  padding: 1rem 3.25rem;
+  backdrop-filter: blur(10px);
+  transition: .4s; /* for light mode animation */
+  left: 25px;
+  z-index: 100;
+}
+
+.nav_list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__link {
+  color: var(--white);
+  font-size: 1.25rem;
+  padding: .4rem;
+  display: flex;
+  border-radius: 5rem;
+  transition: .4s ease-in-out;
+}
+
+.nav__link:hover {
+  background: linear-gradient(180deg,
+              hsla(var(--first-hue), var(--sat), var(--lig)), 
+              hsla(var(--first-hue), var(--sat), var(--lig))
+              );
+}
+
+/* Active link */
+.active-link {
+  background: linear-gradient(180deg,
+              hsla(var(--first-hue), var(--sat), var(--lig)), 
+              hsla(var(--first-hue), var(--sat), var(--lig))
+              );
+  box-shadow: 0 0 16px hsla(var(--first-hue), var(--sat), var(--lig), .4);
+  color: var(--title-color);
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 320px) {
+  .nav__menu {
+    padding: 1rem 1.5rem;
+  }
+
+}
+
+/* For medium devices */
+@media screen and (min-width: 576px) {
+  .nav__menu {
+    width: 380px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 775px) {
+  .contact__container {
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+    column-gap: 3rem;
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 992px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* .nav {
+    height: calc(var(--header-height) + 1rem);
+  } */
+}

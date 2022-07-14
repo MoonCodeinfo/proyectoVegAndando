@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+main{
+    width: 100%;
+    flex-direction: column;
+}
+
+a{
+    font-weight: 100;
+}
+.blog_heading{
+    width: 90%;
+    height: 80px;
+    position: static;
+    border-bottom: solid 2px
+     var(--dark-grey-little);
+}
+
+
+.blog_heading h3{
+    color: var(--dark-grey-little);
+}
+
+.blog_contain{
+    width: 100%;
+  display: grid;
+  justify-items: center;
+
+}
+
+.card_blog{
+    width: 85%;
+    /* height: 600px; */
+  
+    box-sizing: border-box;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.link_vega{
+    width: 100%;
+    height: 45px;
+    background-color: var(--light-base);
+    justify-content: space-evenly;
+}
+.link_vega p{
+    color: var(--light-grey);
+    margin-right: 60px;
+}
+
+.img_card_contain{
+    border: solid 3px var(--light-base);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-sizing: border-box;
+}
+
+.img_card{
+    max-width: 100%;
+    background-size: contain;
+    border-bottom-left-radius: 29px;
+    border-bottom-right-radius: 29px;
+}
+
+.card_text{
+    flex-direction: column;
+    text-align:justify;
+    width: 90%;
+}
+.card_text h4{
+    margin: 12px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.card_text p{
+    font-weight: 200;
+}

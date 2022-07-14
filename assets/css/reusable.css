@@ -1,14 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-/* *, *:before, *:after {
-    box-sizing: inherit;
-  }
-
-html {
-    box-sizing: border-box;
-  }
-   */
-
 *{
     margin: 0;
     padding: 0;
@@ -17,20 +8,40 @@ html {
 
 
 :root{
-    --dark-blue:#252D38;
-}
+    /* =========== Lights Colors ========== */
+    
+        --light-base:#E8E8E8;
+        --light-grey:#A4A4A4;
+        --very-light-grey:#DADADA;
+    
+    
+    /* =========== Basic Colors ========== */
+        
+        --vega-cofee:#41332B;
+        --vega-yellow:#FFCA2C;
+        --vega-red:#DF4949;
+        --vega-green:#5F9032;
+        --vega-light-blue:#267D97;
+        --white: #fff;
+        --black: #000;
+    
+    /* =========== Dark Colors ========== */
+    
+        --dark-blue:#252D38;
+        --dark-light-blue:#2A384A;
+        --very-dark-blue:#0A192E;
+        --dark-grey-old:#252D38;
+        --dark-grey-middle:#2C3644;
+        --dark-grey-little:#474C54;
+        --dark-grey-text: #858585;
+        
+    }
 
 body{
     background-color: var(--dark-blue);
     font-family: 'Roboto', sans-serif;
-    
+    width: 100%;
 }
-
-/* main{
-    box-sizing: border-box;
-    height: 100vh;
-}
- */
 
 a{
     text-decoration: none;
@@ -43,11 +54,9 @@ a{
 
 /*=============== CENTER CONTENT ===============*/
 .center_content{
-
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 /*=============== CENTER CONTENT ===============*/
@@ -59,7 +68,7 @@ a{
 /*=============== BUTTONS ===============*/
 .regular_button {
     justify-content: space-evenly;
-    margin: 28px 0 28px 0;
+    /* margin: 28px 0 28px 0; */
     width: 230px;
     height: 42px;
     border-radius: 50px;
@@ -74,6 +83,7 @@ a{
     height: 80px;
     margin-top: 202px;
 }
+
 .rating h3{
     color: #ffffff;
     font-weight: 300;
@@ -81,13 +91,28 @@ a{
     padding: 0 20px 0 30px;
 }
 
-
-
 /* ============ Glass Morfismo =========== */
-
 
 .glass{
     background: linear-gradient( to right bottom, rgb(255, 255, 255, 0.5), rgba(223, 223, 223, 0.2));
     border: solid 2px rgba(255, 255, 255, 0.493);
     backdrop-filter: blur(5px);
 }
+
+/* ============ SCROLLBAR =========== */
+
+ ::-webkit-scrollbar {
+    width: 14px;
+    height: 10px;
+    
+  }
+  
+::-webkit-scrollbar-thumb {
+    background: var(--vega-yellow);
+    border: 3.5px solid #000;
+    border-radius: 100vw;
+  }
+  
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(250, 189, 6, 0.8);
+  } 
