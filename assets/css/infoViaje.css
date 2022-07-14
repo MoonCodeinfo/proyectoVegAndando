@@ -1,22 +1,33 @@
 main{
     height: 100vh;
-    flex-direction: column;
+    /* flex-direction: column; */
 }
 
-.logo{
+/* ============= Viaje heading ================= */
+.travel_heading {
+    flex-direction: column;
+    gap: 20px;
+}
+.travel_heading h3 {
+    color: var(--very-dark-blue);
+    padding: 8px 60px;
+    border-radius: 15px;
     position: absolute;
-    width: 180px;
-    top: 0;
+    top: 130px;
     z-index: 10;
 }
+.logo{
+    width: auto;
+    height: 100px;
+}
 
-.heroImage{
-    /* REVISAR CON ENGEL ESTOS ESTILOS CREO QUE NO SON NECESARIOS */
+/* ============= Hero Image ================= */
+.hero_image{
     width: 100%;
     height: 75%;
     box-sizing: border-box;
 }
-.heroImage img{
+.hero_image img{
     position: absolute;
     border-radius: 0 0 75px 75px;
     width: -webkit-fill-available;
@@ -27,93 +38,116 @@ main{
     object-position: center;
 }
 
-.rating {
-    margin-top: 30px;
-}
-
-.travel_title h2{
-    font-size: 30px;
-    font-weight:800;
-    color:var(--white);
-}
-.travel_title img{
-    width: 160px;
-}
-
-.travel_info{
-    width: -webkit-fill-available;
+/* ============= Rating y tag ================= */
+.rating_tag {
     flex-direction: column;
 }
-
-.schedule_button{
-    width: 189px;
-    height: 39px;
-    margin: 20px;
-
+.tag h4 {
+    color: var(--vega-yellow);
+    font-weight: 100;
 }
 
-.schedule_icon {
-    width: 20px;
-    height: 20px;
+/* ============= Lugares a visitar ================= */
+.places {
+    flex-direction: column;
 }
-
-.btn_last{
-    margin-top: 450PX;
-}
-
-.schedule_button a{
+.places h3 {
     color: var(--white);
-    font-size: 22px;
-    font-weight: 900;
-    text-decoration: none;
 }
-.second_button {
-    margin-top: 350px;
+.places_list {
+    align-items: start;
+    margin-left: 20px;
+    color: var(--white);
+    gap: 10px;
+    font-weight: 100;
+    /* display: none; */
+    /* overflow: hidden; */
+}
+.places_list ul li{
+    font-size: 13px;
 }
 
-.travel_description{
-    display: flex;
+/* ============= Tips a tener en cuenta ================= */
+ .travel_adds_contain {
+    flex-direction: column;
+  }
+ .travel_adds_section {
+    gap: 10px;
+ }
+ .travel_add_item {
     flex-direction: column;
  }
- .travel_description_text{
-     width: 75%;
+ .travel_add_item h4 {
+    color: var(--white);
+    font-weight: 100;
  }
- .travel_description_text p{
-     font-size: 14px;
-     color: var(--dark-grey-text);
-     text-align: justify;
- }
- .travel_description_price{
-    width: 50%;
+
+/* ============= Frase Section  ================= */
+ .frase_section{
+    width: 100%;
+    height: 200px;
+    background-color: var(--dark-light-blue);
+    box-sizing: border-box;
+}
+.frase_section .img_frase_1{
+    position: absolute;
+    top: 1137px;
+    left: -75px;
+    width: 144px; 
+}
+.frase_section p{
+    text-align: center;
+    max-width: 90%;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+/* ============= Price Section  ================= */
+.travel_description_price{
+    flex-direction: column;
+    gap: 10px;
     height: 60px;
-    margin: 28px 0 10px 0;
+}
+.travel_description_price h3{
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 100;
 }
  .travel_description_price p{
     color: var(--vega-yellow);
     font-size: 20px;
     font-weight: 500;
 }
- .travel_free_pack {
-    width: 70%;
- }
- .travel_free_pack p {
-    font-size: 14px;
-     color: var(--dark-grey-text);
- }
 
- .travel_adds {
+/* ============= Ver mas Section  ================= */
+.view_more_section {
+    flex-direction: column;
+}
+.view_more_content {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    font-weight: 200;
+    display: none;
+    overflow: hidden;
+}
+.view_more_content h4 {
+    color: var(--white);
+    font-weight: 200;
+}
+.view_more_content span {
+    font-weight: bold;
+}
+
+/* ============= Circulos Section  ================= */
+.center_circles {
     display: flex;
-    gap: 10px;
-    margin: 28px 0 32px 0;
+    justify-content: center;
+    height: 460px;
+    width: 250px;
+    overflow: hidden;
  }
- .travel_adds span {
-    width: 30px;
-    height: 30px;
-    border-radius: 50px;
-    outline: 2px solid var(--vega-yellow);
- }
-
- .travel_circles {
+.travel_circles {
     width: 400px;
     height: 400px;
     position: absolute;
@@ -131,14 +165,7 @@ main{
     right: 5px;
  }
 
- .center_circles {
-    display: flex;
-    justify-content: center;
-    height: 100px;
-    width: 250px;
- }
-
-
+/* ============= Date ================= */
 .date_info {
     position: absolute;
     flex-direction: column;
@@ -155,7 +182,10 @@ main{
     color: var(--white);
 }
 
-/*=============== COUNTDOWN ===============*/
+/*=============== Countdown ===============*/
+.coming_soon {
+    color: var(--white);
+}
 .coming_soon, .title {
     flex-direction: column;
 }
@@ -163,22 +193,28 @@ main{
     font-size: 18px;
     margin: 0 0 8px 0;
 }
-
-.coming_soon {
-    color: var(--white);
-}
-
 .countdown {
     display: flex;
     justify-content: space-evenly;
     text-align: center;
     gap: 12px;
 }
-
 .day,
 .hour,
 .minute,
 .second {
     font-size: 18px;
     color: var(--vega-yellow);
+}
+
+/*=============== Politcas ===============*/
+.politicas {
+    flex-direction: column;
+    gap: 20px;
+}
+
+/*=============== Icono del boton Agendar viaje ===============*/
+.schedule_icon {
+    width: 20px;
+    height: 20px;
 }
