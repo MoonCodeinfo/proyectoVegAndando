@@ -1,12 +1,1 @@
-/* Responsive typography */
-@media screen and (min-width: 968px) {
-    /* :root {
-      --biggest-font-size: 2.5rem;
-      --h1-font-size: 2.25rem;
-      --h2-font-size: 1.5rem;
-      --h3-font-size: 1.25rem;
-      --normal-font-size: 1rem;
-      --small-font-size: .875rem;
-      --smaller-font-size: .813rem;
-    } */
-  }
+![colorLogo](https://user-images.githubusercontent.com/64503232/178873492-037271d1-a7c9-4ca3-95fc-abe0b969f135.svg)
