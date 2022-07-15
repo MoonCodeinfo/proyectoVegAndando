@@ -69,3 +69,7 @@ footer{
     width: 80%;
     margin-bottom: 20px;
 }
+.copy_right p:nth-child(3){
+    margin-top:10px;
+    color: var(--vega-light-blue);
+}
