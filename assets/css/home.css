@@ -103,21 +103,21 @@ main{
      flex-direction: column;
      margin:80px 0 50px 0;
  }
- .new_travel_contain::before{
+/*  .new_travel_contain::before{
      content: '';
      position: absolute;
      top: 703px;
      width: 60%;
      height: 2px;
      background-color: var(--white);
- }
+ } */
  .new_travel_contain::after{
-     content: '';
+     content:url("../imagenes/svg+/ola\ white.svg");
      position: absolute;
      top: 723px;
-     width: 40%;
-     height: 2px;
-     background-color: var(--white);
+    /* width: 40%;
+      height: 2px; */
+     
  }
  .new_travel_contain h2{
      font-size: 22px;
@@ -225,11 +225,27 @@ main{
 .icon_section_home{
      width: 85%;
      height: 500px;
-     flex-wrap: wrap;
-     gap: 15px;
+     flex-direction: column;
+    
     margin-top: 77px;
      
  }
+ .title_icon_section {
+    width: 70%;
+   
+ }
+ .title_icon_section h2{
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 20px;
+ }
+
+.icon_contain{
+    width: 90%;
+    flex-wrap:wrap;
+    gap: 15px;
+}
+
  .icon_select{
      width: 80px;
      height: 80px;
@@ -248,7 +264,7 @@ main{
  
  .text_icon_home{
      position:absolute;
-     top: 2030px;
+     top: 2100px;
  }
 
  .icon_select p{

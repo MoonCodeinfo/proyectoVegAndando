@@ -47,9 +47,16 @@ a{
     text-decoration: none;
     color: #fff;
 }
-
+h1, h2, h3, h4{
+    color: var(--white);
+}
 .top_margin{
-    margin-top: 20px;
+    margin-top: 2rem;
+}
+
+/*=============== Flex Direction Column ===============*/
+.flex_column{
+    flex-direction: column;
 }
 
 .bottom_margin {
@@ -63,7 +70,7 @@ a{
     align-items: center;
 }
 
-/*=============== CENTER CONTENT ===============*/
+/*=============== width available ===============*/
 
 .width-aviable{
     width:-webkit-fill-available;
@@ -120,6 +127,7 @@ a{
     backdrop-filter: blur(5px);
 }
 
+
 /* ============ SCROLLBAR =========== */
 
  ::-webkit-scrollbar {
@@ -153,3 +161,4 @@ a{
 .active, .collapsible:hover {
     background-color: var(--vega-yellow);
   }
+
