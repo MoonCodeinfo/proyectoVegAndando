@@ -1,9 +1,63 @@
 /* =========== Footer ============ */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-p{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--dark-blue);
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    position: fixed;
+}
+
+:root{
+    /* =========== Lights Colors ========== */
+    
+        --light-base:#E8E8E8;
+        --light-grey:#A4A4A4;
+        --very-light-grey:#DADADA;
+    
+    
+    /* =========== Basic Colors ========== */
+        
+        --vega-cofee:#41332B;
+        --vega-yellow:#FFCA2C;
+        --vega-red:#DF4949;
+        --vega-green:#5F9032;
+        --vega-light-blue:#267D97;
+        --white: #fff;
+        --black: #000;
+    
+    /* =========== Dark Colors ========== */
+    
+        --dark-blue:#252D38;
+        --dark-light-blue:#2A384A;
+        --very-dark-blue:#0A192E;
+        --dark-grey-old:#252D38;
+        --dark-grey-middle:#2C3644;
+        --dark-grey-little:#474C54;
+        --dark-grey-text: #858585;
+        
+    }
+
+.center_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+h1, h2, h3, h4{
     color: var(--white);
 }
-h2{
+p{
     color: var(--white);
 }
 
@@ -12,8 +66,7 @@ footer{
     justify-content: space-around;
     align-items: center;
    flex-direction: column;
-    height: 750px;
-    
+   height: 673px;
 }
 .sub_email{
     width: 80%;
