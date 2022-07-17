@@ -51,6 +51,9 @@ a{
 h1, h2, h3, h4{
     color: var(--white);
 }
+p{
+    color: var(--white);
+}
 .top_margin{
     margin-top: 2rem;
 }
@@ -104,21 +107,132 @@ h1, h2, h3, h4{
     align-items: center;
 }
 
-/*=============== RATING ===============*/
-.rating{
-    display: flex;
-    flex-direction: column;
-    width: -webkit-fill-available;
-    height: 80px;
-    /* margin-top: 202px; */
+/*=============== Todos los tag  ===============*/
+
+/*=============== viajestag  ===============*/
+.tag-viaje{
+    margin-top: 10px;
+}
+.tag-viaje::after{
+    content: '';
+    position: relative;
+    left: 10px;
+    width: 75px;
+    height: 4px;
+    background-color: var(--vega-green);
+    border-radius: 3px;
+}
+.tag-viaje::before{
+    content: '';
+    position: relative;
+    right: 10px;
+    width: 75px;
+    height: 4px;
+    background-color: var(--vega-green);
+    border-radius: 3px;
 }
 
-.rating h3{
-    color: #ffffff;
-    font-weight: 300;
-    font-size: 15px;
-    padding: 0 20px 0 30px;
+.tag-viaje h4 {
+    color: var(--vega-green);
+    font-weight: 500;
 }
+
+/*=============== viajestag  ===============*/
+
+
+/*=============== excurcion tag  ===============*/
+
+.tag-excurtion{
+    margin-top: 10px;
+}
+.tag-excurtion::after{
+    content: '';
+    position: relative;
+    left: 10px;
+    width: 75px;
+    height: 4px;
+    background-color: var(--vega-yellow);
+    border-radius: 3px;
+}
+.tag-excurtion::before{
+    content: '';
+    position: relative;
+    right: 10px;
+    width: 75px;
+    height: 4px;
+    background-color: var(--vega-yellow);
+    border-radius: 3px;
+}
+
+.tag-excurtion h4 {
+    color: var(--vega-yellow);
+    font-weight: 500;
+}
+
+/*=============== excurcion tag  ===============*/
+
+/*=============== Viajes privados tag  ===============*/
+
+.tag-viaje_privado{
+    margin-top: 10px;
+}
+.tag-viaje_privado::after{
+    content: '';
+    position: relative;
+    left: 10px;
+    width: 75px;
+    height: 4px;
+    background-color: var(--vega-red);
+    border-radius: 3px;
+}
+.tag-viaje_privado::before{
+    content: '';
+    position: relative;
+    right: 10px;
+    width: 75px;
+    height: 4px;
+    background-color: var(--vega-red);
+    border-radius: 3px;
+}
+
+.tag-viaje_privado h4 {
+    color: var(--vega-red);
+    font-weight: 500;
+}
+
+/*=============== Viajes Privados tag  ===============*/
+
+/*=============== resort tag  ===============*/
+
+.tag-resort{
+    margin-top: 10px;
+}
+.tag-resort::after{
+    content: '';
+    position: relative;
+    left: 10px;
+    width: 75px;
+    height: 4px;
+    background-color: var(--vega-light-blue);
+    border-radius: 3px;
+}
+.tag-resort::before{
+    content: '';
+    position: relative;
+    right: 10px;
+    width: 75px;
+    height: 4px;
+    background-color: var(--vega-light-blue);
+    border-radius: 3px;
+}
+
+.tag-resort h4 {
+    color: var(--vega-light-blue);
+    font-weight: 500;
+}
+
+/*=============== resort tag  ===============*/
+
 
 /* ============ Glass Morfismo =========== */
 
@@ -170,6 +284,7 @@ h1, h2, h3, h4{
 iframe{
     width: 100%;
     height: 700px;
+    margin-bottom: 30px;
    /*  position: ; */
   }
 

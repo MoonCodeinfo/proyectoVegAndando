@@ -5,61 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/reusable.css">
-    <link rel="stylesheet" href="./assets/css/infoViaje.css">
     <link rel="stylesheet" href="./assets/css/menuMobile.css">
     <link rel="stylesheet" href="./assets/css/swiper.css">
-    <link rel="stylesheet" href="./assets/css/footer.css">
     <link rel="icon" type="image/x-icon" href="./assets/imagenes/png/Icono Logo VegAndando.png">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./assets/css/infoViaje.css">
     <title>La Romana | VegAndando</title>
 </head>
 <body>
 
-    <!-- ========== MENU ========== -->
-    <nav class="nav container center_content">
-        <div class="nav__menu">
-        <ul class="nav_list">
-
-            <li class="nav__item">
-                <a href="./home.html" class="nav__link">
-                    <i class='bx bx-home-alt'></i>
-                </a>
-            </li>
-
-            <li class="nav__item">
-                <a href="./blog.html" target="_blank" class="nav__link">
-                    <i class='bx bx-book'></i>
-                </a>
-            </li>
-
-            <li class="nav__item">
-                <a href="https://www.google.com/calendar" target="_blank" class="nav__link">
-                    <i class='bx bxs-calendar'></i>
-                </a>
-            </li>
-
-            <li class="nav__item">
-                <a href="" class="nav__link active-link">
-                    <i class='bx bx-menu'></i>
-                </a>
-            </li>
-
-        </ul>
-        </div>
-    </nav>
 
 <main class="width-aviable ">
-
-    <!-- ============= Viaje heading Section ================= -->
-    <section class="travel_heading center_content bottom_margin">
-        <img class="logo center_content" src="./assets/imagenes/logos/lightLogo.svg" alt="logo vegandando">
-        <h3 class="glass">Manantial la Beata</h3>
-    </section>
-
     <!-- ============= Hero Image Section ================= -->
-    <section class="hero_image center_content width-aviable">
-        <!-- ============= Swiper ================= -->
+    <section class="hero_image width-aviable flex_column">
+
+     
+
+    <!-- =========== Swiper =========== -->
+
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -77,15 +41,36 @@
             </div>
             <div class="swiper-pagination"></div>
         </div>
+       
     </section>
 
     <!-- ============= Rating y tag Section =================  -->
-    <section class="rating_tag center_content top_margin">
-        <div class="tag center_content">
-            <h4>Excursión</h4>
+    <section class="rating_tag center_content flex_column">
+      
+        <!-- ------- Clases del tag disponibles:
+                tag-excurtion
+                tag-viaje
+                tag-viaje_privado
+                tag-resort        
+          ------- -->
+
+        <div class="tag-resort  center_content">
+            <!--  Title Disponibles
+            (Para usarlos solo descomenta)
+            -->
+            <!-- <h4>VegA Excursión</h4> -->
+           <!--  <h4>VegA Viaje</h4> -->
+           <!--  <h4>Viajes Privados</h4> -->
+            <h4>VegA Resort</h4>
         </div>
-        <div class="rating center_content">
-            <h3>Valoración</h3> 
+
+
+        <div class="title_viaje center_content width-aviable">
+            <h3>Manantial la Beata</h3>
+        </div>
+        <div class="rating width-aviable flex_column center_content">
+           
+            <h4>Valoración</h4> 
             <img src="./assets/imagenes/svg+/starRate.svg" alt="">
         </div>
     </section>
@@ -110,8 +95,10 @@
     </section>
 
     <!-- ============= Tips a tener en cuenta Section =================  -->
-    <section class="travel_adds_contain center_content top_margin bottom_margin">
-        <!-- ============= Section Tips #1 =================  -->
+<section class="travel_adds_contain center_content top_margin bottom_margin">
+
+<!-- ========== Section Tips #1 ============  -->
+
         <div class="travel_adds_section center_content">
             <div class="travel_add_item center_content">
                 <img src="./assets/imagenes/svg+/tips/bus.svg" alt="autobus">
@@ -131,7 +118,9 @@
             </div>
         </div>
 
-        <!-- ============= Section Tips #1 =================  -->
+  <!-- ========= Section Tips #1 ============  -->
+
+
         <div class="travel_adds_section top_margin center_content">
             <div class="travel_add_item center_content">
                 <img src="./assets/imagenes/svg+/tips/bus.svg" alt="autobus">
@@ -193,7 +182,9 @@
             <div class="line"></div>
             <p class="travel_date">17/07/2022</p>
             <div class="line"></div>
-            <!-- ========== Countdown Section ========== -->
+            
+    <!-- ======== Countdown Section ======== -->
+
             <section class="coming_soon">
                 <div class="title center_content">
                     <h2>Nos vamos en</h2>
@@ -234,37 +225,43 @@
         </div>
     </section>
 
-    <footer class="width-aviable top_margin center_content">
-        <div class="sub_email center_content">
-            <p>Recibiras notificaciones <br> directamente por tu email</p>
-            <a class="sub_email_buttom center_content" href="#">Registrate</a>
-        </div>
-        <div class="socialmedia_footer center_content">
-            <h2>Social Media</h2>
-            <div class="social_icon center_content">
-                <!-- <a href="#">
-                    <img src="./assets/imagenes/svg+/Social Media/facebook.svg" alt="">
-                </a> -->
-                <a href="https://www.instagram.com/vegandandord/" target="_blank">
-                    <img src="./assets/imagenes/svg+/Social Media/instagram.svg" alt="">
-                </a>
-                <a href="https://api.whatsapp.com/send?phone=18294544509&text=Hola%20%F0%9F%99%8C%20quiero%20mas%20informaci%C3%B3n%20sobre%20sus%20excursiones" target="_blank">
-                    <img src="./assets/imagenes/svg+/Social Media/whatsapp.svg" alt="">
-                </a>
-                <!-- <a href="#">
-                        <img src="./assets/imagenes/svg+/Social Media/twitter.svg" alt="">
-                </a> -->
-                <!-- <a href="#">
-                        <img src="./assets/imagenes/svg+/Social Media/youtube.svg" alt="">
-                </a> -->
-                </div>
-        </div>
-        <div class="copy_right center_content">
-            <img class="logo_footer" src="./assets/imagenes/logos/lightLogo.svg" alt="">
+    
+     <!-- ========== footer ========== -->
+     <iframe src="footer.html" frameborder="0"></iframe>
 
-            <p>Copyright © 2022 VegAndando. <span>By Moonco</span>  Todos los derechos reservados</p>
+    <!-- ========== MENU ========== -->
+    <nav class="nav container center_content">
+        <div class="nav__menu">
+            <ul class="nav_list">
+
+                <li class="nav__item">
+                    <a href="./home.html" class="nav__link active-link">
+                        <i class='bx bx-home-alt'></i>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="./blog.html" target="_blank" class="nav__link">
+                        <i class='bx bx-book'></i>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="https://www.google.com/calendar" target="_blank" class="nav__link">
+                        <i class='bx bxs-calendar'></i>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="" class="nav__link">
+                        <i class='bx bx-menu'></i>
+                    </a>
+                </li>
+
+            </ul>
         </div>
-    </footer>
+    </nav>
+
 
 </main>
        

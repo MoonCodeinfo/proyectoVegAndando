@@ -3,12 +3,6 @@
 Iniciamos con 320px de resolucion 
 // */
 
-body{
-    color: var(--white);
-    font-family: 'Roboto', sans-serif;
-    box-sizing: content-box;
-}
-
 main{ 
     max-width: 100%;
 }
@@ -58,26 +52,7 @@ main{
     width: 52px;
   
 }
-/* 
-.link_to_blog{
-    flex-direction: column;
-    width: 100%;
-    margin-top: 40px;
-}
 
-.link_to_blog p{
-    font-size: 20px;
-    font-weight: 100;
-    margin-bottom: 20px;
-    
-}
-.link_conocemas {
-    width: 144px;
-    height: 45px;
-    font-size: 20px;
-     
-}
-*/
 .img_home {
     width:90%;
 }
@@ -86,14 +61,7 @@ main{
 .new_travel_contain {
      margin:80px 0 50px 0;
  }
-/*  .new_travel_contain::before{
-     content: '';
-     position: absolute;
-     top: 703px;
-     width: 60%;
-     height: 2px;
-     background-color: var(--white);
- } */
+
  .new_travel_contain::after{
      content:url("../imagenes/svg+/ola-white.svg");
      position: absolute;
@@ -261,6 +229,9 @@ main{
  
 
 /* =========== Rate Section ============ */
+
+
+
 .back_color {
     background-color: var(--dark-light-blue);
 }
@@ -326,7 +297,12 @@ main{
     background-color: var(--vega-yellow);
     border-radius: 50%;
 }
-/* ========== politica de calidad section==========  */
+
+
+/* ====== politica de calidad section ======  */
+
+
+
 .politics_contain{
     margin-bottom: 50px;
 }
@@ -378,14 +354,6 @@ main{
     right: 0;
 }
 
-/* .our_branding_contain::after{
-    content: url("../imagenes/svg+/multiples-olas.svg;");
-    position: absolute;
-    top:-300px;
-    right: 20px;
-
-} */
-
 .our_branding_box { 
     width: 90%;
  }
@@ -419,7 +387,11 @@ main{
  width: 95%;
 }
 
+
+
 /* ========== Our funders section ==========  */
+
+
 .our_funders_contain{
     margin-bottom:90px;
 }
