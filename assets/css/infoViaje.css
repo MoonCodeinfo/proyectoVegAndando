@@ -155,7 +155,13 @@
 }
 
 /* ============= Circulos Section  ================= */
-.center_circles {
+
+
+.circle_img{
+    
+}
+
+/* .center_circles {
     display: flex;
     justify-content: center;
     height: 460px;
@@ -178,7 +184,7 @@
     background: var(--dark-light-blue);
     top: 10px;
     right: 5px;
- }
+ } */
 
 /* ============= Date ================= */
 .date_info {
