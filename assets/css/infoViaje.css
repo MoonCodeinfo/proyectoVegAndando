@@ -95,6 +95,7 @@
  .travel_add_item h4 {
     color: var(--white);
     font-weight: 100;
+    margin-top: 8px;
  }
 
 /* ============= Frase Section  ================= */
