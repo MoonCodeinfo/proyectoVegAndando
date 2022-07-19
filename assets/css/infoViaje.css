@@ -260,6 +260,9 @@
 .politicas h3 {
 font-size: 26px;
 }
+.link_politics {
+    color: var(--vega-yellow);
+}
 
 /*=============== Icono del boton Realizar Pago ===============*/
 .schedule_icon {

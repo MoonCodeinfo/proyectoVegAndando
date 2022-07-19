@@ -108,13 +108,14 @@ p{
 }
 
 /*=============== POLITICA BUTTON ===============*/
-.politica_button {
-    margin: 0 0 28px 0;
-    padding: 8px 28px;
-    border-radius: 50px;
-    outline: 2px solid var(--vega-yellow);
-    color: var(--vega-yellow);
+.link_politics{
+    width: 130px;
+    height: 45px;
+    border: solid 3px var(--vega-yellow);
+    border-radius: 45px;
+    margin-top: 20px;
 }
+
 
 /*=============== Todos los tag  ===============*/
 
