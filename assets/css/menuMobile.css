@@ -22,26 +22,32 @@ i {
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
  z-index: 100;
+width: 100%;
+height: 65px;
+position: fixed;
+bottom: 1rem;
 }
 
 /*=============== HEADER & NAV===============*/
-.nav {
+/* .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+} */
 
 .nav__menu {
-  position: fixed;
-  bottom: 1rem;
+  /* position: fixed;
+  bottom: 1rem; */
   background-color: var(--very-dark-blue);
   width: 90%;
+  max-width: 338px;
   border-radius: 4rem;
   padding: 1rem 3.25rem;
   backdrop-filter: blur(10px);
   transition: .4s; /* for light mode animation */
   left: 25px;
   z-index: 100;
+  filter: opacity(0.9);
 }
 
 .nav_list {
@@ -86,14 +92,14 @@ i {
 }
 
 /* For medium devices */
-@media screen and (min-width: 576px) {
+/* @media screen and (min-width: 576px) {
   .nav__menu {
     width: 380px;
     left: 0;
     right: 0;
     margin: 0 auto;
   }
-}
+} */
 
 @media screen and (min-width: 775px) {
   .contact__container {

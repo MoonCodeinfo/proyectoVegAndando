@@ -1,20 +1,18 @@
-/* =========== Footer ============ */
 
-p{
-    color: var(--white);
+body{
+    position: fixed;
 }
-h2{
-    color: var(--white);
-}
+
 
 footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
    flex-direction: column;
-    height: 750px;
-    
+   height: 673px;
 }
+
+
 .sub_email{
     width: 80%;
     flex-direction: column;
@@ -68,4 +66,8 @@ footer{
 .logo_footer{
     width: 80%;
     margin-bottom: 20px;
+}
+.copy_right p:nth-child(3){
+    margin-top:10px;
+    color: var(--dark-grey-text);
 }

@@ -3,34 +3,15 @@
 Iniciamos con 320px de resolucion 
 // */
 
-body{
-    width:100%;
-    color: var(--white);
-    font-family: 'Roboto', sans-serif;
-    box-sizing: content-box;
-}
-
 main{ 
     max-width: 100%;
-   flex-direction: column;
-   
 }
 
 .home_section {
-    width: 100%;
     height: 700px;
-    flex-direction: column;
-    
 }
-.home_minibox{
-    width: 100%;
-    flex-direction: column;
-}
-
 
 .home_minibox h3{
-   /*  position: absolute;
-    top: 226px; */
     font-size: 25px;
     font-weight: 100;
    
@@ -72,52 +53,22 @@ main{
   
 }
 
-.link_to_blog{
-    flex-direction: column;
-    width: 100%;
-    margin-top: 40px;
-}
-
-.link_to_blog p{
-    font-size: 20px;
-    font-weight: 100;
-    margin-bottom: 20px;
-    
-}
-.link_conocemas {
-    width: 144px;
-    height: 45px;
-    /* background-color: var(--dark-blue);
-    border: solid 3px var(--white);
-    border-radius: 45px; */
-    font-size: 20px;
-    
-}
 .img_home {
     width:90%;
 }
 
 /* =========== New Travel Section ============ */
 .new_travel_contain {
-     width: 100%;
-     flex-direction: column;
      margin:80px 0 50px 0;
  }
- .new_travel_contain::before{
-     content: '';
-     position: absolute;
-     top: 703px;
-     width: 60%;
-     height: 2px;
-     background-color: var(--white);
- }
+
  .new_travel_contain::after{
-     content: '';
+     content:url("../imagenes/svg+/ola-white.svg");
      position: absolute;
      top: 723px;
-     width: 40%;
-     height: 2px;
-     background-color: var(--white);
+    /* width: 40%;
+      height: 2px; */
+     
  }
  .new_travel_contain h2{
      font-size: 22px;
@@ -127,9 +78,6 @@ main{
  }
  .new_travel_contain .img_flecha{
      padding-left: 10px;
- }
- .new_travel_section{
-     width: 100%;
  }
  
  .travel_contain_slider{
@@ -150,7 +98,6 @@ main{
  
  .travel_box{
      display: flex;
-     flex-direction: column;
      align-items: center;
      min-width: 160px;
      height: 230px;
@@ -161,9 +108,6 @@ main{
      z-index: 10;
  }
  
- .travel_box a{
-    flex-direction: column; 
- }
      
  .img_travel_box{
      background-size: cover;
@@ -186,7 +130,6 @@ main{
 /* =========== frase_section ============ */
 
 .frase_section{
-    width: 100%;
     height: 200px;
     background-color: var(--vega-cofee);
     box-sizing: border-box;
@@ -194,19 +137,19 @@ main{
 
 .frase_section .img_frase_1{
     position: absolute;
-    top: 1437px;
+    top: 1501px;
     left: -82px;
     width: 144px; 
 }
 
 .frase_section .img_frase_2{
     position: absolute;
-    top: 1604px;
+    top: 1653px;
     left: 222px;
 }
 .frase_section .img_frase_3{
     position: absolute;
-    top: 1681px;
+    top: 1815px;
     width: 126px;
     left: -64px;
 }
@@ -224,18 +167,45 @@ main{
 
 .icon_section_home{
      width: 85%;
-     height: 500px;
-     flex-wrap: wrap;
-     gap: 15px;
+     height: 400px;
+     flex-direction: column;
+    
     margin-top: 77px;
      
  }
+ .title_icon_section {
+    width: 70%;
+   
+ }
+ .title_icon_section h2{
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 40px;
+ }
+ .title_icon_section::before{
+    content: '';
+    position: relative;
+    top: 35px;
+    width: 70%;
+    height: 2px;
+    background-color: var(--dark-little-grey);
+ }
+
+.icon_contain{
+    width: 90%;
+    flex-wrap:wrap;
+    gap: 15px;
+}
+
  .icon_select{
-     width: 80px;
-     height: 80px;
-     border: solid 3px var(--dark-grey-little);
+     width: 70px;
+     height: 70px;
+     border: solid 3px var(--dark-little-grey);
      background-color: var(--dark-blue);
      flex-direction: column;
+ }
+ .icon_select img{
+    width: 70%;
  }
  
  .icon_1{
@@ -248,7 +218,8 @@ main{
  
  .text_icon_home{
      position:absolute;
-     top: 2030px;
+     top: 2053px;
+
  }
 
  .icon_select p{
@@ -258,6 +229,9 @@ main{
  
 
 /* =========== Rate Section ============ */
+
+
+
 .back_color {
     background-color: var(--dark-light-blue);
 }
@@ -325,6 +299,168 @@ main{
 }
 
 
+/* ====== politica de calidad section ======  */
+
+
+
+.politics_contain{
+    margin-bottom: 50px;
+}
+.politics_box{
+    width: 80%;
+}
+
+.politics_box img{
+    width: 90%;
+}
+
+.text_politics{
+ 
+ margin-top: 20px;
+}
+
+.text_politics p{
+ margin-top: 3px;
+ font-size: 22px;
+ font-weight: 100;
+}
+
+.text_politics h4{
+    margin-top: 3px;
+    font-size: 24px;
+}
+
+.politics_box:has(h4){
+    font-weight: 500;
+}
+.link_politics{
+    width: 130px;
+    height: 45px;
+    border: solid 3px var(--vega-yellow);
+    border-radius: 45px;
+    margin-top: 20px;
+}
+
+
+/* ========== Our Branding section ==========  */
+ 
+.our_branding_contain{
+    height: 500px;
+    margin-top: 80px;
+}
+.img_our_branding {
+    position: absolute;
+    top: 2738px;
+    right: 0;
+}
+
+.our_branding_box { 
+    width: 90%;
+ }
+.our_branding_box h1{
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.text_our_branding{
+    width: 90%;
+   
+}
+
+.text_our_branding p{
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 300;
+}
+.text_our_branding p:nth-child(2){
+    margin-bottom: 20px;
+    font-size: 17px;
+    font-weight: 100;
+    text-align: justify;
+}
+.colors_desription img:nth-child(1){
+    width: 60%;
+    margin-top: 20px;
+}
+.colors_desription img:nth-child(2){
+ width: 95%;
+}
+
+
+
+/* ========== Our funders section ==========  */
+
+
+.our_funders_contain{
+    margin-bottom:90px;
+}
+.our_funders_contain h1{
+    margin-bottom: 190px;
+}
+.img_our_funders{
+    position: absolute;
+    transform: rotate(180deg);
+    top: 3390px;
+    left:0;
+}
+.our_funders_box{
+    width: 90%;
+    gap: 50px;
+}
+
+.our_funders_card1{
+    width: 275px;
+    height: 340px;
+    border-radius: 35px;
+    background-color: var(--dark-light-blue);
+}
+.circle_card{
+    margin-bottom: 20px;
+    border-radius: 50%;
+    border: solid 3px #fff;
+    width: 150px;
+    height: 150px;
+}
+.circle_card img{
+    clip-path: circle(40%);
+}
+
+.text_our_funders{
+
+    top:-30px;
+    text-align: center;
+    width: 80%;
+
+}
+.text_our_funders h4{
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.text_our_funders p{
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.link_our_funders::before {
+    content: '';
+    position: relative;
+    top: 33px;
+    width: 30%;
+    height: 2px;
+    background-color: var(--dark-little-grey);
+    
+}
+.link_our_funders a {
+    font-size: 20px;
+
+}
+
+
+
+
+
 /* =========== @Media Querys============ */
 /* ========       Home          ======== */
 
@@ -364,18 +500,18 @@ main{
     /* ============= frase Section======= */
 
     .frase_section .img_frase_1 {
-        top: 1498px;
+        top: 1563px;
     }
 
     .frase_section .img_frase_2 {
-        top: 1670px;
-        left: 266px;
+        top: 1707px;
+         left: 275px;
     }
 
     .frase_section .img_frase_3 {
-        top: 1774px;
-        width: 160px;
-        left: -78px;
+        top: 1912px;
+        width: 127px;
+        left: -63px;
     }
 
 
@@ -384,7 +520,7 @@ main{
 
 
     .text_icon_home {
-        top: 2077px;
+        top: 2090px;
     }
 
 
@@ -570,7 +706,7 @@ main{
     .icon_select {
         width: 100px;
         height: 100px;
-        border: solid 4px var(--dark-grey-little);
+        border: solid 4px var(--dark-little-grey);
     }
 
 

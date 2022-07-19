@@ -1,7 +1,4 @@
-main{
-    height: 100vh;
-    /* flex-direction: column; */
-}
+
 
 /* ============= Viaje heading ================= */
 .travel_heading {
@@ -17,15 +14,21 @@ main{
     z-index: 10;
 }
 .logo{
-    width: auto;
-    height: 100px;
+    width: 70%;
+    position: absolute;
+    z-index: 11;
 }
 
 /* ============= Hero Image ================= */
 .hero_image{
     width: 100%;
-    height: 75%;
-    box-sizing: border-box;
+    height:500px;
+    
+}
+.hero_image h3{
+    position: relative;
+    z-index: 10;
+    top: 0;
 }
 .hero_image img{
     position: absolute;
@@ -33,18 +36,30 @@ main{
     width: -webkit-fill-available;
     top: 0;
     width: 100%;
-    height: 75%;
+   /*  height: 80%; */
     object-fit: cover;
     object-position: center;
 }
 
+/* ============= Title Viaje ================= */
+.title_viaje{
+    margin-top: 20px;
+}
+
+.title_viaje h3{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
 /* ============= Rating y tag ================= */
 .rating_tag {
-    flex-direction: column;
+   margin-top: 10px;
+   margin-bottom: 10px;
 }
-.tag h4 {
-    color: var(--vega-yellow);
-    font-weight: 100;
+.rating{
+   margin: 15px 0 20px 0;
+   gap: 10px;
 }
 
 /* ============= Lugares a visitar ================= */
@@ -140,7 +155,13 @@ main{
 }
 
 /* ============= Circulos Section  ================= */
-.center_circles {
+
+
+.circle_img{
+    
+}
+
+/* .center_circles {
     display: flex;
     justify-content: center;
     height: 460px;
@@ -163,7 +184,7 @@ main{
     background: var(--dark-light-blue);
     top: 10px;
     right: 5px;
- }
+ } */
 
 /* ============= Date ================= */
 .date_info {
