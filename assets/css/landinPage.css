@@ -101,3 +101,6 @@ footer{
     margin-top:10px;
     color: var(--light-grey);
 }
+.copy_right a p {
+    color: var(--dark-grey-text);
+}

@@ -83,18 +83,18 @@ p{
 /*=============== BUTTONS ===============*/
 .regular_button {
     justify-content: space-evenly;
-    /* margin: 28px 0 28px 0; */
+    margin: 28px 0 28px 0;
     width: 230px;
     height: 42px;
     border-radius: 50px;
-    outline: 3px solid #fff;
+    outline: 3px solid var(--white);
 }
 
 /*=============== BUTTONS InfoViaje ===============*/
 .schedule_button{
     width: 190px;
     height: 40px;
-    margin: 20px;
+    margin: 30px 0 70px 0; 
 }
 .schedule_button a{
     color: var(--white);
@@ -106,6 +106,16 @@ p{
     display: inline-flex;
     align-items: center;
 }
+
+/*=============== POLITICA BUTTON ===============*/
+.link_politics{
+    width: 130px;
+    height: 45px;
+    border: solid 3px var(--vega-yellow);
+    border-radius: 45px;
+    margin-top: 20px;
+}
+
 
 /*=============== Todos los tag  ===============*/
 
@@ -263,21 +273,15 @@ p{
 
   /* Style the button that is used to open and close the collapsible content */
 .collapsible {
-    background-color: var(--vega-cofee);
-    color: var(--white);
+    background: none;
+    color: var(--vega-yellow);
     cursor: pointer;
-    padding: 6px 64px;
-    /* width: 100%; */
+    padding: 6px 14px;
     border-color: var(--vega-yellow);
     outline: none;
     font-size: 15px;
     border-radius: 50px;
   }
-.active, .collapsible:hover {
-    background-color: var(--vega-yellow);
-  }
-
- 
 
 /* =========== Iframe============ */
 
@@ -288,4 +292,17 @@ iframe{
    /*  position: ; */
   }
 
-  /* =========== Iframe============ */
+/* =========== Iframe============ */
+
+/* =========== SCROLLDOWN============ */
+  .scrolldown {
+    animation-name: floating;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  @keyframes floating {
+    0% { transform: translate(0, 0); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, 0); }   
+}

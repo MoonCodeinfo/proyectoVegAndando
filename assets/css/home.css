@@ -333,13 +333,6 @@ main{
 .politics_box:has(h4){
     font-weight: 500;
 }
-.link_politics{
-    width: 130px;
-    height: 45px;
-    border: solid 3px var(--vega-yellow);
-    border-radius: 45px;
-    margin-top: 20px;
-}
 
 
 /* ========== Our Branding section ==========  */

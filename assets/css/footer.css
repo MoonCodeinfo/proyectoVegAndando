@@ -71,3 +71,6 @@ footer{
     margin-top:10px;
     color: var(--dark-grey-text);
 }
+.copy_right a p {
+    color: var(--dark-grey-text);
+}
