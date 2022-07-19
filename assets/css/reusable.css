@@ -292,4 +292,17 @@ iframe{
    /*  position: ; */
   }
 
-  /* =========== Iframe============ */
+/* =========== Iframe============ */
+
+/* =========== SCROLLDOWN============ */
+  .scrolldown {
+    animation-name: floating;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  @keyframes floating {
+    0% { transform: translate(0, 0); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, 0); }   
+}
