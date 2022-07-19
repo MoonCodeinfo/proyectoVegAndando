@@ -131,7 +131,7 @@
 }
  .travel_description_price p{
     color: var(--vega-yellow);
-    font-size: 20px;
+    font-size: 32px;
     font-weight: 500;
 }
 
@@ -153,6 +153,13 @@
 }
 .view_more_content span {
     font-weight: bold;
+}
+
+/* =========== Linea ============ */
+.linea {
+    border-bottom: 1px solid var(--white);
+    margin: -16px auto 0 auto;
+    padding: 0 38px;
 }
 
 /* ============= Circulos Section  ================= */
@@ -187,6 +194,12 @@
     right: 5px;
  } */
 
+ .line {
+    border-bottom: 2px solid var(--white);
+    margin: 25px auto 25px auto;
+    padding: 0 140px;
+ }
+
 /* ============= Date ================= */
 .date_info {
     position: absolute;
@@ -194,13 +207,14 @@
 }
 .date_info .travel_date_title {
     color: var(--white);
+    gap: 10px;
 }
 .date_info img {
     height: 25px;
     width: 25px;
 }
 .date_info .travel_date {
-    font-size: 36px;
+    font-size: 30px;
     color: var(--white);
 }
 
@@ -208,25 +222,34 @@
 .coming_soon {
     color: var(--white);
 }
-.coming_soon, .title {
+.coming_soon, .title_countdown {
     flex-direction: column;
 }
-.coming_soon .title h2 {
-    font-size: 18px;
+.coming_soon .title_countdown h2 {
+    font-size: 16px;
     margin: 0 0 8px 0;
+    font-weight: 100;
 }
 .countdown {
     display: flex;
     justify-content: space-evenly;
     text-align: center;
-    gap: 12px;
+    gap: 28px;
+}
+.recuerda_countdown {
+    font-size: 12px;
+    width: 230px;
 }
 .day,
 .hour,
 .minute,
 .second {
-    font-size: 18px;
+    font-size: 34px;
     color: var(--vega-yellow);
+}
+.countdown p {
+    font-size: 14px;
+    font-weight: 100;
 }
 
 /*=============== Politcas ===============*/
@@ -234,8 +257,11 @@
     flex-direction: column;
     gap: 20px;
 }
+.politicas h3 {
+font-size: 26px;
+}
 
-/*=============== Icono del boton Agendar viaje ===============*/
+/*=============== Icono del boton Realizar Pago ===============*/
 .schedule_icon {
     width: 20px;
     height: 20px;
