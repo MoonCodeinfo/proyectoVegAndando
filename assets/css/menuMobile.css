@@ -65,12 +65,12 @@ bottom: 1rem;
   transition: .4s ease-in-out;
 }
 
-.nav__link:hover {
+/* .nav__link:hover {
   background: linear-gradient(180deg,
               hsla(var(--first-hue), var(--sat), var(--lig)), 
               hsla(var(--first-hue), var(--sat), var(--lig))
               );
-}
+} */
 
 /* Active link */
 .active-link {
@@ -81,6 +81,54 @@ bottom: 1rem;
   box-shadow: 0 0 16px hsla(var(--first-hue), var(--sat), var(--lig), .4);
   color: var(--title-color);
 }
+
+/*=============== DROPDOWN ===============*/
+.dropdown {
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.select-clicked i {
+  color: var(--vega-red);
+}
+
+.prueba {
+  transition: 0.3s;
+}
+
+.prueba-rotate {
+  transform: rotate(45deg);
+}
+
+.menu_dropdown {
+  padding: 8px 24px;
+  background: var(--dark-light-blue);
+  position: absolute;
+  border-radius: 10px;
+  top: -70px;
+  /* width: 100%; */
+  opacity: 0;
+  display: none;
+  transition: 1s;
+  z-index: 10;
+}
+
+.menu_dropdown li {
+  padding: 1px 1px;
+  margin: 1px 0;
+  cursor: pointer;
+}
+
+/* .active {
+  background: var(--vega-red;
+} */
+
+.menu_dropdown-open {
+  /* transition: 5s; */
+  display: block;
+  opacity: 1;
+}
+/*=============== DROPDOWN ===============*/
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
