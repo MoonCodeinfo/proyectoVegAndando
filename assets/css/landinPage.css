@@ -77,6 +77,7 @@ video{
 
 footer{
     height: 100px;
+    margin-bottom: 50px;
 }
 
 .socialmedia_footer{
@@ -97,10 +98,11 @@ footer{
     font-weight: 100;
 }
 
-.copy_right p:nth-child(2){
+/* .copy_right p:nth-child(2){
     margin-top:10px;
-    color: var(--light-grey);
-}
+    color:#000;
+} */
 .copy_right a p {
-    color: var(--dark-grey-text);
+    margin-top: 5px;
+    color:rgba(255, 255, 255, 0.596) ;
 }
