@@ -1,0 +1,61 @@
+.heading h1 {
+    color: var(--vega-yellow);
+}
+
+/* =========== WAVES ============ */
+.heading::after{
+    content:url("../imagenes/svg+/ola-white.svg");
+    position: absolute;
+    top: 120px; 
+    margin-bottom: 20px;
+}
+
+/* =========== CEO PROFILE ============ */
+.ceo_profile {
+    width: 90%;
+    margin: 80px 0 50px 0;
+    gap: 15px;
+    text-align: justify;
+}
+.ceo_profile img:nth-child(1)  {
+    clip-path: circle(40%);
+}
+
+.profile_text {
+    width: 70%;
+    gap: 15px;
+}
+
+.ceo_profile span {
+    color: var(--dark-grey-text);
+}
+
+.hobbies {
+    width: 70%;
+    gap: 25px;
+    padding: 8px 0;
+    background: var(--dark-light-blue);
+    border-radius: 10px 0 10px 0;
+}
+
+/* =========== NUESTRA HISTORIA ============ */
+.story {
+    width: 90%;
+    gap: 15px;
+}
+.story_text {
+    width: 70%;
+    gap: 25px;
+    text-align: justify;
+}
+
+
+/* =========== Mision, Vision, Valores ============ */
+.empresa {
+    justify-content: space-around;
+}
+
+.empresa p {
+    text-align: justify;
+    width: 60%;
+}

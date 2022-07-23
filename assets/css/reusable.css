@@ -6,15 +6,7 @@
     box-sizing: border-box;
 }
 
-
 :root{
-    /* =========== Lights Colors ========== */
-    
-        --light-base:#E8E8E8;
-        --light-grey:#A4A4A4;
-        --very-light-grey:#DADADA;
-    
-    
     /* =========== Basic Colors ========== */
         
         --vega-cofee:#41332B;
@@ -25,7 +17,7 @@
         --white: #fff;
         --black: #000;
     
-    /* =========== Dark Colors ========== */
+    /* =========== Dark Theme ========== */
     
         --dark-blue:#252D38;
         --dark-light-blue:#2A384A;
@@ -41,6 +33,14 @@ body{
     background-color: var(--dark-blue);
     font-family: 'Roboto', sans-serif;
     width: 100%;
+    transition: .5s;
+}
+
+body.active {
+    /* =========== Light Theme ========== */
+    --light-base:#E8E8E8;
+    --light-grey:#A4A4A4;
+    --very-light-grey:#DADADA;
 }
 
 a{
@@ -79,6 +79,39 @@ p{
 .width-aviable{
     width:100%;
 }
+
+/*=============== LIGHT/DARK MODE ===============*/
+/* .darkMode {
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress_bar {
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    right: 20px;
+    border-radius: 50px;
+    background: var(--very-dark-blue);
+    transition: .2s;
+    cursor: pointer;
+}
+
+.progress_bar .circle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: var(--vega-yellow);
+    border-radius: 50%;
+    margin: 2.5px 0 0 2.5px;
+    transition: .2s;
+}
+
+.progress_bar.active .circle{
+    left: 25px;
+    border: 1px solid #000;
+} */
+/*=============== LIGHT/DARK MODE ===============*/
 
 /*=============== BUTTONS ===============*/
 .regular_button {
