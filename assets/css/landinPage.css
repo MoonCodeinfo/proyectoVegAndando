@@ -20,18 +20,10 @@ main{
 }
 
 .text_landing{
-    display: flex;
-    justify-content: left;
-    align-items: center;
     width: 100%;
-    margin-bottom: 50px;
+    height: 250px;
 }
-/* .text_landing::before{
-    content: 'con';
-    position: relative;
-    top: -5px;
-    left: 0;
-} */
+
 
 .text_landing .text_landing_js{
     font-size: 40px;
@@ -40,12 +32,16 @@ main{
 }
 
 .text_landing p {
-    margin-left: 18%;
-    padding-top: 68px;
-    margin-top: -10%;
     font-size: 30px;
-    font-weight: 300;
 }
+.p1_text_landing{
+    font-weight: 500;
+}
+
+.p2_text_landing{
+    font-weight: 100;
+}
+
 
 
 
