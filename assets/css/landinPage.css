@@ -2,6 +2,7 @@
 
 body{
     position: fixed;
+    background-color: var(--dark-blue);
 
 }
 
@@ -31,19 +32,16 @@ main{
     font-weight:900;
 }
 
-.text_landing p {
-    font-size: 30px;
-}
+
 .p1_text_landing{
     font-weight: 500;
+    font-size: 30px;
 }
 
 .p2_text_landing{
     font-weight: 100;
+    font-size: 25px;
 }
-
-
-
 
 
 .landing_logo {
@@ -63,6 +61,7 @@ main{
 
 video{
    width:100%;
+   background-size: cover;
     position: fixed;
     opacity: 0.4;
     left: 0;
@@ -101,4 +100,29 @@ footer{
 .copy_right a p {
     margin-top: 5px;
     color:rgba(255, 255, 255, 0.596) ;
+}
+
+
+/* =========== @Media Querys============ */
+/* ========   Landing Page     ======== */
+
+
+@media only screen and (min-width: 500px) {
+
+    
+}
+
+@media only screen and (min-width: 744px) {
+
+    .p1_text_landing{
+        font-size: 50px;
+    }
+    
+    .p2_text_landing{
+        font-size: 40px;
+    }
+    .text_landing .text_landing_js{
+        font-size: 60px;
+    }
+
 }
