@@ -1,10 +1,10 @@
 const typed = new Typed('.typed', {
 	strings: [
-		'<i class="text_landing_js">Excursión</i>',
-		'<i class="text_landing_js">Viaje</i>',
-		'<i class="text_landing_js">Tour</i>',
-		'<i class="text_landing_js">Gira</i>',
-		'<i class="text_landing_js">Resort</i>'
+		'<i class="text_landing_js">Excursión?</i>',
+		'<i class="text_landing_js">Viaje?</i>',
+		'<i class="text_landing_js">Tour?</i>',
+		'<i class="text_landing_js">Gira?</i>',
+		'<i class="text_landing_js">Resort?</i>'
 	],
 	//stringsElement: '#cadenas-texto', // ID del elemento que contiene cadenas de texto a mostrar.
 	typeSpeed: 50, // Velocidad en mlisegundos para poner una letra,
