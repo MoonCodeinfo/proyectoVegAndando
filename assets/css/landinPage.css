@@ -35,7 +35,7 @@ main{
     margin-bottom: 53px;
     opacity: 0.7;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 100;
 }
 
 
@@ -122,6 +122,13 @@ footer{
 /* =========== @Media Querys============ */
 /* ========   Landing Page     ======== */
 
+@media only screen and (min-width: 425px) {
+
+    .ocupation_landing {
+        margin-bottom: 25px;
+
+    }
+}
 
 @media only screen and (min-width: 500px) {
 
