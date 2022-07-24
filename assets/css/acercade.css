@@ -55,5 +55,9 @@
     text-align: justify;
     width: 80%;
     gap: 25px;
-    margin-top: 160px;
+    margin: 160px 0 50px 0;
+}
+
+.icontext_section{
+ justify-content: space-between;
 }
