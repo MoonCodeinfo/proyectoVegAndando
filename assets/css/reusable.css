@@ -57,6 +57,12 @@ p{
 .top_margin{
     margin-top: 2rem;
 }
+.text_center{
+    text-align: center;
+}
+.text_justify{
+    text-align: justify;
+}
 
 /*=============== Flex Direction Column ===============*/
 .flex_column{
