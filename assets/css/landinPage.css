@@ -31,11 +31,11 @@ main{
     font-weight:900;
 }
 
-.ocupation_landing{
-    margin-bottom: 40px;
+.ocupation_landing {
+    margin-bottom: 20px;
     opacity: 0.7;
-    font-size: 18px;
-    font-weight: 100;
+    font-size: 20px;
+    font-weight: 200;
 }
 
 
@@ -124,10 +124,7 @@ footer{
 
 @media only screen and (min-width: 425px) {
 
-    .ocupation_landing {
-        margin-bottom: -9px;
 
-    }
 }
 
 @media only screen and (min-width: 500px) {
