@@ -107,7 +107,7 @@
 }
 .frase_section .img_frase_1{
     position: absolute;
-    top: 1137px;
+    top: 1000px;
     left: -75px;
     width: 144px; 
 }
@@ -144,8 +144,8 @@
     text-align: center;
     gap: 20px;
     font-weight: 200;
-    display: none;
-    overflow: hidden;
+    /* display: none;
+    overflow: hidden; */
 }
 .view_more_content h4 {
     color: var(--white);
