@@ -288,7 +288,7 @@ p{
 
 /* ============ SCROLLBAR =========== */
 
- ::-webkit-scrollbar {
+ /* ::-webkit-scrollbar {
     width: 10px;
     height: 10px;
     
@@ -302,7 +302,7 @@ p{
   
 ::-webkit-scrollbar-thumb:hover {
     background: rgba(250, 189, 6, 0.8);
-  } 
+  }  */
 
   /* Style the button that is used to open and close the collapsible content */
 .collapsible {

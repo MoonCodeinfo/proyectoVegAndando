@@ -155,11 +155,30 @@
     font-weight: bold;
 }
 
+.view_more_content_title {
+    justify-content: space-between;
+}
+
 /* =========== Linea ============ */
 .linea {
     border-bottom: 1px solid var(--white);
     margin: -16px auto 0 auto;
     padding: 0 38px;
+}
+
+
+/* ============= Prohibido ================= */
+.prohibido {
+    gap: 5px;
+}
+.prohibido h3 {
+    font-size: 28px;
+}
+.prohibiciones {
+    background: var(--dark-light-blue);
+    padding: 20px 35px;
+    border-radius: 30px;
+    gap: 15px;
 }
 
 /* ============= Circulos Section  ================= */
