@@ -32,7 +32,7 @@ main{
 }
 
 .ocupation_landing{
-    margin-bottom: 53px;
+    margin-bottom: 40px;
     opacity: 0.7;
     font-size: 18px;
     font-weight: 100;
@@ -125,7 +125,7 @@ footer{
 @media only screen and (min-width: 425px) {
 
     .ocupation_landing {
-        margin-bottom: 25px;
+        margin-bottom: -9px;
 
     }
 }

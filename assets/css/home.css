@@ -81,6 +81,10 @@ main{
     /* margin-bottom: 20px; */
     /* padding-right: 30%; */
 }
+.new_travel_title{
+    gap: 10px;
+    margin-bottom: 20px;
+}
  .new_travel_title img{
     width: 39px;
  }
@@ -467,11 +471,14 @@ main{
 
     .home_section h4 {
         margin-bottom: 32px;
+        margin: buttom;
+        margin-top: 20px;
     }
 
     .home_minibox h3 {
         top: 181px;
     }
+
 
     #coco {
         top: 79px;
@@ -521,7 +528,7 @@ main{
 
 
     .text_icon_home {
-        top: 2090px;
+        top: 2114px;
     }
 
 
@@ -531,14 +538,15 @@ main{
         top: 2374px;
     }
 
-    /* ======= Our Branding Section====== */
+
+/* ======= Our Branding Section====== */
 
     .img_our_branding {
 
-        top: 2815px;
+        top:2858px;
     }
     .img_our_funders {
-        top: 3466px;
+        top: 3501px;
     }
 }
 @media only screen and (min-width: 425px) {
