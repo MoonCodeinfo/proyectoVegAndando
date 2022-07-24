@@ -25,6 +25,11 @@ main{
     max-width: 80%;
 
 }
+.ocupation_home{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
 #Stree-coco {
     position: absolute;
     top: 526px;
@@ -70,14 +75,14 @@ main{
       height: 2px; */
      
  }
- .new_travel_contain h2{
-     font-size: 22px;
-     font-weight: 300;
-     margin-bottom: 20px;
-     padding-right: 30%;
- }
- .new_travel_contain .img_flecha{
-     padding-left: 10px;
+ .new_travel_contain h2 {
+    font-size: 30px;
+    font-weight: 500;
+    /* margin-bottom: 20px; */
+    /* padding-right: 30%; */
+}
+ .new_travel_title img{
+    width: 39px;
  }
  
  .travel_contain_slider{
@@ -474,9 +479,12 @@ main{
         width: 53px;
     }
 
-  /*   #Stree-coco {
-        left: 41%;
-    } */
+    #Stree-coco {
+        top: 586px;
+    }
+    #Stree-coco1 {
+        top: 498px;
+    }
 
     /* =============New Travel Section======= */
 
@@ -521,6 +529,16 @@ main{
 
     .circle_rate {
         top: 2374px;
+    }
+
+    /* ======= Our Branding Section====== */
+
+    .img_our_branding {
+
+        top: 2815px;
+    }
+    .img_our_funders {
+        top: 3466px;
     }
 }
 @media only screen and (min-width: 425px) {
