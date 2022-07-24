@@ -528,7 +528,7 @@ main{
 
 
     .text_icon_home {
-        top: 2114px;
+        top: 2130px;
     }
 
 
@@ -589,20 +589,17 @@ main{
 
 
     /* ============= frase Section======= */
-
+   
     .frase_section .img_frase_1 {
-        top: 1581px;
+        top: 1645px;
     }
-
     .frase_section .img_frase_2 {
-        top: 1761px;
-        left: 310px;
-    }    
-
-    .frase_section .img_frase_3 {
-        top: 1896px;
+        top: 1790px;
+        left: 322px;
     }
-
+    .frase_section .img_frase_3 {
+        top: 1972px;
+    }
 
 
     /* ============= Icon Section======= */
@@ -612,7 +609,11 @@ main{
     }
 
     .text_icon_home {
-        top: 2164px;
+        top: 2204px;
+    }
+    
+    .title_icon_section h2 {
+        margin-bottom: -4px;
     }
 
 
@@ -620,6 +621,14 @@ main{
 
     .circle_rate {
         top: 2468px;
+    }
+
+    /* ============= Our Branding Section======= */
+    .img_our_branding {
+        top: 2973px;
+    }
+    .img_our_funders {
+        top: 3629px;
     }
 }
 

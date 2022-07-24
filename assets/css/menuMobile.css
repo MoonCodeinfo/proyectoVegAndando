@@ -93,6 +93,7 @@ bottom: 1rem;
   height: auto;
   cursor: pointer;
   overflow: hidden;
+  min-width: 32.78px;
 }
 
 .select span {
