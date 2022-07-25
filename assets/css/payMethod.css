@@ -1,20 +1,25 @@
-
+.title_pay_method{
+    font-size: 15px;
+    font-weight: 100;
+    margin-top: 10px;
+}
 .img_hero_paymethod{
     margin-top: 40px;
-    max-width: 40%;
+    max-width: 50%;
 }
 
 
 .box_pay_descripton {
     width: 80%;
-    margin: 50px 0 20px 0;
+    margin-top:50px;
     gap:20px;
 }
 
-.img_box_pay img{
-    width: 170px;
-    border-bottom-left-radius: 20px;
-    border-top-right-radius: 20px;
+.img_box_pay .img_hero{
+    width: 100px;
+    margin-bottom: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .box_text{
@@ -46,7 +51,7 @@
 
 .box_pay_method {
     width: 80%;
-    height: 900px;
+    height: 660px;
     margin: 50px 0 50px 0;
     background-color: var(--dark-light-blue);
     border-top-right-radius: 30px;
@@ -61,24 +66,32 @@
     text-align: justify;
 }
 .information_paymethod h3{
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 600;
     color: var(--vega-yellow);
 }
 .name_banck_account{
-    font-size: 35px;
+    font-size: 20px;
     font-weight: 100;
    margin: 10px 0 5px 0;
 }
 
 .banck_name{
-    font-size: 28px;
+    font-size: 18px;
     font-weight: 300;
    margin: 10px 0 5px 0;
 }
+/* .personal_contact::after{
+    content: '';
+    position: relative;
+    top: 5px;
+    width: 5px;
+    height: 5px;
+    background-color: var(--white);
+} */
 
 .banck_num{
-    font-size: 28px;
+    font-size: 18px;
     font-weight: 600;
 }
 .line_section{
@@ -98,20 +111,20 @@
     width: 90%;
 }
 .box_important_content h4{
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 600;
     margin-bottom: 10px;
 }
 .box_important_content p{
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 100;
   
 }
-.paypal_method{
+/* .paypal_method{
     margin-bottom: 50px;
-}
+} */
 .paypal_method h3 {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 400;
     margin-bottom: 15px;
 }
@@ -121,18 +134,115 @@
     margin: 30px 0 30px 0;
 }
 .reservar h4 {
-    font-size: 25px;
+    font-size: 19px;
     font-weight: 600;
     margin-bottom: 10px;
 
 }
 .reservar p {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 100;
  
 
 }
 
 .schedule_button{
-    margin-top: 100px;
+    width: 160px;
+    margin-top: 50px;
+}
+
+@media only screen and (min-width: 520px) {
+    
+    .box_pay_method {
+        width: 80%;
+        height: 900px;
+        margin: 50px 0 50px 0;
+        background-color: var(--dark-light-blue);
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        
+    }
+
+    .information_paymethod{
+        width: 90%;
+        height: 90%;
+        justify-content: space-evenly;
+        text-align: justify;
+    }
+    .information_paymethod h3{
+        font-size: 30px;
+        font-weight: 600;
+        color: var(--vega-yellow);
+    }
+    .name_banck_account{
+        font-size: 35px;
+        font-weight: 100;
+    margin: 10px 0 5px 0;
+    }
+
+    .banck_name{
+        font-size: 28px;
+        font-weight: 300;
+    margin: 10px 0 5px 0;
+    }
+
+    .banck_num{
+        font-size: 28px;
+        font-weight: 600;
+    }
+    .line_section{
+        width: 80%;
+        height: 2px;
+        background-color: var(--white);
+        margin: 20px 0 20px 0;
+    }
+    .important{
+        height: 300px;
+        background-color: var(--very-dark-blue);
+        border-bottom-left-radius: 29px;
+        opacity: 0.8;
+    
+    }
+    .box_important_content{
+        width: 90%;
+    }
+    .box_important_content h4{
+        font-size: 25px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    .box_important_content p{
+        font-size: 20px;
+        font-weight: 100;
+    
+    }
+    .paypal_method{
+        margin-bottom: 50px;
+    }
+    .paypal_method h3 {
+        font-size: 30px;
+        font-weight: 400;
+        margin-bottom: 15px;
+    }
+
+
+    .reservar{
+        margin: 30px 0 30px 0;
+    }
+    .reservar h4 {
+        font-size: 25px;
+        font-weight: 600;
+        margin-bottom: 10px;
+
+    }
+    .reservar p {
+        font-size: 20px;
+        font-weight: 100;
+    
+
+    }
+
+    .schedule_button{
+        margin-top: 100px;
+    }
 }

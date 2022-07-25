@@ -17,22 +17,18 @@
     <main class="width-aviable center_content flex_column">
 
         <img class="center_content img_hero_paymethod" src="/assets/imagenes/logos/lightLogo.svg" alt="logo vegandando">
+        <p class="title_pay_method">Metodos de Pago</p>
 
-        <section class="box_pay_descripton center_content">
-            <div class="img_box_pay center_content">
-                <img src="/assets/imagenes/png/160x160.png" alt="">
+        <section class="box_pay_descripton center_content flex_column">
+            <h2>Manantial la Beata</h2>
+            <div class="img_box_pay center_content flex_column">
+                <img class="img_hero" src="/assets/imagenes/png/160x160.png" alt="">
+                <img src="/assets/imagenes/svg+/starRate.svg" alt="">
             </div>
-            <div class="box_text center_content flex_column">
-                <h2>Manantia la Beata</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit architecto praesentium corporis, atque sint illum ab ex culpa sequi incidunt saepe quidem molestias.</p>
-            </div>
+        <p style="color: var(--vega-yellow); font-size: 20px; font-weight: 600;">$2,800 Pp</p>
         </section>
 
 
-        <section class="rating center_content flex_column">
-            <h3>Valoración</h3> 
-            <img src="/assets/imagenes/svg+/starRate.svg" alt="">
-        </section>
 
         <!-- ============ Como Reservar ========== -->
         <div class="reservar center_content flex_column text_center">
@@ -40,31 +36,50 @@
             <h4>¿Como resevar?</h4>
     
              <p class="text_center">Se reserva con $1000 pesos <br>
-                *NO REEMBOLSABLES*</p>
+                *NO REEMBOLSABLES*
+            <br>
+            <p class="text_center" style="width: 80%; margin-top: 10px; font-size: 12px;">El pago se puede realizar por transferencia o paypal</p>
+            </p>
     
           </div>
 <!-- ============ Box Pay Method ========== -->
+<section class="paypal_method center_content flex_column  width-aviable">
+    <h3>Paypal</h3>
+
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="KY83NAT6GWYKC">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+        </form>
+  </section>
 
     <section class="box_pay_method center_content flex_column">
         <div class="information_paymethod center_content flex_column text_justify">
         <h3>Pagos por Transferencia</h3>
-    <div class="liz_franco_contac center_content flex_column text_center">
-        <p>A nombre de: <br> <span class="name_banck_account">Liz Franco Vega</span></p>
 
-            <p class="banck_name">Popular</p>
-            <p class="banck_num">822970471</p>
-
-            <p class="banck_name">Banreservas</p>
-            <p class="banck_num">9601606858</p>
-
-        </div>
-        <span class="line_section"></span>
-        <div class="Yenifer_vega_contac center_content flex_column text_center">
+        <div class="personal_contact  center_content flex_column text_center">
             <p>A nombre de: <br> <span class="name_banck_account">Yenifer Vega</span></p>
-            <p class="banck_name">BHD León</p>
+            <p class="banck_name">- BHD León</p>
             <p class="banck_num">22800430014</p>
             
     </div>
+
+    <span class="line_section"></span>
+
+    <div class="personal_contact center_content flex_column text_center">
+
+        <p>A nombre de: <br> <span class="name_banck_account">Liz Franco Vega</span></p>
+
+            <p class="banck_name">- Popular</p>
+            <p class="banck_num">822970471</p>
+
+            <p class="banck_name">- Banreservas</p>
+            <p class="banck_num">9601606858</p>
+
+        </div>
+       
+
     </div>
         <div class="important center_content flex_column width-aviable">
             <div class="box_important_content center_content flex_column text_justify">
@@ -76,16 +91,13 @@
         </div>
 
       </section>
-      <section class="paypal_method center_content flex_column  width-aviable">
-        <h3>Paypal</h3>
 
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-            <input type="hidden" name="cmd" value="_s-xclick">
-            <input type="hidden" name="hosted_button_id" value="KY83NAT6GWYKC">
-            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-            <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
-            </form>
-      </section>
+       <!--   ========== Volver Atras Buttom ===============  -->
+      <section class="schedule_button regular_button center_content">
+        <!-- Si es necesario, agregar esta clase, que estaba en el diseño anterior ------- nth_btn2_AGdarVaje -->
+        <a  href="./infoViaje.html" >Volver atras</a>
+    </section>
+      
 
       <!--   ========== Question Section ===============  -->
 
@@ -123,10 +135,7 @@
     </section>
             
         
-        <section class="schedule_button regular_button center_content">
-            <!-- Si es necesario, agregar esta clase, que estaba en el diseño anterior ------- nth_btn2_AGdarVaje -->
-            <a  href="./infoViaje.html" >Volver atras</a>
-        </section>
+        
 
      <!-- ========== footer ========== -->
      <iframe src="/footer.html" frameborder="0"></iframe>
