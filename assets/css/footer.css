@@ -59,7 +59,7 @@ footer{
     line-height: 18px;
     
 }
-.copy_right p span{
+.copy_right p span a{
     font-weight: 300;
    
    color: var(--vega-yellow);

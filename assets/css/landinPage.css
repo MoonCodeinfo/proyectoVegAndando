@@ -109,7 +109,7 @@ footer{
     margin-top: 5px;
     color:var(--white) ;
 }
-.copy_right p span {
+.copy_right p span a {
     color:var(--vega-yellow) ;
 }
 .copy_right p {
