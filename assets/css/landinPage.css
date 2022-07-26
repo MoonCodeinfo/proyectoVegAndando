@@ -119,17 +119,14 @@ footer{
     display: none;
 }
 
+/* =========== @Media Querys ============ */
+/* ======== Landing Page ======== */
 
-/* =========== @Media Querys============ */
-/* ========   Landing Page     ======== */
+/* @media only screen and (min-width: 425px) {
 
-@media only screen and (min-width: 425px) {
-
-
-}
+} */
 
 @media only screen and (min-width: 500px) {
-
     .p1_text_landing{
         font-size: 50px;
     }
@@ -141,17 +138,19 @@ footer{
         font-size: 60px;
     }
 
+    .landing_logo {
+        width: 50%;
+    }
+
     .landing_bottom {
-        width: 151px;
-        height: 52px;
+        width: 140px;
+        height: 42px;
         font-size: 20px;
         outline: 3px solid var(--white);
         margin-bottom: 156px;
     }
 
     /* =========== Footer Copy Right ============ */
-
-
     .social_icon {
         gap: 26px;
     }
@@ -164,17 +163,13 @@ footer{
         font-size: 19px;
         line-height: 23px;
     }
-
-
 }
 
 @media only screen and (min-width: 744px) {
-
-    .landing_logo {
-        width: 60%;
-    
+    .landing_container {
+        height: 100%;
     }
-    
+
     .circle_vegayelow{
         display: block;
         position: absolute;
@@ -183,15 +178,19 @@ footer{
         height: 100%;
         background-color: var(--vega-yellow);
         border-radius: 50%;
-}
-.landing_bottom {
-    margin-bottom: 55px;
-}
+    }
+
+    .landing_bottom {
+        margin-bottom: 16px;
+    }
+
+    footer{
+        margin-bottom: 0;
+    } 
 
 }
 
 @media only screen and (min-width: 1024px) {
-
     .landing_logo {
         width: 35%;
         top: 33%;
@@ -202,7 +201,7 @@ footer{
     }
 
     .circle_vegayelow{
-        top: 521px;
+        top: 430px;
         width: 90%;
         height: 150%;
     }
@@ -210,11 +209,17 @@ footer{
     .landing_bottom {
         margin-bottom: 103px;
     }
-    .copy_right p, .copy_right p span, .copy_right a p {
-        color:rgb(85, 85, 85) ;
+    /* No entiendo estos estilos */
+    .copy_right p, 
+    .copy_right p span, 
+    .copy_right a p {
+        color:rgb(85, 85, 85);
+    }   
+    .copy_right p span a {
+        color:var(--white);
     }
-
 }
+
 @media only screen and (min-width: 1280px) {
 
     .landing_logo {
