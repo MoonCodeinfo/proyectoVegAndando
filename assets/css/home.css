@@ -26,14 +26,14 @@ main{
 
 #Stree-coco {
     position: absolute;
-    top: 526px;
+    top: 350px;
     right: 0;
     width: 123px;
     
 }
 #Stree-coco1 {
     position: absolute;
-    top: 444px;
+    top: 560px;
     left: -123px;
     width: 231px;
 }
@@ -46,7 +46,7 @@ main{
 }
 #coco {
     position: absolute;
-    top: 66px;
+    top: 100px;
     right: 8%;
     width: 52px;
 }
@@ -61,12 +61,12 @@ main{
     margin-bottom: 20px;
     font-size: 20px;
     text-align: center;
-    max-width: 70%;
+    max-width: 80%;
 }
 
 /* =========== New Travel Section ============ */
 .new_travel_contain {
-     margin: 80px 0 50px 0;
+     margin: 135px 0 50px 0;
  }
 
  .new_travel_contain h2 {
@@ -75,34 +75,35 @@ main{
     /* margin-bottom: 20px; */
     /* padding-right: 30%; */
 }
-.new_travel_title{
+.new_travel_title {
     gap: 10px;
     margin-bottom: 20px;
 }
- .new_travel_title img{
+ .new_travel_title img {
     width: 39px;
  }
  
- .travel_contain_slider{
+ .travel_contain_slider {
     justify-content: flex-end;
      /* gap: 30px; */
  }
- .travel_contain_slider::-webkit-scrollbar{
+ .travel_contain_slider::-webkit-scrollbar {
      width: 10px;
      height: 10px;
  }
 
  .img_viaje {
+    width: 90%;
     border-radius: 35px;
  }
  
- .travel_box{
+ .travel_box {
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 280px;
-    height: 230px;
+    width: 270px;
+    height: 250px;
     background-color: rgba(10, 25, 46, 0.78);
     border: solid 3px var(--white);
     border-radius: 30px;
@@ -124,11 +125,9 @@ main{
     align-items: flex-end;
  }
 
- /* .title_travel_box::after {
-    content: '';
-
-
- } */
+ .travel_box a {
+    margin: 8px 0 5px 0;
+ }
 
  .title_travel_box h2 {
     width: 90%;
@@ -141,6 +140,7 @@ main{
 
  .paragraph_travel_box {
     gap: 5px;
+    margin-top: -20px;
  }
 
  .paragraph_travel_box a{
@@ -150,9 +150,8 @@ main{
  }
 
  .paragraph_travel_box p {
-    width: 90%;
     font-size: 14px;
-    text-align: justify;
+    text-align: center;
  }
  
      
@@ -184,19 +183,19 @@ main{
 
 .frase_section .img_frase_1{
     position: absolute;
-    top: 1501px;
+    top: 1420px;
     left: -82px;
     width: 144px; 
 }
 
 .frase_section .img_frase_2{
     position: absolute;
-    top: 1653px;
+    top: 1555px;
     left: 222px;
 }
 .frase_section .img_frase_3{
     position: absolute;
-    top: 1815px;
+    top: 1670px;
     width: 126px;
     left: -64px;
 }
@@ -214,7 +213,7 @@ main{
 
 .icon_section_home{
      width: 85%;
-     height: 400px;
+     height: 260px;
      flex-direction: column;
     
     margin-top: 77px;
@@ -265,7 +264,7 @@ main{
  
  .text_icon_home{
      position:absolute;
-     top: 2053px;
+     top: 1875px;
 
  }
 
@@ -386,11 +385,10 @@ main{
  
 .our_branding_contain{
     height: 500px;
-    margin-top: 80px;
 }
 .img_our_branding {
     position: absolute;
-    top: 2738px;
+    top: 1950px;
     right: 0;
 }
 
@@ -441,7 +439,7 @@ main{
 .img_our_funders{
     position: absolute;
     transform: rotate(180deg);
-    top: 3390px;
+    top: 2530px;
     left:0;
 }
 .our_funders_box{
@@ -506,7 +504,6 @@ main{
 
 
 @media only screen and (min-width: 375px) {
-
     .home_section h4 {
         margin-bottom: 32px;
         margin: buttom;
@@ -516,7 +513,6 @@ main{
     .home_minibox h3 {
         top: 181px;
     }
-
 
     #coco {
         top: 160px;
@@ -532,7 +528,6 @@ main{
     }
 
     /* =============New Travel Section======= */
-
     .new_travel_contain {
         margin: 130px 0 50px 0;
     }
@@ -544,51 +539,40 @@ main{
     }
 
     /* ============= frase Section======= */
-
     .frase_section .img_frase_1 {
-        top: 1563px;
+        top: 1480px;
     }
 
     .frase_section .img_frase_2 {
-        top: 1707px;
+        top: 1620px;
          left: 275px;
     }
 
     .frase_section .img_frase_3 {
-        top: 1912px;
+        top: 1710px;
         width: 127px;
         left: -63px;
     }
 
-
-
     /* ============= Icon Section======= */
-
-
     .text_icon_home {
-        top: 2130px;
+        top: 1935px;
     }
 
-
 /* ============= Rate Section======= */
-
     .circle_rate {
         top: 2374px;
     }
 
-
 /* ======= Our Branding Section====== */
-
     .img_our_branding {
-
-        top:2858px;
+        top: 2010px;
     }
     .img_our_funders {
-        top: 3501px;
+        top: 2580px;
     }
 }
 @media only screen and (min-width: 425px) {
-
     .home_section h4 {
         margin-bottom: 32px;
     }
@@ -598,12 +582,12 @@ main{
     }
 
     #coco {
-        top: 91px;
+        top: 125px;
         right: 8%;
     }
 
     #Stree-coco1 {
-        top: 497px;
+        top: 560px;
     }
 /* 
     #Stree-coco {
@@ -612,9 +596,8 @@ main{
     } */
 
     /* =============New Travel Section======= */
-
     .new_travel_contain {
-        margin: 218px 0 50px 0;
+        margin: 120px 0 50px 0;
     }
 
     .new_travel_contain::after {
@@ -625,54 +608,46 @@ main{
         top: 808px;
     }
 
-
     /* ============= frase Section======= */
-   
     .frase_section .img_frase_1 {
-        top: 1645px;
+        top: 1480px;
     }
     .frase_section .img_frase_2 {
-        top: 1790px;
+        top: 1620px;
         left: 322px;
     }
     .frase_section .img_frase_3 {
-        top: 1972px;
+        top: 1720px;
     }
 
-
     /* ============= Icon Section======= */
-
     .icon_section_home {
         gap: 36px;
     }
 
     .text_icon_home {
-        top: 2204px;
+        top: 1935px;
     }
     
     .title_icon_section h2 {
         margin-bottom: -4px;
     }
 
-
 /* ============= Rate Section======= */
-
     .circle_rate {
         top: 2468px;
     }
 
     /* ============= Our Branding Section======= */
     .img_our_branding {
-        top: 2973px;
+        top: 2000px;
     }
     .img_our_funders {
-        top: 3629px;
+        top: 2580px;
     }
 }
 
 @media only screen and (min-width: 768px) {
-
-
     .home_section h4 {
         margin-bottom: 32px;
     }
@@ -709,7 +684,6 @@ main{
     } */
 
     /* =============New Travel Section======= */
-
     .new_travel_contain {
         margin: 730px 0 130px 0;
     }
@@ -728,7 +702,6 @@ main{
         margin-bottom: 32px;
         padding-right: 45%;
     }
-
 
     /* ============= frase Section======= */
 
@@ -753,10 +726,7 @@ main{
         font-weight: 100;
     }
 
-
-
     /* ============= Icon Section======= */
-
     .icon_section_home {
         gap: 73px;
     }
@@ -775,9 +745,7 @@ main{
         border: solid 4px var(--dark-little-grey);
     }
 
-
 /* ============= Rate Section======= */
-
     .circle_rate {
         top: 3047px;
         left: -47px;
@@ -797,7 +765,6 @@ main{
     }
 
 /* ============= footer Section======= */
-
     .sub_email p {
         font-size: 20px;
     }
@@ -810,8 +777,4 @@ main{
         font-size: 20px;
         line-height: 25px;
     }
-
-
 }
-
-
