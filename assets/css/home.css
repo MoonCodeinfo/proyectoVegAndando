@@ -8,28 +8,22 @@ main{
 }
 
 .home_section {
-    height: 700px;
+    height: 100%;
 }
 
-.home_minibox h3{
-    font-size: 25px;
-    font-weight: 100;
-   
+.img_home {
+    position: relative;
+    width: 50%;
 }
-.home_section h4{
-    font-size: 20px;
-    font-weight: 100;
-    margin-bottom: 60px;
-    font-size: 20px;
-    text-align: center;
-    max-width: 80%;
 
+.hero_image {
+    position: relative;
+    width: 280px;
+    right: 80px;
+    top: -80px;
 }
-.ocupation_home{
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
+
+
 #Stree-coco {
     position: absolute;
     top: 526px;
@@ -45,9 +39,9 @@ main{
 }
 #sol {
     position: absolute;
-    top: -71px;
-    left: -50px;
-    width: 165px;
+    top: -75px;
+    left: -60px;
+    width: 130px;
   
 }
 #coco {
@@ -55,26 +49,26 @@ main{
     top: 66px;
     right: 8%;
     width: 52px;
-  
 }
 
-.img_home {
-    width:90%;
+.experience_frase {
+    margin: -90px 0 0 0;
+}
+
+.experience_frase p{
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: center;
+    max-width: 70%;
 }
 
 /* =========== New Travel Section ============ */
 .new_travel_contain {
-     margin:80px 0 50px 0;
+     margin: 80px 0 50px 0;
  }
 
- .new_travel_contain::after{
-     content:url("../imagenes/svg+/ola-white.svg");
-     position: absolute;
-     top: 723px;
-    /* width: 40%;
-      height: 2px; */
-     
- }
  .new_travel_contain h2 {
     font-size: 30px;
     font-weight: 500;
@@ -90,31 +84,75 @@ main{
  }
  
  .travel_contain_slider{
-     display: flex;
-     overflow-x: auto;
-     scroll-behavior: smooth;
-     -webkit-overflow-scrolling: touch;
-     scrooll-snap-points-x:repeat(400px);
-     scrooll-snap-type:mandatory;
-     gap: 30px;
-     margin-left: 30px;
-     background-color: rgba(255, 255, 255, 0);
+    justify-content: flex-end;
+     /* gap: 30px; */
  }
  .travel_contain_slider::-webkit-scrollbar{
      width: 10px;
      height: 10px;
  }
+
+ .img_viaje {
+    border-radius: 35px;
+ }
  
  .travel_box{
-     display: flex;
-     align-items: center;
-     min-width: 160px;
-     height: 230px;
-     background-color: rgba(255, 255, 255, 0);
-     border: solid 3px var(--white);
-     border-radius: 20px;
-     box-sizing: content-box;
-     z-index: 10;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 230px;
+    background-color: rgba(10, 25, 46, 0.78);
+    border: solid 3px var(--white);
+    border-radius: 30px;
+    box-sizing: content-box;
+    margin-bottom: 25px;
+ }
+
+ .travel_box span {
+    position: relative;
+    color: var(--white);
+    font-size: 13px;
+    top: -62px;
+    left: 90px;
+ }
+
+ .title_travel_box {
+    padding: 15px;
+    justify-content: space-between;
+    align-items: flex-end;
+ }
+
+ /* .title_travel_box::after {
+    content: '';
+
+
+ } */
+
+ .title_travel_box h2 {
+    width: 90%;
+    line-height: 26px;
+ }
+ .title_travel_box p {
+    color: var(--vega-yellow);
+    font-weight: 600;
+ }
+
+ .paragraph_travel_box {
+    gap: 5px;
+ }
+
+ .paragraph_travel_box a{
+    position: relative;
+    right: 78px;
+    color: var(--light-grey);
+ }
+
+ .paragraph_travel_box p {
+    width: 90%;
+    font-size: 14px;
+    text-align: justify;
  }
  
      
@@ -481,16 +519,16 @@ main{
 
 
     #coco {
-        top: 79px;
+        top: 160px;
         right: 8%;
         width: 53px;
     }
 
     #Stree-coco {
-        top: 586px;
+        top: 350px;
     }
     #Stree-coco1 {
-        top: 498px;
+        top: 620px;
     }
 
     /* =============New Travel Section======= */

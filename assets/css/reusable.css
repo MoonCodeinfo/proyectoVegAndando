@@ -26,6 +26,7 @@
         --dark-grey-middle:#2C3644;
         --dark-little-grey:#474C54;
         --dark-grey-text: #858585;
+        --light-grey:#A4A4A4;
         
     }
 
@@ -39,7 +40,6 @@ body{
 body.active {
     /* =========== Light Theme ========== */
     --light-base:#E8E8E8;
-    --light-grey:#A4A4A4;
     --very-light-grey:#DADADA;
 }
 
