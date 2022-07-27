@@ -18,7 +18,7 @@ main{
 
 .hero_image {
     position: relative;
-    width: 280px;
+    width: 420px;
     right: 80px;
     top: -80px;
 }
@@ -499,10 +499,8 @@ main{
 
 
 
-/* =========== @Media Querys============ */
+/* =========== @Media Querys min-width============ */
 /* ========       Home          ======== */
-
-
 @media only screen and (min-width: 375px) {
     .home_section h4 {
         margin-bottom: 32px;
@@ -778,3 +776,8 @@ main{
         line-height: 25px;
     }
 }
+
+/* =========== @Media Querys max-width============ */
+/* ======== Home ======== */
+
+
