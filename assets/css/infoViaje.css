@@ -355,11 +355,7 @@ font-size: 26px;
         flex-direction: row;
         gap: 15px;
     }
-
-    
-   
-    /* .rating_tag {
-        flex-direction: row;
-    } */
-        
+    .circle_img {
+        /* width: 50%; */
+    }   
 }
