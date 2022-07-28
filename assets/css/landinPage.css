@@ -14,29 +14,35 @@ main{
 }
 
 .landing_container{
-    width: 100%;
     height: 70%;
-    justify-content: space-between;
-    z-index: 11;
+    justify-content: space-evenly;
 }
 
 .text_landing{
-    width: 100%;
-    height: 190px;
+    width: 305px;
+    height: 137px;
+    background-color: rgb(37 45 56 / 59%);
+    border-radius: 92px;
+    border: solid 5px var(--vega-yellow);
+    z-index: 22;
 }
 
+.p1_text_landing, .p2_text_landingp{
+    margin-bottom: -8px;
+}
 
 .text_landing .text_landing_js{
     font-size: 40px;
     color: var(--vega-yellow);
     font-weight:900;
+    /* margin-top: -8px; */
 }
 
 .ocupation_landing {
- 
     opacity: 0.7;
     font-size: 20px;
     font-weight: 200;
+    z-index: 22;
 }
 
 
@@ -50,13 +56,13 @@ main{
     font-weight: 100;
     font-size: 25px;
 }
-
+.logo_link{
+    z-index: 22;
+}
 
 .landing_logo {
-    position: absolute;
-    top: 40%;
     width: 80%;
-   /*  margin-bottom: 85px; */
+ 
 }
 
 .landing_bottom{
@@ -67,8 +73,17 @@ main{
     outline: 2px solid var(--white);
     margin-bottom: 20px;
     border-radius: 35px;
+    z-index: 22;
 }
-
+/* .container_video{
+    position: fixed;
+    max-width:100%;
+    max-height: 100%;
+}
+ */
+/* .act_video{
+    display: none;
+} */
 video{
    min-width:100%;
    min-height: 100%;
@@ -81,7 +96,7 @@ video{
 }
 
 footer{
-    z-index: 10;
+    z-index: 22;
     height: 100px;
     margin-bottom: 50px;
 }
@@ -118,6 +133,9 @@ footer{
 .circle_vegayelow{
     display: none;
 }
+.img_landing{
+    display:none;
+}
 
 /* =========== @Media Querys ============ */
 /* ======== Landing Page ======== */
@@ -126,8 +144,17 @@ footer{
 
 } */
 
-@media only screen and (min-width: 500px) {
-    .p1_text_landing{
+@media only screen and (min-width: 700px) {
+   
+
+     
+    
+    /* ==========  text effect =========  */
+    .text_landing{
+        background-color: none;
+        border: none;
+    }
+    /* .p1_text_landing{
         font-size: 50px;
     }
     
@@ -136,22 +163,41 @@ footer{
     }
     .text_landing .text_landing_js{
         font-size: 60px;
+    } */
+    .landing_container{
+        justify-content: center;
+
+    }
+
+    .logo_link {
+        width: 100%;
+        align-items: center;
+        margin-left: -400px;
+        margin-bottom:-6px;
+
     }
 
     .landing_logo {
-        width: 50%;
+        width: 35%;
     }
 
     .landing_bottom {
         width: 140px;
-        height: 42px;
         font-size: 20px;
         outline: 3px solid var(--white);
-        margin-bottom: 156px;
+        margin-bottom: none;
+        margin-top: 25px;
+  
+        padding: 25px 0 24px 0;
+        
     }
 
     /* =========== Footer Copy Right ============ */
     .social_icon {
+        position: absolute;
+        flex-direction: column;
+        right: 49px;
+        bottom: 189px;
         gap: 26px;
     }
 
@@ -159,35 +205,123 @@ footer{
         width: 40px;
     }
 
+    .copy_right{
+        width: 100%;
+        margin-top: none;
+        margin-bottom: 20px;
+        
+    }
+
+    .copy_right .active{
+        display: none;
+    }
+
     .copy_right p {
+       text-align: none;
         font-size: 19px;
         line-height: 23px;
-    }
-}
+        color: var(--light-grey);
 
-@media only screen and (min-width: 744px) {
-    .landing_container {
-        height: 100%;
     }
+ /* =========== Video ============ */
+    video{
+      
+        height: 600px;
+        position: static;
+        opacity: 1;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        border-radius: 60px;
+        border: solid 5px var(--white);
+        z-index: 22;
+     }
 
-    .circle_vegayelow{
+ /* =========== Circulos ============ */
+     .circle_vegayelow{
         display: block;
         position: absolute;
-        top: 729px;
-        width: 200%;
-        height: 100%;
-        background-color: var(--vega-yellow);
+        z-index: 30;
+     }
+
+     .circle_1 {
+        width: 300px;
+        height: 300px;
         border-radius: 50%;
+        top: -140px;
+        right: -140px;
+        background-color: var(--vega-yellow);
     }
 
-    .landing_bottom {
-        margin-bottom: 16px;
+    .circle_2 {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        top: 313px;
+        left: 106px;
+        background-color: var(--vega-yellow);
+        z-index: -3;
+    }
+    .circle_3 {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        bottom: 331px;
+        right: 152px;
+        background-color: var(--vega-yellow);
+    }
+    .circle_4 {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        top: 313px;
+        right: 112px;
+        background-color: var(--vega-yellow);
+    }
+     /* =========== img olas ============ */
+
+    .img_landing{
+        display:block;
+        position: absolute;
+    }
+    .olas_1 {
+        bottom: 519px;
+        right: 78px;
+        z-index: -10;
+    }
+    .olas_2 {
+        bottom: 348px;
+        left: 52px;
+        z-index: -10;
     }
 
-    footer{
-        margin-bottom: 0;
-    } 
+}
+@media only screen and (min-width: 834px) {
 
+
+    .circle_2 {
+        top: 351px;
+        left: 161px;
+  
+    }
+    .circle_3 {
+        bottom: 323px;
+        right: 211px;
+    }
+    .circle_4 {
+        top: 356px;
+        right: 155px;
+    }
+     /* =========== img olas ============ */
+
+    .olas_1 {
+        right: 145px;
+    
+    }
+    .olas_2 {
+        left: 127px;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -200,21 +334,12 @@ footer{
         height: 80%;
     }
 
-    .circle_vegayelow{
-        top: 430px;
-        width: 90%;
-        height: 150%;
-    }
+    
 
     .landing_bottom {
         margin-bottom: 103px;
     }
-    /* No entiendo estos estilos */
-    .copy_right p, 
-    .copy_right p span, 
-    .copy_right a p {
-        color:rgb(85, 85, 85);
-    }   
+     
     .copy_right p span a {
         color:var(--white);
     }
@@ -226,8 +351,6 @@ footer{
         width: 35%;
     }
 
-    .circle_vegayelow{
-        top: 466px;
-    }
+   
 
 }
