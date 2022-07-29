@@ -7,6 +7,7 @@ body{
 }
 
 main{
+    flex-direction: column;
     max-width: 100%;
     height: 100vh;
     box-sizing: border-box;
@@ -14,6 +15,7 @@ main{
 }
 
 .landing_container{
+    width: 100%;
     height: 70%;
     justify-content: space-evenly;
 }
@@ -94,6 +96,15 @@ video{
     bottom: 0;
     z-index: -1;
 }
+
+
+/* == Segundo section se activa en 1024px */
+
+.footer_and_buttom_section{
+    display: none;
+}
+
+/* ====================================== */
 
 footer{
     z-index: 22;
@@ -325,31 +336,140 @@ footer{
 }
 
 @media only screen and (min-width: 1024px) {
-    .landing_logo {
-        width: 35%;
-        top: 33%;
-    }
-
-    .landing_container {
-        height: 80%;
-    }
-
+    main{
+        flex-direction: row-reverse;
+       }
     
+        main::after{
+            content: '';
+            position: fixed;
+            width: 90%;
+            height: 90%;
+            border-radius: 30px;
+            border: solid 3px var(--white);
+        }
+    
+      
+        .landing_container{
+            width: 40%;
+            height: 80%;
+            justify-content: space-between;
+            margin: 0 -47px 0 41px;
 
-    .landing_bottom {
-        margin-bottom: 103px;
-    }
+        }
+    
+        .footer_and_buttom_section{
+            display: block;
+         
+        }
+       /*  .container_video{
+            width: 60%;
+        } */
+        .buttom_conocemas_box{
+            margin-bottom: 50px;
+        }
+
+        .landing_bottom{
+            margin: 0;
+        }
+    
+        .active_section{
+            display: none;
+        }
+
+        .logo_link {
+            width: 100%;
+            align-items: center;
+            margin-left: 0px;
+            margin-bottom: 30px;
+            
+        }
+
+        .landing_logo {
+            width: 55%;
+            /* top: 50px; */
+        }
+        .text_landing{
+            margin-bottom: 30px;
+        }
+
+        .p1_text_landing{
+            font-size: 40px;
+        }
+        
+        .p2_text_landing{
+            font-size: 30px;
+        }
+
+        .text_landing .text_landing_js{
+            font-size: 55px;
+        }
+
+
+       /*  footer{
+            margin-bottom: -10px;
+        } */
+    
+         .social_icon {
+            position: static;
+            flex-direction:row;
+            bottom: 189px;
+            gap: 12px;
+         }
      
-    .copy_right p span a {
+         #icon {
+            width: 31px;
+        }
+     
+        .copy_right p span a {
         color:var(--white);
     }
+
+
+    /* =========== circulos ============ */
+
+    .circle_1 {
+        width: 200px;
+        height: 200px;
+        top: 436px;
+        right: -96px;
+        z-index: -3;
+        
+    }
+
+    .circle_2 {
+        width: 130px;
+        height: 130px;
+        top: 142px;
+        left: 85px;
+    }
+
+    .circle_3 {
+        position: relative;
+        bottom: 188px;
+        left: 441px;
+    }
+    .circle_4 {
+        top: 204px;
+        left: 527px;
+    }
+     /* =========== img olas ============ */
+    .olas_1 {
+        bottom: 389px;
+        left: 290px;
+    }
+    .olas_2 {
+        bottom: 252px;
+        left: 72px;
+    }
+
 }
 
 @media only screen and (min-width: 1280px) {
 
-    .landing_logo {
+    /* .landing_logo {
         width: 35%;
-    }
+    } */
 
    
 
