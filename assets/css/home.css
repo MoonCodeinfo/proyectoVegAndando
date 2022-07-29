@@ -115,7 +115,7 @@ main{
     position: relative;
     color: var(--white);
     font-size: 13px;
-    top: -62px;
+    top: -70px;
     left: 90px;
  }
 
@@ -135,7 +135,7 @@ main{
  }
  .title_travel_box p {
     color: var(--vega-yellow);
-    font-weight: 600;
+    font-weight: 400;
  }
 
  .paragraph_travel_box {
