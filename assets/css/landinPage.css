@@ -1,95 +1,73 @@
-body {
+
+
+body{
     position: fixed;
     background-color: var(--dark-blue);
+
 }
-<<<<<<< HEAD
 
 main{
     flex-direction: column;
-=======
-main {
->>>>>>> 9e0f65dd078520e4d6775fb5df8686e4a3894225
     max-width: 100%;
     height: 100vh;
     box-sizing: border-box;
     padding: 25px 0 30px 0;
 }
 
-<<<<<<< HEAD
 .landing_container{
     width: 100%;
-=======
-/* ============= Landing Container ============= */
-.landing_container {
->>>>>>> 9e0f65dd078520e4d6775fb5df8686e4a3894225
     height: 70%;
     justify-content: space-evenly;
 }
 
-/* ============= Logo ============= */
-.ocupation_landing {
-    opacity: 0.7;
-    font-size: 20px;
-    font-weight: 200;
-    z-index: 22;
-}
-.logo_link {
-    z-index: 22;
-}
-.landing_logo {
-    width: 80%;
-}
-
-/* ============= Text effect ============= */
-.text_landing {
-    width: 305px;
+.text_landing{
+   width: 305px;
     height: 137px;
     background-color: rgb(37 45 56 / 59%);
     border-radius: 92px;
     border: solid 5px var(--vega-yellow);
     z-index: 22;
 }
-.p1_text_landing,
-.p2_text_landingp {
+
+.p1_text_landing, .p2_text_landingp{
     margin-bottom: -8px;
 }
-.p1_text_landing {
-    font-weight: 500;
-    font-size: 30px;
-}
-.p2_text_landing {
-    font-weight: 100;
-    font-size: 25px;
-}
-.text_landing .text_landing_js {
+
+.text_landing .text_landing_js{
     font-size: 40px;
     color: var(--vega-yellow);
-    font-weight: 900;
+    font-weight:900;
     /* margin-top: -8px; */
 }
 
-/* ============= Video de fondo ============= */
-/*.container_video {
-    position: fixed;
-    max-width: 100%;
-    max-height: 100%;
-}*/
-/*.act_video{
-    display: none;
-}*/
-video {
-    min-width: 100%;
-    min-height: 100%;
-     position: fixed;
-     opacity: 0.7;
-     left: 0;
-     right: 0;
-     bottom: 0;
-     z-index: -1;
- }
+.ocupation_landing {
+    opacity: 0.7;
+    font-size: 20px;
+    font-weight: 200;
+    z-index: 22;
+}
 
-/* ============= Buttom conoce mas ============= */
-.landing_bottom {
+
+
+.p1_text_landing{
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.p2_text_landing{
+    font-weight: 100;
+    font-size: 25px;
+}
+.logo_link{
+    z-index: 22;
+}
+
+.landing_logo {
+    width: 80%;
+ 
+}
+
+.landing_bottom{
     width: 100px;
     height: 35px;
     font-size: 14px;
@@ -99,8 +77,26 @@ video {
     border-radius: 35px;
     z-index: 22;
 }
+/* .container_video{
+    position: fixed;
+    max-width:100%;
+    max-height: 100%;
+}
+ */
+/* .act_video{
+    display: none;
+} */
+video{
+   min-width:100%;
+   min-height: 100%;
+    position: fixed;
+    opacity: 0.7;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
 
-<<<<<<< HEAD
 
 /* == Segundo section se activa en 1024px */
 
@@ -111,61 +107,152 @@ video {
 /* ====================================== */
 
 footer{
-=======
-/* ============= Buttom conoce mas ============= */
-footer {
->>>>>>> 9e0f65dd078520e4d6775fb5df8686e4a3894225
     z-index: 22;
     height: 100px;
     margin-bottom: 50px;
 }
-.socialmedia_footer {
+
+.socialmedia_footer{
     margin-top: 5px;
+    
 }
+
 .social_icon {
-    margin-top: 20px;
+    margin-top:20px;
     gap: 10px;
 }
-#icon {
+
+#icon{
     width: 20px;
 }
 .copy_right {
     margin-top: 15px;
     font-weight: 100;
 }
-.copy_right a p,
-.copy_right p,
-.copy_right p span {
+
+
+.copy_right a p, .copy_right p,.copy_right p span {
     margin-top: 5px;
-    color: var(--white);
+    color:var(--white) ;
 }
 .copy_right p span a {
-    color: var(--vega-yellow);
+    color:var(--vega-yellow) ;
 }
 .copy_right p {
     font-size: 15px;
 }
-.circle_vegayelow {
+.circle_vegayelow{
     display: none;
 }
-.img_landing {
-    display: none;
+.img_landing{
+    display:none;
 }
 
-/* ============= @Media Querys ============= */
-/* ============= Landing Page ============= */
+/* =========== @Media Querys ============ */
+/* ======== Landing Page ======== */
 
 /* @media only screen and (min-width: 425px) {
 
 } */
 
 @media only screen and (min-width: 700px) {
-    /* ============= Circle vegayelow ============= */
-    .circle_vegayelow {
+    
+    /* ==========  text effect =========  */
+    .text_landing{
+        background-color: none;
+        border: none;
+    }
+    /* .p1_text_landing{
+        font-size: 50px;
+    }
+    
+    .p2_text_landing{
+        font-size: 40px;
+    }
+    .text_landing .text_landing_js{
+        font-size: 60px;
+    } */
+    .landing_container{
+        justify-content: center;
+
+    }
+
+    .logo_link {
+        width: 100%;
+        align-items: center;
+        margin-left: -400px;
+        margin-bottom:-6px;
+
+    }
+
+    .landing_logo {
+        width: 35%;
+    }
+
+    .landing_bottom {
+        width: 140px;
+        font-size: 20px;
+        outline: 3px solid var(--white);
+        margin-bottom: none;
+        margin-top: 25px;
+  
+        padding: 25px 0 24px 0;
+        
+    }
+
+    /* =========== Footer Copy Right ============ */
+    .social_icon {
+        position: absolute;
+        flex-direction: column;
+        right: 49px;
+        bottom: 189px;
+        gap: 26px;
+    }
+
+    #icon {
+        width: 40px;
+    }
+
+    .copy_right{
+        width: 100%;
+        margin-top: none;
+        margin-bottom: 20px;
+        
+    }
+
+    .copy_right .active{
+        display: none;
+    }
+
+    .copy_right p {
+       text-align: none;
+        font-size: 19px;
+        line-height: 23px;
+        color: var(--light-grey);
+
+    }
+ /* =========== Video ============ */
+    video{
+      
+        height: 600px;
+        position: static;
+        opacity: 1;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        border-radius: 60px;
+        border: solid 5px var(--white);
+        z-index: 22;
+     }
+
+ /* =========== Circulos ============ */
+     .circle_vegayelow{
         display: block;
         position: absolute;
         z-index: 30;
      }
+
      .circle_1 {
         width: 300px;
         height: 300px;
@@ -174,6 +261,7 @@ footer {
         right: -140px;
         background-color: var(--vega-yellow);
     }
+
     .circle_2 {
         width: 160px;
         height: 160px;
@@ -199,66 +287,10 @@ footer {
         right: 112px;
         background-color: var(--vega-yellow);
     }
+     /* =========== img olas ============ */
 
-    /* ============= Landing Container ============= */
-    .landing_container{
-        justify-content: center;
-    }
-
-     /* ============= Logo ============= */
-     .logo_link {
-        width: 100%;
-        align-items: center;
-        margin-left: -400px;
-        margin-bottom: -6px;
-    }
-    .landing_logo {
-        width: 35%;
-    }
-
-    /* ============= Text effect ============= */
-    .text_landing {
-        background-color: none;
-        border: none;
-    }
-    /* .p1_text_landing{
-        font-size: 50px;
-    }
-    
-    .p2_text_landing{
-        font-size: 40px;
-    }
-    .text_landing .text_landing_js{
-        font-size: 60px;
-    } */
-
-    /* ============= Video de fondo ============= */
-    video {
-        height: 600px;
-        position: static;
-        opacity: 1;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: -1;
-        border-radius: 60px;
-        border: solid 5px var(--white);
-        z-index: 22;
-     }
-    
-     /* ============= Buttom conoce mas ============= */
-    .landing_bottom {
-        width: 140px;
-        font-size: 20px;
-        outline: 3px solid var(--white);
-        margin-bottom: none;
-        margin-top: 25px;
-        padding: 25px 0 24px 0;
-    }
-
-     /* ============= Img olas ============= */
-     .img_landing {
-        display: block;
+    .img_landing{
+        display:block;
         position: absolute;
     }
     .olas_1 {
@@ -272,38 +304,15 @@ footer {
         z-index: -10;
     }
 
-    /* ============= Footer ============= */
-    .social_icon {
-        position: absolute;
-        flex-direction: column;
-        right: 49px;
-        bottom: 189px;
-        gap: 26px;
-    }
-    #icon {
-        width: 40px;
-    }
-    .copy_right {
-        width: 100%;
-        margin-top: none;
-        margin-bottom: 20px;
-    }
-    .copy_right .active {
-        display: none;
-    }
-    .copy_right p {
-        text-align: none;
-        font-size: 19px;
-        line-height: 23px;
-        color: var(--light-grey);
-    }
 }
 
 @media only screen and (min-width: 834px) {
-    /* ============= Circle vegayelow ============= */
+
+
     .circle_2 {
         top: 351px;
         left: 161px;
+  
     }
     .circle_3 {
         bottom: 323px;
@@ -313,10 +322,11 @@ footer {
         top: 356px;
         right: 155px;
     }
+     /* =========== img olas ============ */
 
-     /* ============= Img olas ============= */
     .olas_1 {
         right: 145px;
+    
     }
     .olas_2 {
         left: 127px;
@@ -324,7 +334,6 @@ footer {
 }
 
 @media only screen and (min-width: 1024px) {
-<<<<<<< HEAD
     main{
         flex-direction: row-reverse;
        }
@@ -411,26 +420,6 @@ footer {
         }
      
         .copy_right p span a {
-=======
-    /* ============= Landing Container ============= */
-    .landing_container {
-        height: 80%;
-    }
-
-    /* ============= Logo ============= */
-    .landing_logo {
-        width: 35%;
-        top: 33%;
-    }
-
-    /* ============= Buttom conoce mas ============= */
-    .landing_bottom {
-        margin-bottom: 103px;
-    }
-     
-    /* ============= Footer ============= */
-    .copy_right p span a {
->>>>>>> 9e0f65dd078520e4d6775fb5df8686e4a3894225
         color:var(--white);
     }
 
@@ -475,7 +464,6 @@ footer {
 }
 
 @media only screen and (min-width: 1280px) {
-<<<<<<< HEAD
 
     /* .landing_logo {
         width: 35%;
@@ -483,10 +471,4 @@ footer {
 
    
 
-=======
-    /* ============= Logo ============= */
-    .landing_logo {
-        width: 35%;
-    }
->>>>>>> 9e0f65dd078520e4d6775fb5df8686e4a3894225
 }
