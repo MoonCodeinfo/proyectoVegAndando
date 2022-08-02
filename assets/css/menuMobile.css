@@ -42,6 +42,7 @@ bottom: 1rem;
   bottom: 1rem; */
   background-color: var(--very-dark-blue);
   width: 90%;
+  height: 100%;
   max-width: 338px;
   border-radius: 4rem;
   padding: 1rem 3.25rem;
@@ -91,19 +92,19 @@ bottom: 1rem;
 }
 
 .select {
-  width: auto;
-  height: auto;
+  width: 40px;
+  height: 100%;
   cursor: pointer;
   overflow: hidden;
   min-width: 32.78px;
 }
 
-.select span {
+.select .span1, .span2, .span3 {
   position: absolute;
   width: 30px;
-  height: 2.5px;
+  height: 3px;
   background: var(--white);
-  border-radius: 10px;
+  border-radius: 5px;
   transition: 0.5s;
 }
 
