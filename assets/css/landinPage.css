@@ -73,7 +73,7 @@ main{
     color: var(--white);
     outline: 2px solid var(--white);
  /*    margin-bottom: 20px; */
-    border-radius: 35px;
+    border-radius: 16px;
     z-index: 22;
 }
 /* .container_video{
