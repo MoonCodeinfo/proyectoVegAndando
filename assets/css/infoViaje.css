@@ -14,7 +14,7 @@
 }
 
 /* ============= Title Viaje ============= */
-.title_viaje h3 {
+.title_viaje h2 {
     font-size: 24px;
     font-weight: 500;
     margin-bottom: 10px;
@@ -69,9 +69,9 @@
 }
 .frase_section .img_frase_1 {
     position: absolute;
-    top: 1600px;
+    top: 1750px;
     left: -85px;
-    width: 144px; 
+    width: 130px; 
 }
 .frase_section p {
     text-align: center;
@@ -83,7 +83,6 @@
 /* ============= Price Section  ============= */
 .travel_description_price {
     gap: 10px;
-    /* height: 60px; */
 }
 .travel_description_price h3 {
     color: var(--white);
@@ -110,22 +109,35 @@
     gap: 20px;
     font-weight: 200;
 }
-.view_more_content h4 {
+.horarios {
+    gap: 8px;
+}
+.hora span, 
+.provincia span, 
+.lugar span {
+    font-size: 15px;
+    font-weight: 400;
     color: var(--white);
-    font-weight: 200;
 }
-.view_more_content span {
-    font-weight: bold;
+.hora p, 
+.provincia p, 
+.lugar p {
+    font-size: 13px;
+    margin-top: 18px;
 }
-.view_more_content_title {
-    justify-content: space-between;
+.hora p {
+    font-weight: 400;
 }
-
 /* ============= Linea ============= */
 .linea {
     border-bottom: 1px solid var(--white);
     margin: -16px auto 0 auto;
     padding: 0 38px;
+}
+/* ============= Vertical Line ============= */
+.v-line {
+    border-left: 1px solid #fff;
+    height: 130px;
 }
 
 /* ============= Prohibido ============= */
@@ -349,7 +361,7 @@ font-size: 26px;
     }
 
      /* ============= Title Viaje ============= */
-     .title_viaje h3 {
+     .title_viaje h2 {
         font-size: 44px;
     }
     .title_viaje p {
@@ -416,6 +428,36 @@ font-size: 26px;
     .hero_image img {
         width: 60%;
         height: 100%;
+    }
+
+    /* ============= Rutas de Salida ============= */
+    .go_routes_content h4 {
+        font-size: 24px;
+    }
+    .horarios {
+        gap: 20px;
+    }
+    .hora span, 
+    .provincia span, 
+    .lugar span {
+        font-size: 21px;
+    }
+    .hora p, 
+    .provincia p, 
+    .lugar p {
+        font-size: 19px;
+    }
+    /* ============= Vertical Line ============= */
+    .v-line {
+        border-left: 1px solid #fff;
+        height: 170px;
+    }
+    .linea {
+        padding: 0 70px;
+    }
+
+    .travel_description_price h3 {
+        font-size: 24px;
     }
 
     /* ============= Date ============= */
