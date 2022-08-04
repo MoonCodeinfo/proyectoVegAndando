@@ -8,6 +8,10 @@
     max-width: 50%;
 }
 
+script p {
+    color: var(--white);
+}
+
 .box_pay_descripton {
     width: 80%;
     margin-top:50px;

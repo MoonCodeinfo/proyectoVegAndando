@@ -67,12 +67,6 @@
     background-color: var(--dark-light-blue);
     box-sizing: border-box;
 }
-.frase_section .img_frase_1 {
-    position: absolute;
-    top: 1750px;
-    left: -85px;
-    width: 130px; 
-}
 .frase_section p {
     text-align: center;
     max-width: 90%;
@@ -80,7 +74,7 @@
     font-weight: 100;
 }
 
-/* ============= Price Section  ============= */
+/* ============= Price Section ============= */
 .travel_description_price {
     gap: 10px;
 }
@@ -111,6 +105,9 @@
 }
 .horarios {
     gap: 8px;
+}
+.hora {
+    padding: 0 30px;
 }
 .hora span, 
 .provincia span, 
@@ -169,7 +166,7 @@
     font-weight: 300;
 }
 .difficulty_recomendation {
-    justify-content: start;
+    justify-content: flex-start;
 }
 
 /* ============= Circulos Section  ============= */
@@ -327,9 +324,6 @@ font-size: 26px;
         height: 120px;
         border-radius: 50px;
     }
-    .frase_section .img_frase_1 {
-        display: none;
-    }
 
     /* ============= Circulos Section ============= */
     .circle_img {
@@ -371,7 +365,8 @@ font-size: 26px;
 
     /* ============= Lugares a visitar ============= */
     .places h3 {
-        font-size: 28px;
+        width: 95%;
+        font-size: 20px;
     }
     .places_list {
         width: 100%;
@@ -382,8 +377,15 @@ font-size: 26px;
     }
 
     /* ============= Tips a tener en cuenta ============= */
+    .tips {
+        margin: 0;
+    }
+    .travel_adds_contain {
+        flex-direction: row;
+        align-items: flex-start;
+    }
     .travel_adds_contain h3 {
-        font-size: 28px;
+        font-size: 24px;
     }
 
     /* ============= Frase Section  ============= */
@@ -397,6 +399,10 @@ font-size: 26px;
     }
 
     /* ============= Dificultad y Recomendacion ============= */
+    .recomendation_first,
+    .recomendation_second {
+        max-width: 50%;
+    }
     .difficulty_recomendation,
     .recomendation_first,
     .recomendation_second,
@@ -428,6 +434,10 @@ font-size: 26px;
     .hero_image img {
         width: 60%;
         height: 100%;
+    }
+
+    .travel_adds_contain {
+        justify-content: space-evenly;
     }
 
     /* ============= Rutas de Salida ============= */
