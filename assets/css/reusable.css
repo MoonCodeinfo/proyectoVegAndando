@@ -37,11 +37,12 @@ body{
     transition: .5s;
 }
 
-body.active {
-    /* =========== Light Theme ========== */
+/* =========== Light Theme ========== */
+/* body.active {
+    
     --light-base:#E8E8E8;
     --very-light-grey:#DADADA;
-}
+} */
 
 a{
     text-decoration: none;
@@ -74,6 +75,11 @@ p{
 .bottom15px {
     margin-bottom: 15px;
 }
+/* //intercambiar */
+.bottom_margin {
+    margin-bottom: 15px;
+}
+
 
 /*=============== Align ===============*/
 .text_center{
@@ -88,9 +94,6 @@ p{
     flex-direction: column;
 }
 
-.bottom_margin {
-    margin-bottom: 15px;
-}
 
 /*=============== CENTER CONTENT ===============*/
 .center_content{
@@ -300,6 +303,9 @@ p{
 }
 
 /*=============== resort tag  ===============*/
+
+/*=============== Aqui terminan todos los tag  ===============*/
+
 
 
 /* ============ Glass Morfismo =========== */

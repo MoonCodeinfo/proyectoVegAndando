@@ -19,11 +19,10 @@ main{
 
 .hero_image {
     position: relative;
-    width: 420px;
+    max-width: 420px;
     right: 80px;
-    top: -80px;
+    top: -52px;
 }
-
 
 #Stree-coco {
     position: absolute;
@@ -53,7 +52,7 @@ main{
 }
 
 .experience_frase {
-    margin: -90px 0 0 0;
+    margin-top:-39px;
 }
 
 .experience_frase p{
@@ -95,36 +94,43 @@ main{
 
  .img_viaje {
     width: 90%;
+   
     border-radius: 35px;
  }
  
  .travel_box {
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 270px;
-    height: 250px;
+    height: 266px;
     background-color: rgba(10, 25, 46, 0.78);
     border: solid 3px var(--white);
     border-radius: 30px;
-    box-sizing: content-box;
     margin-bottom: 25px;
+ }
+ .travel_box a{
+    font-size: 17px;
+    font-weight: 500;
  }
 
  .travel_box span {
-    position: relative;
+    /* position: relative; */
     color: var(--white);
-    font-size: 13px;
-    top: -70px;
-    left: 90px;
- }
+    font-size: 12px;
+    opacity: 0.5;
+    /* top: -70px; */
+    /* left: 90px; */
+}
 
  .title_travel_box {
     padding: 15px;
+    margin-bottom: 4px;
     justify-content: space-between;
     align-items: flex-end;
  }
+ .title_travel_box h2{
+    align-items: flex-end;
+ }
+
 
  .travel_box a {
     margin: 8px 0 5px 0;
@@ -136,17 +142,17 @@ main{
  }
  .title_travel_box p {
     color: var(--vega-yellow);
-    font-weight: 400;
+    font-weight: 800;
  }
 
  .paragraph_travel_box {
+    width: 90%;
+    align-items: flex-start;
     gap: 5px;
     margin-top: -20px;
- }
+}
 
  .paragraph_travel_box a{
-    position: relative;
-    right: 78px;
     color: var(--light-grey);
  }
 
@@ -192,7 +198,9 @@ main{
 .frase_section .img_frase_2{
     position: absolute;
     top: 1555px;
-    left: 222px;
+    /* left: 222px; */
+    margin-right: 30px;
+    right: 0;
 }
 .frase_section .img_frase_3{
     position: absolute;
@@ -499,7 +507,6 @@ main{
 
 
 
-
 /* =========== @Media Querys min-width============ */
 /* ========       Home          ======== */
 @media only screen and (min-width: 375px) {
@@ -520,42 +527,43 @@ main{
     }
 
     #Stree-coco {
-        top: 350px;
+        top: 396px;
     }
+
     #Stree-coco1 {
         top: 620px;
     }
 
     /* =============New Travel Section======= */
-    .new_travel_contain {
+   /*  .new_travel_contain {
         margin: 130px 0 50px 0;
-    }
-    .new_travel_contain::after {
+    } */
+    /* .new_travel_contain::after {
         top: 773px;
     }
     .new_travel_contain::before {
         top: 734px;
-    }
+    } */
 
     /* ============= frase Section======= */
     .frase_section .img_frase_1 {
-        top: 1480px;
+        top: 1623px;
     }
 
     .frase_section .img_frase_2 {
-        top: 1620px;
-         left: 275px;
+        top: 1775px;
+       /*  left: 275px; */
     }
 
     .frase_section .img_frase_3 {
-        top: 1710px;
+        top: 1871px;
         width: 127px;
         left: -63px;
     }
 
     /* ============= Icon Section======= */
     .text_icon_home {
-        top: 1935px;
+        top: 2113px;
     }
 
 /* ============= Rate Section======= */
@@ -564,12 +572,22 @@ main{
     }
 
 /* ======= Our Branding Section====== */
-    .img_our_branding {
-        top: 2010px;
-    }
-    .img_our_funders {
-        top: 2580px;
-    }
+.our_branding_contain {
+    margin-bottom: 61px;
+}
+
+.img_our_branding {
+    top: 2178px;
+}
+
+.img_our_funders {
+    top: 2682px;
+}
+
+.our_funders_contain h1 {
+    margin-bottom: 41px;
+}
+
 }
 @media only screen and (min-width: 425px) {
     .home_section h4 {
@@ -580,205 +598,48 @@ main{
         top: 171px;
     }
 
-    #coco {
-        top: 125px;
-        right: 8%;
-    }
-
-    #Stree-coco1 {
-        top: 560px;
-    }
-/* 
-    #Stree-coco {
-        top: 610px;
-        left: 54%;
-    } */
-
-    /* =============New Travel Section======= */
-    .new_travel_contain {
-        margin: 120px 0 50px 0;
-    }
-
-    .new_travel_contain::after {
-        top: 848px;
-    }
-
-    .new_travel_contain::before {
-        top: 808px;
-    }
-
-    /* ============= frase Section======= */
-    .frase_section .img_frase_1 {
-        top: 1480px;
-    }
-    .frase_section .img_frase_2 {
-        top: 1620px;
-        left: 322px;
-    }
-    .frase_section .img_frase_3 {
-        top: 1720px;
-    }
 
     /* ============= Icon Section======= */
     .icon_section_home {
         gap: 36px;
     }
-
-    .text_icon_home {
-        top: 1935px;
-    }
-    
     .title_icon_section h2 {
         margin-bottom: -4px;
     }
 
-/* ============= Rate Section======= */
-    .circle_rate {
-        top: 2468px;
-    }
 
     /* ============= Our Branding Section======= */
-    .img_our_branding {
-        top: 2000px;
-    }
-    .img_our_funders {
-        top: 2580px;
-    }
+
 }
 
 @media only screen and (min-width: 768px) {
-    .home_section h4 {
-        margin-bottom: 32px;
-    }
-
-    .home_minibox {
-        margin-top: 316px;
-    }
-
-    .home_minibox h3 {
-        top: 222px;
-        font-size: 30px;
-    }
-
-    #sol {
-        width: 221px;
-    }
-
-    #coco {
-        top: 90px;
-        left: 608px;
-        width: 90px;
-    }
-
-    #Stree-coco1 {
-        top: 713px;
-        left: -156px;
-        width: 345px;
-    }
-
-  /*   #Stree-coco {
-        top: 901px;
-        left: 60%;
-        width: 191px;
-    } */
-
-    /* =============New Travel Section======= */
-    .new_travel_contain {
-        margin: 730px 0 130px 0;
-    }
-
-    .new_travel_contain::after {
-        top: 1333px;
-    }
-
-    .new_travel_contain::before {
-        top: 1273px;
-    }
-
-    .new_travel_contain h2 {
-        font-size: 26px;
-        font-weight: 500;
-        margin-bottom: 32px;
-        padding-right: 45%;
-    }
-
-    /* ============= frase Section======= */
-
-    .frase_section .img_frase_1 {
-        top: 2184px;
-    }
-
-    .frase_section .img_frase_2 {
-        top: 2349px;
-        left: 612px;
-        width: 123px;
-    }   
-
-    .frase_section .img_frase_3 {
-        top: 2481px;
-        width: 210px;
-        left: -100px;
-    }
-    .frase_section p {
-        max-width: 75%;
-        font-size: 28px;
-        font-weight: 100;
-    }
-
-    /* ============= Icon Section======= */
-    .icon_section_home {
-        gap: 73px;
-    }
-
-    .icon_select p {
-        font-size: 18px;
-    }
-
-    .text_icon_home {
-        top: 2770px;
-    }
-
-    .icon_select {
-        width: 100px;
-        height: 100px;
-        border: solid 4px var(--dark-little-grey);
-    }
-
-/* ============= Rate Section======= */
-    .circle_rate {
-        top: 3047px;
-        left: -47px;
-        width: 200px;
-        height: 200px;
-    }
-    .circle_rate::after {
-        top: 240px;
-        left: 486px;
-    }
-    .circle_rate::before {
-        left: 132px;
-    }
-    .rate_contain h2 {
-        font-weight: 400;
-        margin-bottom: 30px;
-    }
-
-/* ============= footer Section======= */
-    .sub_email p {
-        font-size: 20px;
-    }
-    .logo_footer {
-        width: 60%;
-        margin-bottom: 50px;
-
-    }
-    .copy_right p {
-        font-size: 20px;
-        line-height: 25px;
-    }
+    
 }
 
-/* =========== @Media Querys max-width============ */
-/* ======== Home ======== */
 
 
+@media only screen and (min-width: 834px) {
+
+
+}
+
+@media only screen and (min-width: 1000px) {
+  
+
+}
+
+@media only screen and (min-width: 1200px) {
+    
+   
+
+}
+@media only screen and (min-width: 1300px) {
+    /* =========== iVideo ============ */
+ 
+
+}
+@media only screen and (min-width: 1400px) {
+     /* =========== Landing Container ============ */
+
+
+}
