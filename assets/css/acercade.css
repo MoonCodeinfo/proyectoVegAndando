@@ -6,14 +6,14 @@
 .heading::after{
     content:url("../imagenes/svg+/ola-white.svg");
     position: absolute;
-    top: 120px; 
+    top: 285px; 
     margin-bottom: 20px;
 }
 
 /* =========== CEO PROFILE ============ */
 .ceo_profile {
     width: 90%;
-    margin: 80px 0 50px 0;
+    /* margin: 80px 0 50px 0; */
     gap: 15px;
    text-align: center;
 }
