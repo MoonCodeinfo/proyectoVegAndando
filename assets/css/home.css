@@ -588,26 +588,147 @@ main{
 }
 
 @media only screen and (min-width: 768px) {
+    .hero_image {
+        position: relative;
+        max-width: 530px;
+        right: -120px;
+        top: -2px;
+    }
+    .experience_frase {
+        margin-top: 17px;
+    }
+    #Stree-coco {
+        top: 730px;
+    }
+    #Stree-coco1 {
+        top: 447px;
+        left: -119px;
+        width: 277px;
+    }
+
+
+     /* ============= viaje Section======= */
+    .img_viaje {
+        height: 800px;
+    }
+
+    .travel_box {
+        width: 341px;
+        height: 337px;
+        justify-content: space-evenly
+    }
+
+    .politics_box img {
+        width: 70%;
+    }
     
 }
 
 
-
-@media only screen and (min-width: 834px) {
-
-
-}
-
 @media only screen and (min-width: 1000px) {
-  
+    #sol {
+        position: absolute;
+        top: -70px;
+        left: -71px;
+        width: 217px;
+    }
+    #Stree-coco1 {
+        top: 608px;
+        left: -150px;
+        width: 329px;
+    }
+    .home_minibox{
+        flex-direction: row-reverse;
+    }
+
+    .hero_image {
+        position: relative;
+        max-width: 558px;
+        right: 0;
+        top: -12px;
+    }
+
+    .experience_frase p {
+        font-size: 27px;
+        font-weight: 100;
+        margin-bottom: 20px;
+        /* font-size: 20px; */
+        text-align: center;
+        max-width: 80%;
+    }
+    .box_card_travel_section{
+        flex-direction: row;
+    }
+    .img_viaje {
+        height: 543px;
+    }
+    .travel_box {
+        width: 253px;
+        height: 281px;
+        justify-content: space-evenly;
+    }
+    
+    .politics_box img {
+        width: 40%;
+    }
+    .frase_section {
+        height: 105px;
+        background-color: var(--vega-cofee);
+        box-sizing: border-box;
+    }
+    .img_frase_2 {
+        position: relative;
+        top: -29px;
+        margin-right: -714px;
+        /* right: 0; */
+    }
+    .title_icon_section::before {
+        width: 30%;
+    }
+    .text_our_branding p:nth-child(2) {
+        width: 80%;
+        text-align: center;
+    }
+
+    .regular_button {
+        margin: 82px 0 28px 0;
+    }
+    .link_our_funders::before {
+        width: 10%;
+    }
 
 }
 
 @media only screen and (min-width: 1200px) {
-    
-   
-
+    .img_viaje {
+        height: 642px;
+    }
+    .travel_box {
+        width: 282px;
+        height: 281px;
+        justify-content: space-evenly;
+    }
+    .colors_desription img:nth-child(1) {
+        width: 90%;
+        margin-top: 20px;
+    }
+    .our_funders_box{
+        flex-direction: row;
+    }
+    .link_our_funders{
+        margin-top: 40px;
+    }
+    .politics_contain{
+        width: 70%;
+    }
+    .politics_box{
+        flex-direction: row;
+    }
+    .text_politics{
+        width: 50%;
+    }
 }
+
 @media only screen and (min-width: 1300px) {
     /* =========== iVideo ============ */
  

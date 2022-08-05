@@ -359,6 +359,17 @@ iframe{
    /*  position: ; */
   }
 
+  @media only screen and (min-width: 768px) {
+    iframe{
+        width: 100%;
+        height: 900px;
+        margin-bottom: 30px;
+       /*  position: ; */
+      }
+    
+    
+}
+
 /* =========== Iframe============ */
 
 /* =========== SCROLLDOWN============ */
