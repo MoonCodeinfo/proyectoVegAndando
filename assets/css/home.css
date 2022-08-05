@@ -658,6 +658,7 @@ main{
     }
     .box_card_travel_section{
         flex-direction: row;
+        gap: 20px;
     }
     .img_viaje {
         height: 543px;
@@ -696,6 +697,9 @@ main{
     .link_our_funders::before {
         width: 10%;
     }
+    .our_funders_card1 {
+        height: 377px;
+    }
 
 }
 
@@ -708,7 +712,7 @@ main{
         width: 30%;
     }
     .img_viaje {
-        height: 712px;
+        height: 630px;
     }
     .travel_box {
         width: 282px;
@@ -716,8 +720,12 @@ main{
         justify-content: space-evenly;
     }
     .colors_desription img:nth-child(1) {
-        width: 90%;
+        width: 401px;
         margin-top: 20px;
+    }
+    .colors_desription img:nth-child(2) {
+        width: 518px;
+        margin-top: 15px;
     }
     .our_funders_box{
         flex-direction: row;
