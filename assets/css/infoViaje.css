@@ -170,9 +170,9 @@
 }
 
 /* ============= Circulos Section  ============= */
-/* .circle_img{
-    
-}*/
+.circle_img{
+    max-width: 420px;
+}
 
 /* .center_circles {
     display: flex;
