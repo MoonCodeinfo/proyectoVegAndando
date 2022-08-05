@@ -700,8 +700,15 @@ main{
 }
 
 @media only screen and (min-width: 1200px) {
+    .new_travel_contain{
+        width: 90%;
+    }
+    .img_home {
+        position: relative;
+        width: 30%;
+    }
     .img_viaje {
-        height: 642px;
+        height: 712px;
     }
     .travel_box {
         width: 282px;
@@ -726,6 +733,9 @@ main{
     }
     .text_politics{
         width: 50%;
+    }
+    .experience_frase {
+        margin-bottom: -22px;
     }
 }
 
