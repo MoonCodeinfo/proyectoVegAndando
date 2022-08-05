@@ -90,21 +90,72 @@
     text-align: center;
 }
 
+/* ============= Blog Item Individual============= */
+.blog_item h4{
+    margin: 12px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
 /* ============= @Media Querys min-width ============= */
 /* ============= Blog ============= */
 @media only screen and (min-width: 425px) {
     /* ============= Blog Swiper ============= */
-.blog_swiper{
-    width: 85%;
-    height: 530px;
+    .blog_swiper {
+        height: 530px;
+    }
+    .blog_swiper img {
+        height: 500px;
+    }
+
+    /* ============= Blog Item Individual============= */
+    .blog_item img {
+        width: 80%;
+    }
 }
-.blog_swiper img{
-    /* position: absolute; */
-    border-radius: 0 0 26px 26px;
-    width: -webkit-fill-available;
-    width: 90%;
-    height: 500px;
-    object-fit: cover;
-    object-position: center;
+
+@media only screen and (min-width: 768px) {
+    /* ============= Blog heading ============= */
+    .blog_heading {
+        width: 30%;
+    }
+
+    /* ============= Blog Link ============= */
+    .blog_link {
+        width: 50%;
+    }
+
+    /* ============= Blog Swiper ============= */
+    .blog_swiper {
+        width: 50%;
+        height: 530px;
+    }
+    .blog_swiper img {
+        height: 500px;
+    }
+
+    .card_text p {
+        width: 50%;
+    }
+
+    /* ============= Blog Item Individual============= */
+    .blog_item img {
+        width: 60%;
+    }
 }
+
+@media only screen and (min-width: 1024px) {
+    .blog {
+        flex-direction: row;
+    }
+
+    .blog_cards {
+        max-width: 70%;
+    }
+
+    /* ============= Blog Item Individual============= */
+    .blog_item img {
+        width: 48%;
+    }
+
 }
