@@ -147,6 +147,16 @@ footer{
     display:none;
 }
 
+
+.scrollright{
+        position: absolute;
+        top: 50%;
+        right: 0;
+        margin-right: 112px;
+        
+        z-index: 40;
+}
+
 /* =========== @Media Querys ============ */
 /* ======== Landing Page ======== */
 
@@ -165,9 +175,10 @@ footer{
         height: auto;
     }
     /* ==========  text effect =========  */
-    .text_landing{
+    .text_landing {
         background-color: none;
         border: none;
+        margin-bottom: 25px;
     }
  
     .landing_container{
@@ -370,8 +381,8 @@ footer{
        /*  .container_video{
             width: 60%;
         } */
-        .buttom_conocemas_box{
-            margin-bottom: 50px;
+        .buttom_conocemas_box {
+            margin-bottom: 22px;
         }
 
         .landing_bottom{
