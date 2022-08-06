@@ -51,18 +51,7 @@ main{
     width: 52px;
 }
 
-.experience_frase {
-    margin-top:-39px;
-}
 
-.experience_frase p{
-    font-size: 20px;
-    font-weight: 100;
-    margin-bottom: 20px;
-    font-size: 20px;
-    text-align: center;
-    max-width: 80%;
-}
 
 /* =========== New Travel Section ============ */
 .new_travel_contain {
@@ -115,7 +104,7 @@ main{
  .travel_box span {
     /* position: relative; */
     color: var(--white);
-    font-size: 12px;
+    font-size: 16px;
     opacity: 0.5;
     /* top: -70px; */
     /* left: 90px; */
@@ -193,6 +182,22 @@ main{
     top: -39px;
     margin-right: -222px;
     /* right: 0; */
+}
+.experience_frase {
+    margin-top:-39px;
+}
+
+.experience_frase p{
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: center;
+    max-width: 80%;
+}
+.experience_frase span{
+    font-weight: 300;
+    color: var(--vega-yellow);
 }
 
 
