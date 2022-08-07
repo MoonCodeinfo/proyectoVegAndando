@@ -400,3 +400,22 @@ iframe{
     50%  { transform: translate(15px, 0); }
     100%   { transform: translate(0, 0); }   
 }
+
+
+/* ============= Etiqueta ViajeEnCurso============ */
+
+.viajeEnCurso::after {
+    content: "Viaje en Curso";
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -591px;
+    width: 159px;
+    height: 26px;
+    background-color: var(--dark-blue);
+    font-size: 17px;
+    color: rgb(0, 128, 0);
+    border-radius: 20px;
+    margin-bottom: -30px;
+}
