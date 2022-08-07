@@ -249,3 +249,12 @@ script p {
         margin-top: 100px;
     }
 }
+@media only screen and (min-width: 1000px) {
+    .box_pay_method {
+        width: 40%;
+    }
+    .info_box {
+        width: 30%;
+    }
+    
+}
