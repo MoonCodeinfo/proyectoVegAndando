@@ -147,15 +147,10 @@ footer{
     display:none;
 }
 
-
-.scrollright{
-        position: absolute;
-        top: 50%;
-        right: 0;
-        margin-right: 112px;
-        
-        z-index: 40;
+.scrolldown1, .scrollright{
+ display: none;
 }
+
 
 /* =========== @Media Querys ============ */
 /* ======== Landing Page ======== */
@@ -474,6 +469,21 @@ footer{
         bottom: 252px;
         left: 72px;
     }
+
+  /* =========== Flecha ScrollRight ============ */
+
+    .scrolldown1, .scrollright{
+        display: block;
+       }
+       
+       .scrollright{
+               position: absolute;
+               top: 50%;
+               right: 0;
+               margin-right: 112px;
+               
+               z-index: 40;
+       }
 
 }
 
