@@ -36,7 +36,6 @@
     border-radius: 0 0 35px 35px;
 }
 .blog_swiper img{
-    /* position: absolute; */
     border-radius: 0 0 26px 26px;
     width: -webkit-fill-available;
     width: 90%;
@@ -103,9 +102,11 @@
     /* ============= Blog Swiper ============= */
     .blog_swiper {
         height: 530px;
+        width: 80%;
     }
     .blog_swiper img {
         height: 500px;
+        width: 80%;
     }
 
     /* ============= Blog Item Individual============= */
