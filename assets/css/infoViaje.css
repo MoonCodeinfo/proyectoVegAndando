@@ -23,6 +23,12 @@
     width: 60%;
     text-align: center;
 }
+.title_viaje span {
+    width: 60%;
+    text-align: center;
+    color: var(--dark-grey-text);
+}
+   
 
 /* ============= Rating y tag ============= */
 /* .rating_tag {

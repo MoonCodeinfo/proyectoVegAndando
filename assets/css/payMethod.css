@@ -17,6 +17,9 @@ script p {
     margin-top:50px;
     gap:20px;
 }
+.box_pay_descripton span {
+    color: var(--dark-grey-text);
+}
 
 .img_box_pay .img_hero{
     width: 100px;
