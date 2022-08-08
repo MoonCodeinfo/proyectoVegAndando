@@ -60,10 +60,14 @@
  .travel_adds_section {
     gap: 10px;
  }
+ .travel_add_item {
+    height: 112px;
+ }
  .travel_add_item h4 {
     color: var(--white);
     font-weight: 100;
     margin-top: 8px;
+    text-align: center;
  }
 
 /* ============= Frase Section  ============= */
