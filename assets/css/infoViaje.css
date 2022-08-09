@@ -62,6 +62,7 @@
  }
  .travel_add_item {
     height: 112px;
+    justify-content: flex-start;
  }
  .travel_add_item h4 {
     color: var(--white);

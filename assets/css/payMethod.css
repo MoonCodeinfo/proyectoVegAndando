@@ -17,6 +17,11 @@ script p {
     margin-top:50px;
     gap:20px;
 }
+.box_pay_descripton p {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--vega-yellow);
+}
 .box_pay_descripton span {
     color: var(--dark-grey-text);
 }
