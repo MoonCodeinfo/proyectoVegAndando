@@ -544,7 +544,7 @@ footer{
 @media only screen and (min-width: 1300px) {
     /* =========== iVideo ============ */
     video {
-        height: 500px;
+        max-height: 456px;
     }
 
     /* =========== circulos ============ */
