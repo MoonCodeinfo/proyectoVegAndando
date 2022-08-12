@@ -20,7 +20,7 @@
     /* =========== Dark Theme ========== */
     
         --dark-blue:#252D38;
-        --dark-light-blue:#2A384A;
+        --dark-light-blue:#2a384a;
         --very-dark-blue:#0A192E;
         --dark-grey-old:#252D38;
         --dark-grey-middle:#2C3644;
@@ -352,19 +352,18 @@ p{
 
 /* =========== Iframe============ */
 
-iframe{
+iframe {
     width: 100%;
-    height: 700px;
+    height: 655px;
     margin-bottom: 30px;
-   /*  position: ; */
-  }
+}
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 1000px) {
     iframe{
         width: 100%;
-        height: 900px;
-        margin-bottom: 30px;
-       /*  position: ; */
+        max-height: 900px;
+        background-color: var(--dark-light-blue);
+       margin-bottom: 0;
       }
     
     
