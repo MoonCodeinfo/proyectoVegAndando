@@ -1,0 +1,126 @@
+
+
+/* ============== General Footer Section =============== */
+body{
+    position: fixed;
+    background-color: transparent;
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   flex-direction: column;
+   /* height: 673px; */
+}
+
+
+.footer_box{
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.logo_footer_Grl {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.column_1{
+    align-items: flex-start;
+}
+
+.column_2{
+        align-items: flex-start;
+}
+
+.column_2_primera{
+    align-items: flex-start;
+}
+
+.column_2_primera h3{
+    margin-bottom: 10px;
+}
+.column_2_segunda h3{
+    margin-bottom: 10px;
+}
+.column_2_segunda{
+    align-items: flex-start;
+}
+
+
+.copy_right{
+    border-top: solid 2px var(--white);
+}
+.copy_right img{
+   width: 200px;
+}
+.copy_right p span a{
+    font-weight: 300;
+   
+   color: var(--vega-yellow);
+}
+
+.sub_email{
+    width: 80%;
+    flex-direction: column;
+}
+.sub_email a{
+    width: 150px;
+    height: 60px;
+    border-radius: 15px;
+    background-color: var(--vega-yellow);
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.sub_email p{
+    text-align: center;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+.socialmedia_footer{
+    flex-direction: column;
+    margin-top: 65px;
+}
+.socialmedia_footer h2{
+    font-size: 20px;
+    margin-bottom: 25px;
+    font-weight: 300;
+}
+
+.social_icon {
+    gap: 20px;
+}
+
+
+
+
+
+/* ============== Aqui termina =============== */
+/* ============== General Footer Section =============== */
+
+
+
+@media only screen and (min-width: 1000px) {
+
+    footer{
+        background-color: var(--dark-light-blue);
+        margin-top: 65px;
+    }
+    .copy_right p {
+        font-size: 15px;
+    }
+
+    .sub_email p {
+        font-size: 23px;
+    }
+    .socialmedia_footer {
+        margin-top: 28px;
+    }
+    .socialmedia_footer h2 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    
+}
