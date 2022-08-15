@@ -477,10 +477,10 @@ main{
     width: 150px;
     height: 150px;
 }
-.circle_card img{
+/* .circle_card img{
     clip-path: circle(40%);
 }
-
+ */
 .text_our_funders{
 
     top:-30px;
