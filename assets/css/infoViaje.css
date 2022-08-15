@@ -14,7 +14,7 @@
 }
 
 /* ============= Title Viaje ============= */
-.title_viaje h2 {
+.title_viaje h1 {
     font-size: 24px;
     font-weight: 500;
     margin-bottom: 10px;
@@ -370,7 +370,7 @@ font-size: 26px;
     }
 
      /* ============= Title Viaje ============= */
-     .title_viaje h2 {
+     .title_viaje h1 {
         font-size: 44px;
     }
     .title_viaje p {

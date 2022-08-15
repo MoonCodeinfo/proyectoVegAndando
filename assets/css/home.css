@@ -188,7 +188,7 @@ main{
     margin-top:-39px;
 }
 
-.experience_frase p{
+.experience_frase h1{
     font-size: 20px;
     font-weight: 100;
     margin-bottom: 20px;
@@ -388,12 +388,12 @@ main{
  font-weight: 100;
 }
 
-.text_politics h4{
+.text_politics h3{
     margin-top: 3px;
     font-size: 24px;
 }
 
-.politics_box:has(h4){
+.politics_box:has(h3){
     font-weight: 500;
 }
 
@@ -412,7 +412,7 @@ main{
 .our_branding_box { 
     width: 90%;
  }
-.our_branding_box h1{
+.our_branding_box h2{
     margin-bottom: 20px;
     font-size: 24px;
     font-weight: 500;
@@ -450,7 +450,7 @@ main{
 .our_funders_contain{
     margin-bottom:90px;
 }
-.our_funders_contain h1{
+.our_funders_contain h2{
     margin-bottom: 50px;
 }
 .img_our_funders{
@@ -482,13 +482,11 @@ main{
 }
 
 .text_our_funders{
-
     top:-30px;
     text-align: center;
     width: 80%;
-
 }
-.text_our_funders h4{
+.text_our_funders h3{
     margin-bottom: 20px;
     font-size: 20px;
     font-weight: 600;
@@ -562,7 +560,7 @@ main{
         top: 2771px;
     }
 
-    .our_funders_contain h1 {
+    .our_funders_contain h2 {
         margin-bottom: 41px;
     }
 
@@ -654,7 +652,7 @@ main{
         top: -12px;
     }
 
-    .experience_frase p {
+    .experience_frase h1 {
         font-size: 27px;
         font-weight: 100;
         margin-bottom: 20px;

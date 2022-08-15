@@ -6,7 +6,7 @@
     border-bottom: solid 2px
      var(--white);
 }
-.blog_heading h3{
+.blog_heading h1{
     color: var(--white);
 }
 
@@ -78,7 +78,7 @@
 .card_text{
     width: 90%;
 }
-.card_text h4{
+.card_text h2{
     margin: 12px;
     font-size: 20px;
     font-weight: 800;
