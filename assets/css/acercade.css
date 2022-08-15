@@ -3,13 +3,13 @@
 }
 
 /* =========== WAVES ============ */
-.heading::after{
+/* .heading::after{
     content:url("../imagenes/svg+/ola-white.svg");
     position: absolute;
     top: 285px; 
     margin-bottom: 20px;
 }
-
+ */
 /* =========== CEO PROFILE ============ */
 .ceo_profile {
     width: 90%;

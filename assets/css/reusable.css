@@ -81,6 +81,10 @@ p{
 .bottom15px {
     margin-bottom: 15px;
 }
+
+.bottom50px {
+    margin-bottom: 50px;
+}
 /* //intercambiar */
 .bottom_margin {
     margin-bottom: 15px;
@@ -363,6 +367,7 @@ iframe {
     height: 1300px;
     /* margin-bottom: 88px; */
     background-color: var(--very-dark-blue);
+    margin-top: 50px;
 }
 
     @media only screen and (min-width: 352px) {

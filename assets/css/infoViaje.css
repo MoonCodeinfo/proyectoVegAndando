@@ -294,6 +294,7 @@ font-size: 26px;
 @media only screen and (min-width: 475px) {
     /* ============= Heading Section ============= */
     .heading_viaje {
+        width: 90%;
         flex-direction: row;
     }
 
@@ -397,6 +398,7 @@ font-size: 26px;
     .travel_adds_contain {
         flex-direction: row;
         align-items: flex-start;
+        gap: 20px;
     }
     .travel_adds_contain h3 {
         font-size: 24px;
@@ -433,11 +435,11 @@ font-size: 26px;
     }
 
     /* ============= Date ============= */
-    .date_info {
+    /* .date_info {
         flex-direction: row;
         align-items: flex-start;
         gap: 40px;
-    }
+    } */
 }
 
 @media only screen and (min-width: 1024px) {
@@ -451,6 +453,7 @@ font-size: 26px;
     }
 
     .travel_adds_contain {
+        gap: 100px;
         justify-content: space-evenly;
     }
 
@@ -485,9 +488,9 @@ font-size: 26px;
     }
 
     /* ============= Date ============= */
-    .date_info {
+   /*  .date_info {
         gap: 120px;
-    }
+    } */
     /* No coge los estilos */
     /* .travel_date_title h3 {
         font-size: 24px;
