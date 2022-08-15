@@ -1,1 +1,2 @@
 vegandando.zip
+sitemap.xml
