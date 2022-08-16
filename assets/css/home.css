@@ -110,7 +110,7 @@ main{
 
  .title_travel_box {
     padding: 15px;
-    margin-bottom: 4px;
+    margin-bottom: 19px;
     justify-content: space-between;
     /* align-items: flex-end; */
     flex-direction: column;
@@ -125,6 +125,8 @@ main{
 
  .title_travel_box h2 {
     width: 100%;
+    font-size: 29px;
+    font-weight: 700;
     line-height: 26px;
     align-items: flex-end;
  }
@@ -704,6 +706,9 @@ main{
     .our_funders_card1 {
         height: 377px;
     }
+    .title_travel_box {
+        margin-bottom: 4px;
+     }
 
 }
 
