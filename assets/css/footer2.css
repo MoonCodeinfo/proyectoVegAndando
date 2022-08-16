@@ -78,13 +78,28 @@ footer{
 }
 .copy_right p span a{
     font-weight: 300;
-   
-   color: var(--vega-yellow);
+    color: var(--vega-yellow);
+}
+
+/* Begin Mailchimp Signup Form */
+#mc_embed_signup {
+    color: #fff;
+    clear:left; 
+    font:14px Helvetica,Arial,sans-serif;  
+    width:400px;
+    border-radius: 20px;
+}
+#mc_embed_signup .brandingLogo {
+    /* Para darle el tamaño al boto de mailchimp */
 }
 
 .sub_email{
     width: 80%;
     flex-direction: column;
+}
+.sub_email h2 {
+    color: var(--white);
+    font-weight: 100;
 }
 
 .sub_email a{
@@ -97,11 +112,11 @@ footer{
     font-weight: 600;
 }
 
-.sub_email p{
+/* .sub_email p{
     text-align: center;
     font-weight: 100;
     font-size: 23px;
-}
+} */
 
 .copy_right p {
     font-size: 15px;
