@@ -261,8 +261,9 @@ script p {
     .box_pay_method {
         width: 40%;
     }
+    
     .info_box {
-        width: 30%;
+        width: 22%;
     }
     
 }
