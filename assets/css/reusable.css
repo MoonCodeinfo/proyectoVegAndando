@@ -37,6 +37,11 @@ body{
     transition: .5s;
 }
 
+::selection{
+    color: #fff;
+    background: var(--dark-light-blue);
+  }
+
 /* =========== Light Theme ========== */
 /* body.active {
     
