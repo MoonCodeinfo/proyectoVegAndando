@@ -1,40 +1,48 @@
-
-
-.text_box_contain {
+.heading {
     width: 90%;
 }
-
-.text_box_contain img{
-    width: 50%;
-    margin: 20px 0 55px 0;
-}
-
-.title_box{
-    width: 90%;
-}
-.title_box h2{
-    font-size: 25px;
-    font-weight: 600;
-    margin-bottom: 55px;
+.heading h1{
     text-align: center;
 }
+.heading img {
+    width: 70%;
+}
 
-.text_box {
-    width:85%
+.privacy_policy_heading span{
+    font-weight: 200;
 }
-.text_box p{
-    font-weight: 100;
-    font-size:20px;
-    text-align: justify;
+.privacy_policy {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 30px;
 }
-.text_box p span{
+.privacy_policy h2 {
+    font-weight: 200;
+    margin-bottom: 18px;
+}
+.privacy_policy h3 {
+    font-weight: 200;
+    margin-bottom: 15px;
+}
+.privacy_policy p, 
+.privacy_policy ul li {
+    font-weight: 400;
+    margin: 14px 0;
+}
+.privacy_policy ul {
+    margin-left: 18px;
+    color: var(--white);
+    list-style: disc;
+}
+.privacy_policy span {
     font-weight: 600;
+    font-style: italic;
 }
 
 /* ========== Question Section =============== */
 .question_section{
     width: 100%;
-    
 }
 
 .info_box{
@@ -77,4 +85,12 @@
 }
 .link_ws_infobox p{
     color: var(--vega-light-blue);
+}
+
+/* =========== @Media Querys min-width============ */
+/* ========       privacy policy          ======== */
+@media only screen and (min-width: 768px) {
+    .privacy_policy {
+        width: 60%;
+    }
 }
