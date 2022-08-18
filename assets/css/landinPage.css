@@ -485,6 +485,11 @@ footer{
                z-index: 40;
        }
 
+    video {
+        max-height: 410px;
+        border-radius: 32px;
+    }
+
 }
 
 @media only screen and (min-width: 1200px) {
@@ -493,10 +498,10 @@ footer{
         height: 90%;
     }
 
-    video {
+  /*   video {
         height: 560px;
-        border-radius: 32px;
-    }
+       
+    } */
     /* =========== circulos ============ */
 
     .circle_1 {
@@ -544,7 +549,7 @@ footer{
 @media only screen and (min-width: 1300px) {
     /* =========== iVideo ============ */
     video {
-        max-height: 462px;
+        max-height: 417px;
     }
 
     /* =========== circulos ============ */
