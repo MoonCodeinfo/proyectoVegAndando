@@ -1,25 +1,29 @@
 .form {
     background-color: var(--very-dark-blue);
-    width: 90%;
+    width: 80%;
     max-width: 400px;
     border-radius: 20px;
-    padding: 56px 24px;
+    padding: 16px 16px;
+}
+.form h3 {
+    font-size: 18px;
+    font-weight: 400;
 }
 .form_container {
     display: grid;
-    gap: 15px;
+    gap: 12px;
     grid-auto-columns: 100%;
 }
 .form_title {
     text-align: center;
-    font-size: 30px;
+    font-size: 22px;
 }
 .form_input {
-    font-size: 16px;
-    padding: 12.8px 16px;
+    font-size: 13.5px;
+    padding: 9px 16px;
     outline: none;
     border: none;
-    border: 3px solid var(--dark-light-blue);
+    border: 2px solid var(--dark-light-blue);
     border-radius: 16px;
 }
 .form_input--message {
@@ -31,12 +35,15 @@
     font-weight: 300;
 }
 .form_container label span {
-    font-size: 15px;
-    font-weight: 700;
+    font-size: 14px;
+    font-weight: 500;
     color: var(--light-grey);
 }
 .selections input {
-    margin-bottom: 12px;
+    margin-top: 12px;
+}
+.selections_health label {
+    margin-right: 15px;
 }
 .form_cta {
     font-size: 16px;
@@ -50,8 +57,8 @@
     font-weight: 400;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (min-width: 450px) {
     .form {
-        padding: 56px 16px;
+        padding: 56px 24px;
     }
 }

@@ -12,6 +12,67 @@ script p {
     color: var(--white);
 }
 
+/* Info pay card */
+.travel_contain_slider {
+    justify-content: flex-end;
+     /* gap: 20px; */
+ }
+
+ .img_viaje {
+    width: 60%;
+    border-radius: 18px;
+ }
+
+ .travel_box {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    background-color: rgba(10, 25, 46, 0.78);
+    border: solid 1.5px var(--white);
+    border-radius: 18px;
+    margin-bottom: 25px;
+    padding: 8px 0;
+ }
+ .travel_box h2 {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 26px;
+    align-items: flex-end;
+ }
+
+ .travel_box span {
+    color: var(--white);
+    font-size: 14px;
+    opacity: 0.5;
+}
+
+.title_travel_box {
+    padding: 15px;
+    /* margin-bottom: 18px; */
+    gap: 6px;
+    flex-direction: column;
+    /* justify-content: space-between;
+    align-items: center;
+    text-align: center; */
+ }
+ .title_travel_box p {
+    color: var(--vega-yellow);
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.paragraph_travel_box {
+    width: 90%;
+    /* align-items: flex-start; */
+    /* gap: 5px; */
+    /* margin-top: -20px; */
+}
+
+ .paragraph_travel_box p {
+    font-size: 14px;
+    text-align: center;
+ }
+
 .box_pay_descripton {
     width: 80%;
     margin-top:50px;
@@ -140,7 +201,6 @@ script p {
     margin-bottom: 15px;
 }
 
-
 .reservar{
     margin: 30px 0 30px 0;
 }
@@ -148,22 +208,30 @@ script p {
     font-size: 19px;
     font-weight: 600;
     margin-bottom: 10px;
-
 }
 .reservar p {
     font-size: 15px;
     font-weight: 100;
- 
-
 }
 
 .schedule_button{
     width: 160px;
-    margin-top: 50px;
+}
+
+@media only screen and (min-width: 425px) {
+    .img_viaje {
+        width: 70%;
+     }
+     .travel_box {
+        max-width: 250px;
+     }
 }
 
 @media only screen and (min-width: 520px) {
-    
+    .img_viaje {
+        width: 75%;
+     }
+
     .box_pay_method {
         width: 80%;
         height: 900px;
@@ -171,7 +239,6 @@ script p {
         background-color: var(--dark-light-blue);
         border-top-right-radius: 30px;
         border-bottom-left-radius: 30px;
-        
     }
 
     .information_paymethod{
@@ -212,7 +279,6 @@ script p {
         background-color: var(--very-dark-blue);
         border-bottom-left-radius: 29px;
         opacity: 0.8;
-    
     }
     .box_important_content{
         width: 90%;
@@ -236,7 +302,6 @@ script p {
         margin-bottom: 15px;
     }
 
-
     .reservar{
         margin: 30px 0 30px 0;
     }
@@ -249,15 +314,41 @@ script p {
     .reservar p {
         font-size: 20px;
         font-weight: 100;
-    
-
-    }
-
-    .schedule_button{
-        margin-top: 100px;
     }
 }
+
+@media only screen and (min-width: 768px) {
+    .pay_info-form {
+        align-items: flex-start;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .img_viaje {
+        width: 80%;
+    }
+    .travel_box {
+        max-height: 200px;
+     }
+
+    .travel_box {
+        width: 341px;
+        height: 337px;
+        justify-content: space-evenly
+    }
+
+    .pay {
+        align-items: flex-start;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
 @media only screen and (min-width: 1000px) {
+    .img_viaje {
+        width: 90%;
+    }
+
     .box_pay_method {
         width: 40%;
     }
@@ -265,5 +356,36 @@ script p {
     .info_box {
         width: 22%;
     }
-    
+
+    .box_card_travel_section{
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .img_viaje {
+        height: 543px;
+    }
+
+    .travel_box {
+        width: 253px;
+        height: 281px;
+        justify-content: space-evenly;
+    }
+
+    .title_travel_box {
+        margin-bottom: 4px;
+     }
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .img_viaje {
+        height: 630px;
+    }
+
+    .travel_box {
+        width: 282px;
+        height: 281px;
+        justify-content: space-evenly;
+    }
 }
