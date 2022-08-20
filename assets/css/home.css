@@ -81,7 +81,6 @@ main{
 
  .img_viaje {
     width: 90%;
-   
     border-radius: 35px;
  }
  
@@ -97,6 +96,7 @@ main{
  .travel_box a{
     font-size: 17px;
     font-weight: 500;
+    margin: 8px 0 5px 0;
  }
 
  .travel_box span {
@@ -108,6 +108,14 @@ main{
     /* left: 90px; */
 }
 
+.travel_box h4{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 100;
+    margin-bottom: 4px;
+}
+
  .title_travel_box {
     padding: 15px;
     margin-bottom: 19px;
@@ -117,10 +125,6 @@ main{
     align-items: center;
     text-align: center;
     gap: 6px;
- }
-
- .travel_box a {
-    margin: 8px 0 5px 0;
  }
 
  .title_travel_box h2 {
@@ -161,13 +165,6 @@ main{
      border-radius: 16px;
  }
  
- .travel_box h4{
-     margin-top: 10px;
-     text-align: center;
-     font-size: 15px;
-     font-weight: 100;
-     margin-bottom: 4px;
- }
  .last_card{
      margin-right: 24px;
  }
@@ -708,7 +705,6 @@ main{
     .title_travel_box {
         margin-bottom: 4px;
      }
-
 }
 
 @media only screen and (min-width: 1200px) {

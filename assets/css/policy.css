@@ -8,6 +8,14 @@
     width: 70%;
 }
 
+.new_travel_title {
+    gap: 10px;
+    margin-bottom: 20px;
+}
+ .new_travel_title img {
+    width: 39px;
+ }
+
 .privacy_policy_heading span{
     font-weight: 200;
 }
