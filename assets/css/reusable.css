@@ -89,6 +89,9 @@ p{
 .bottom15px {
     margin-bottom: 15px;
 }
+.bottom25px {
+    margin-bottom: 25px;
+}
 
 .bottom50px {
     margin-bottom: 50px;
@@ -127,6 +130,10 @@ p{
 
 .width-aviable{
     width:100%;
+}
+
+.width-90{
+    width: 90%;
 }
 
 /*=============== LIGHT/DARK MODE ===============*/
@@ -412,6 +419,10 @@ iframe {
     iframe{
         height: 550px;
       }
+
+      .active_section{
+        display: none;
+    }
     
     
 }
