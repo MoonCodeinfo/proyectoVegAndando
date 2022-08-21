@@ -47,7 +47,7 @@
 
 
 /* =========== CEO PROFILE ============ */
-.ceo_profile {
+.ceo_profile_contain {
     width: 90%;
     /* margin: 80px 0 50px 0; */
     gap: 15px;
@@ -71,7 +71,7 @@
     font-weight: 200;
 }
 
-.ceo_profile span {
+.ceo_profile_contain span {
     color: var(--dark-grey-text);
 }
 
@@ -91,6 +91,9 @@
     width: 80%;
     gap: 5px;
     text-align: justify;
+}
+.new_travel_title{
+    margin-bottom: 25px;
 }
 
 
@@ -133,6 +136,79 @@
     }
     .img_2{
         display: block;
+    }
+    
+}
+@media only screen and (min-width: 1000px) {
+
+    .our_branding_box h2 {
+        font-size: 31px;
+    }
+
+    .text_our_branding p {
+        font-size: 23px;
+    }
+
+    .text_our_branding p:nth-child(2) {
+        width: 90%;
+        font-size: 22px;
+    }
+    .colors_desription img:nth-child(1) {
+        width: 100%;
+    }
+    .colors_desription img:nth-child(2) {
+        width: 132%;
+    }
+
+
+    /* =============================== */
+    .title_story{
+        width: 38%;
+        margin-bottom: 0px;
+    }
+    .story_box{
+        flex-direction: row-reverse;
+    }
+    
+    .story_box h2{
+        font-size: 35px;
+        width: 68%;
+        text-align: center;
+    }
+    .story_text {
+        font-size: 22px;
+        width: 80%;
+        gap: 5px;
+        text-align: left;
+        font-weight: 300;
+    }
+
+/* =============================== */
+    .ceo_profile_contain{
+        margin-top: 60px;
+    }
+    .ceo_profile_contain h2{
+        font-size: 32px;
+    }
+    .ceo_profile_contain h3{
+        font-size: 26px;
+    }
+    .ceo_profile_boxcard {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .ceo_profile_card {
+     max-width: 450px;
+    }
+
+    /* =============================== */
+
+    .empresa_contain{
+        flex-direction: row;
+    }
+    .icontext_section p {
+        text-align: center;
+
     }
     
 }
