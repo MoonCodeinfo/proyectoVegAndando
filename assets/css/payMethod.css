@@ -218,6 +218,54 @@ script p {
     width: 160px;
 }
 
+
+/* ========== Question Section =============== */
+.question_section{
+    width: 100%;
+}
+
+.info_box{
+    width: 80%;
+    height: 456px;
+    border: solid 3px #fff;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.signo_question_box{
+    width: 100%;
+}
+.signo_question_box img{
+    width: 3rem;
+    margin-bottom: 35px;
+}
+.signo_question_box p{
+    font-size: 18px;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.name_info_box{
+    width: 80%;
+}
+
+.name_info_box h4{
+   font-size: 20px;
+   font-weight: 500;
+   margin-bottom: 5px;
+}
+.name_info_box p{
+    font-size: 23px;
+   font-weight: 100;
+   margin-bottom: 10px;
+}
+
+.link_ws_infobox{
+    width: 90%;
+}
+.link_ws_infobox p{
+    color: var(--vega-light-blue);
+}
+
 @media only screen and (min-width: 425px) {
     .img_viaje {
         width: 70%;
@@ -255,13 +303,13 @@ script p {
     .name_banck_account{
         font-size: 35px;
         font-weight: 100;
-    margin: 10px 0 5px 0;
+        margin: 10px 0 5px 0;
     }
 
     .banck_name{
         font-size: 28px;
         font-weight: 300;
-    margin: 10px 0 5px 0;
+        margin: 10px 0 5px 0;
     }
 
     .banck_num{
@@ -291,8 +339,8 @@ script p {
     .box_important_content p{
         font-size: 20px;
         font-weight: 100;
-    
     }
+    
     .paypal_method{
         margin-bottom: 50px;
     }

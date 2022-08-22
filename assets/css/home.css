@@ -7,6 +7,25 @@ main{
     max-width: 100%;
 }
 
+/* ============= Top Nav ============= */
+.top_nav {
+    /* position: fixed; */
+    justify-content: space-around;
+    /* top: 0;
+    z-index: 10; */
+}
+.social_icon {
+    margin-top: 5px;
+    gap: 10px;
+}
+.social_icon i {
+    font-size: 26px;
+}
+/* .top_nav i{
+    font-size: 30px;
+    gap: 25px;
+} */
+
 /* ============= Hero Image ============= */
 .home_section {
     height: 100%;
@@ -360,11 +379,7 @@ main{
     border-radius: 50%;
 }
 
-
 /* ====== politica de calidad section ======  */
-
-
-
 .politics_contain{
     margin-bottom: 50px;
 }
@@ -396,9 +411,7 @@ main{
     font-weight: 500;
 }
 
-
 /* ========== Our Branding section ==========  */
- 
 .our_branding_contain{
     height: 500px;
 }
@@ -440,11 +453,7 @@ main{
  width: 95%;
 }
 
-
-
 /* ========== Our funders section ==========  */
-
-
 .our_funders_contain{
     margin-bottom:90px;
 }
@@ -508,9 +517,6 @@ main{
 
 }
 
-
-
-
 /* =========== @Media Querys min-width============ */
 /* ========       Home          ======== */
 @media only screen and (min-width: 375px) {
@@ -561,9 +567,6 @@ main{
     /* .our_funders_contain h2 {
         margin-bottom: 41px;
     } */
-
-    
-
 }
 
 @media only screen and (min-width: 425px) {
@@ -575,7 +578,6 @@ main{
         top: 171px;
     }
 
-
     /* ============= Icon Section======= */
     .icon_section_home {
         gap: 36px;
@@ -584,9 +586,7 @@ main{
         margin-bottom: -4px;
     }
 
-
     /* ============= Our Branding Section======= */
-
 }
 
 @media only screen and (min-width: 768px) {

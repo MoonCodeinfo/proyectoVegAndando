@@ -48,8 +48,11 @@ footer{
     align-items: flex-start;
 }
 
-.socialmedia_footer  img {
-    width: 26px;
+.social_icon {
+    gap: 10px;
+}
+.social_icon i {
+    font-size: 26px;
 }
 
 .column_2{
