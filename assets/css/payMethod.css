@@ -11,6 +11,12 @@
 script p {
     color: var(--white);
 }
+.title_img {
+    align-items: flex-start;
+}
+.img_flecha {
+    width: 39px;
+}
 
 /* Info pay card */
 .travel_contain_slider {
@@ -135,7 +141,6 @@ script p {
     width: 90%;
     height: 90%;
     justify-content: space-evenly;
-    text-align: justify;
 }
 .information_paymethod h3{
     font-size: 20px;
@@ -216,6 +221,19 @@ script p {
 
 .schedule_button{
     width: 160px;
+}
+
+.comprobante_pago {
+    width: 80%;
+    font-size: 18px;
+    gap: 5px;
+    padding: 8px;
+    outline: 2px solid var(--vega-yellow);
+    border-radius: 24px;
+    font-size: 700;
+}
+.comprobante_pago a i {
+    font-size: 24px;
 }
 
 
@@ -398,11 +416,11 @@ script p {
     }
 
     .box_pay_method {
-        width: 40%;
+        width: 60%;
     }
     
     .info_box {
-        width: 22%;
+        width: 60%;
     }
 
     .box_card_travel_section{
