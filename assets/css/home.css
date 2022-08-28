@@ -9,18 +9,32 @@ main{
 
 /* ============= Top Nav ============= */
 .top_nav {
-    /* position: fixed; */
     justify-content: space-around;
-    /* top: 0;
-    z-index: 10; */
 }
 .social_icon {
-    margin-top: 5px;
+    position: absolute;
+    top: 0;
+    right: 5px;
     gap: 10px;
 }
 .social_icon i {
-    font-size: 26px;
+    font-size: 22px;
+    border-radius: 0 0 50px 50px;
+    transition: 0.4s ease-in-out;
 }
+.social_icon .instagram {
+    background: linear-gradient(194.37deg, #FEDC15 -5.97%, #F71F86 55%, #9802D5 110.31%);
+}
+.social_icon .instagram:hover {
+    transform: translateY(10px);
+}
+.social_icon .whatsapp {
+    background-color: #29A71A;
+}
+.social_icon .envelope {
+    background-color: #C31010;
+}
+
 /* .top_nav i{
     font-size: 30px;
     gap: 25px;
@@ -595,6 +609,9 @@ main{
         max-width: 530px;
         right: -120px;
         top: -2px;
+    }
+    .social_icon i {
+        font-size: 26px;
     }
     .experience_frase {
         margin-top: 17px;
