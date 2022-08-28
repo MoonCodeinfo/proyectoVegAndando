@@ -32,9 +32,9 @@ main{
 }
 
 .text_landing .text_landing_js{
-    font-size: 40px;
+    font-size: 35px;
     color: var(--vega-yellow);
-    font-weight:900;
+    font-weight:800;
 }
 
 .ocupation_landing {
@@ -237,7 +237,12 @@ footer{
         position: absolute;
         z-index: 30;
      }
-
+     .palma_1{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 200px;
+     }
      .circle_1 {
        /*  width: 300px; */
         height: 300px;
@@ -330,7 +335,7 @@ footer{
         flex-direction: row-reverse;
     }
 
-        main::after{
+   /*      main::after{
             content: '';
             position: fixed;
             width: 90%;
@@ -338,7 +343,7 @@ footer{
             border-radius: 30px;
             border: solid 3px var(--white);
         }
-    
+     */
         .landing_container{
             width: 40%;
             height: 60%;
@@ -386,7 +391,7 @@ footer{
         }
 
         .text_landing .text_landing_js{
-            font-size: 55px;
+            font-size: 45px;
         }
 
 
@@ -525,7 +530,7 @@ footer{
 @media only screen and (min-width: 1300px) {
     /* =========== iVideo ============ */
     video {
-        max-height: 417px;
+        max-height: 480px;
     }
 
     /* =========== circulos ============ */
