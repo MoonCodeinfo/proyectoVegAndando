@@ -30,6 +30,10 @@
         
     }
 
+    html {
+        scroll-behavior: smooth;
+    }
+
 body{
     background-color: var(--dark-blue);
     font-family: 'Roboto', sans-serif;
