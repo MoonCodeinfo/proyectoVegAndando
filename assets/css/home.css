@@ -2,23 +2,23 @@
 ================Nota=============
 Iniciamos con 320px de resolucion 
 // */
-
+body{
+  overflow: hidden;
+}
 main {
   max-width: 100%;
 }
 
 /* ============= Top Nav ============= */
 .top_nav {
-  position: absolute;
-  top: 0;
-  right: 30px;
+  width: 90%;
   justify-content:flex-end;
- 
   height: 28px;
 }
 
 .top_nav_social{
   gap: 12px;
+  /* margin-right: 20px; */
 }
 
 .social_icon{
@@ -78,16 +78,18 @@ main {
 
 #Stree-coco {
   position: absolute;
-  top: 422px;
+  top: 376px;
   right: 0;
-  width: 123px;
+  width: 95px;
 }
+
 #Stree-coco1 {
   position: absolute;
-  top: 644px;
+  top: 528px;
   left: -123px;
-  width: 231px;
+  width: 248px;
 }
+
 #sol {
   position: absolute;
   top: -75px;
@@ -103,13 +105,14 @@ main {
       transform: rotate(360deg);
     }
   }
-#coco {
-  position: absolute;
-  top: 100px;
-  right: 8%;
-  width: 52px;
-  animation: bounce 3s;
+  #coco {
+    position: absolute;
+    top: 144px;
+    right: 5%;
+    width: 48px;
+    animation: bounce 3s;
 }
+
 @keyframes bounce {
     0% {
       transform: rotate(20deg);
@@ -121,7 +124,7 @@ main {
 
 /* =========== New Travel Section ============ */
 .new_travel_contain {
-  margin: 135px 0 50px 0;
+  margin: 225px 0 50px 0;
 }
 
 .new_travel_contain h2 {
@@ -565,15 +568,16 @@ main {
     top: 181px;
   }
 
-  #coco {
+ /*  #coco {
     top: 160px;
     right: 8%;
     width: 53px;
-  }
+  } */
 
-  #Stree-coco {
-    top: 396px;
-  }
+/*   #Stree-coco {
+    top: 368px;
+    width: 113px;
+} */
 
   #Stree-coco1 {
     top: 620px;
@@ -662,7 +666,9 @@ main {
 }
 
 @media only screen and (min-width: 1000px) {
- 
+  .top_nav {
+    right: 30px;
+}
   .social_icon{
     height: 60px;
     width: 37px;
