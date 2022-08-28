@@ -187,16 +187,20 @@
     .ceo_profile_contain{
         margin-top: 60px;
     }
+    
     .ceo_profile_contain h2{
         font-size: 32px;
     }
+
     .ceo_profile_contain h3{
         font-size: 26px;
     }
+
     .ceo_profile_boxcard {
         flex-direction: row;
         justify-content: space-evenly;
     }
+
     .ceo_profile_card {
      max-width: 450px;
     }
