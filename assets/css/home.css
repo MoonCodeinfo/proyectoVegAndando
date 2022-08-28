@@ -99,16 +99,7 @@ main {
   top: 100px;
   right: 8%;
   width: 52px;
-  animation: bounce 3s;
 }
-@keyframes bounce {
-    0% {
-      transform: rotate(20deg);
-    }
-    100% {
-      transform: rotate(35deg);
-    }
-  }
 
 /* =========== New Travel Section ============ */
 .new_travel_contain {
