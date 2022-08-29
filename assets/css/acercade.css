@@ -46,6 +46,43 @@
 }
 
 
+<<<<<<< HEAD
+=======
+/* =========== CEO PROFILE ============ */
+.ceo_profile_contain {
+    width: 90%;
+    /* margin: 80px 0 50px 0; */
+    gap: 15px;
+}
+
+.ceo_img img{
+    width: 190px;
+    box-shadow: 0 0 0 10px var(--dark-blue), 0 0 0 15px var(--vega-yellow);
+    /* clip-path: circle(40%); */
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+.profile_text {
+    gap: 15px;
+}
+.profile_text p{
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.ceo_profile_contain span {
+    color: var(--dark-grey-text);
+}
+
+.hobbies {
+    gap: 15px;
+    padding: 8px 0;
+    background: var(--dark-light-blue);
+    border-radius: 10px 0 10px 0;
+}
+
+>>>>>>> 2cebf08b480d7f6c80d5fe7110d2e30b6e498547
 /* =========== NUESTRA HISTORIA ============ */
 .story {
     width: 90%;
@@ -54,7 +91,6 @@
 .story_text {
     width: 80%;
     gap: 5px;
-    text-align: justify;
 }
 .new_travel_title{
     margin-bottom: 25px;
@@ -80,7 +116,6 @@
 
 .icontext_section p{
     font-size: 20px;
-    text-align: justify;
     width: 90%;
 }
 

@@ -5,42 +5,6 @@ Iniciamos con 320px de resolucion
 main {
   max-width: 100%;
 }
-/* ============= Top Nav ============= */
-.top_nav {
-  width: 90%;
-  justify-content: flex-end;
-  height: 28px;
-}
-
-.top_nav_social {
-  gap: 12px;
-}
-
-.social_icon {
-  height: 27px;
-  width: 22px;
-  font-size: 26px;
-  border-radius: 0 0 50px 50px;
-  align-items: flex-end;
-  transition: 0.4s ease-in-out;
-}
-.social_icon i {
-  margin-bottom: 7px;
-}
-.social_icon_instagram {
-  background: linear-gradient(
-    194.37deg,
-    #fedc15 -5.97%,
-    #f71f86 55%,
-    #9802d5 110.31%
-  );
-}
-.social_icon_whatsapp {
-  background-color: #29a71a;
-}
-.social_icon_envelope {
-  background-color: #c31010;
-}
 
 /* ============= Hero Image ============= */
 .home_section {
@@ -611,9 +575,6 @@ main {
     right: -120px;
     top: -2px;
   }
-  .social_icon i {
-    font-size: 26px;
-  }
   .experience_frase {
     margin-top: 17px;
   }
@@ -643,19 +604,6 @@ main {
 }
 
 @media only screen and (min-width: 1000px) {
-  .top_nav {
-    right: 30px;
-  }
-  .social_icon {
-    height: 60px;
-    width: 37px;
-    /* font-size: 22px; */
-    border-radius: 0 0 50px 50px;
-  }
-  .social_icon:hover {
-    height: 90px;
-  }
-
   #sol {
     position: absolute;
     top: -70px;
