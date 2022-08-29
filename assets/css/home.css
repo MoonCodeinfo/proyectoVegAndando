@@ -2,13 +2,9 @@
 ================Nota=============
 Iniciamos con 320px de resolucion 
 // */
-body {
-  overflow: hidden;
-}
 main {
   max-width: 100%;
 }
-
 /* ============= Top Nav ============= */
 .top_nav {
   width: 90%;
