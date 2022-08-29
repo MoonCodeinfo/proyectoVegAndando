@@ -2,9 +2,9 @@
 ================Nota=============
 Iniciamos con 320px de resolucion 
 // */
-body{
+/* body{
   overflow: hidden;
-}
+} */
 main {
   max-width: 100%;
 }
