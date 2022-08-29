@@ -58,6 +58,7 @@
       <section
         class="box_pay_descripton center_content flex_column width-aviable"
       >
+      <div>
         <div class="box_pay_info center_content flex_column">
           <!-- <div class="title_img center_content width-aviable"> -->
           <img
@@ -82,7 +83,7 @@
             class="box_card_travel_section flex_column width-aviable center_content"
           >
             <div class="center_content">
-              <div class="travel_contain_slider center_content flex_column">
+              <div class="travel_contain_slider center_content flex_column top15px">
                 <img
                   class="img_viaje"
                   src="/assets/viajes/giraParaZonaDeBavaro/img/recorrido-buggy.png"
@@ -116,368 +117,364 @@
                 </p>
             </div> -->
         </div>
-      </section>
 
-      <!-- ========== Viaje info & CONTACT FORM ========== -->
-      <section class="center_content flex_column width-aviable top60px">
-        <!-- ========= Sin definir ========= -->
-        <div class="pay_info-form center_content flex_column width-aviable">
-          <!-- ============ Pay ========== -->
-          <div class="pay center_content flex_column width-aviable">
-            <div class="center_content flex_column width-aviable">
-              <!-- ============ Box Pay Method ========== -->
-              <div id="smart-button-container">
-                <div style="text-align: center">
-                  <div id="paypal-button-container"></div>
+         <!-- ============ Pay ========== -->
+         <div class="pay center_content flex_column width-aviable">
+          <div class="center_content flex_column width-aviable">
+            <!-- ============ Box Pay Method ========== -->
+            <div id="smart-button-container">
+              <div style="text-align: center">
+                <div id="paypal-button-container"></div>
+              </div>
+            </div>
+            <script
+              src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD"
+              data-sdk-integration-source="button-factory"
+            ></script>
+            <script>
+              function initPayPalButton() {
+                paypal
+                  .Buttons({
+                    style: {
+                      shape: "pill",
+                      color: "gold",
+                      layout: "horizontal",
+                      label: "pay",
+                    },
+
+                    createOrder: function (data, actions) {
+                      return actions.order.create({
+                        purchase_units: [
+                          { amount: { currency_code: "USD", value: 1 } },
+                        ],
+                      });
+                    },
+
+                    onApprove: function (data, actions) {
+                      return actions.order
+                        .capture()
+                        .then(function (orderData) {
+                          // Full available details
+                          console.log(
+                            "Capture result",
+                            orderData,
+                            JSON.stringify(orderData, null, 2)
+                          );
+
+                          // Show a success message within this page, e.g.
+                          const element = document.getElementById(
+                            "paypal-button-container"
+                          );
+                          element.innerHTML = "";
+                          element.innerHTML =
+                            "<h3>Thank you for your payment!</h3>";
+
+                          // Or go to another URL:  actions.redirect('thank_you.html');
+                        });
+                    },
+
+                    onError: function (err) {
+                      console.log(err);
+                    },
+                  })
+                  .render("#paypal-button-container");
+              }
+              initPayPalButton();
+            </script>
+
+            <div class="box_pay_method center_content flex_column">
+              <div class="information_paymethod center_content flex_column">
+                <h3>Pagos por Transferencia</h3>
+                <div
+                  class="personal_contact center_content flex_column text_center"
+                >
+                  <p>
+                    A nombre de: <br />
+                    <span class="name_banck_account">Yenifer Vega</span>
+                  </p>
+                  <p></p>
+                  <p class="banck_name">- BHD León</p>
+                  <p class="banck_num">22800430014</p>
+                  <div
+                    class="comprobante_pago center_content flex_column top15px"
+                  >
+                    <a href="">
+                      <p>
+                        Enviar comprobante de pago
+                        <i class="bx bxl-whatsapp"></i>
+                      </p>
+                    </a>
+                  </div>
+                </div>
+                <span class="line_section"></span>
+                <div
+                  class="personal_contact center_content flex_column text_center"
+                >
+                  <p>
+                    A nombre de: <br />
+                    <span class="name_banck_account">Liz Franco Vega</span>
+                  </p>
+                  <p class="banck_name">- Popular</p>
+                  <p class="banck_num">822970471</p>
+                  <p class="banck_name">- Banreservas</p>
+                  <p class="banck_num">9601606858</p>
+                  <div
+                    class="comprobante_pago center_content flex_column top15px bottom15px"
+                  >
+                    <a href="">
+                      <p>
+                        Enviar comprobante de pago
+                        <i class="bx bxl-whatsapp"></i>
+                      </p>
+                    </a>
+                  </div>
                 </div>
               </div>
-              <script
-                src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD"
-                data-sdk-integration-source="button-factory"
-              ></script>
-              <script>
-                function initPayPalButton() {
-                  paypal
-                    .Buttons({
-                      style: {
-                        shape: "pill",
-                        color: "gold",
-                        layout: "horizontal",
-                        label: "pay",
-                      },
-
-                      createOrder: function (data, actions) {
-                        return actions.order.create({
-                          purchase_units: [
-                            { amount: { currency_code: "USD", value: 1 } },
-                          ],
-                        });
-                      },
-
-                      onApprove: function (data, actions) {
-                        return actions.order
-                          .capture()
-                          .then(function (orderData) {
-                            // Full available details
-                            console.log(
-                              "Capture result",
-                              orderData,
-                              JSON.stringify(orderData, null, 2)
-                            );
-
-                            // Show a success message within this page, e.g.
-                            const element = document.getElementById(
-                              "paypal-button-container"
-                            );
-                            element.innerHTML = "";
-                            element.innerHTML =
-                              "<h3>Thank you for your payment!</h3>";
-
-                            // Or go to another URL:  actions.redirect('thank_you.html');
-                          });
-                      },
-
-                      onError: function (err) {
-                        console.log(err);
-                      },
-                    })
-                    .render("#paypal-button-container");
-                }
-                initPayPalButton();
-              </script>
-
-              <div class="box_pay_method center_content flex_column">
-                <div class="information_paymethod center_content flex_column">
-                  <h3>Pagos por Transferencia</h3>
-                  <div
-                    class="personal_contact center_content flex_column text_center"
-                  >
-                    <p>
-                      A nombre de: <br />
-                      <span class="name_banck_account">Yenifer Vega</span>
-                    </p>
-                    <p></p>
-                    <p class="banck_name">- BHD León</p>
-                    <p class="banck_num">22800430014</p>
-                    <div
-                      class="comprobante_pago center_content flex_column top15px"
-                    >
-                      <a href="">
-                        <p>
-                          Enviar comprobante de pago
-                          <i class="bx bxl-whatsapp"></i>
-                        </p>
-                      </a>
-                    </div>
-                  </div>
-                  <span class="line_section"></span>
-                  <div
-                    class="personal_contact center_content flex_column text_center"
-                  >
-                    <p>
-                      A nombre de: <br />
-                      <span class="name_banck_account">Liz Franco Vega</span>
-                    </p>
-                    <p class="banck_name">- Popular</p>
-                    <p class="banck_num">822970471</p>
-                    <p class="banck_name">- Banreservas</p>
-                    <p class="banck_num">9601606858</p>
-                    <div
-                      class="comprobante_pago center_content flex_column top15px bottom15px"
-                    >
-                      <a href="">
-                        <p>
-                          Enviar comprobante de pago
-                          <i class="bx bxl-whatsapp"></i>
-                        </p>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="important center_content flex_column width-aviable">
-                  <div class="box_important_content center_content flex_column">
-                    <h4>Importante</h4>
-                    <p>
-                      En la nota de la transferencia debe colocar su nombre,
-                      apellido y cual es la excursión que esta reservando, luego
-                      enviar el comprobante de pago a uno de los siguientes
-                      números para validar el proceso.
-                    </p>
-                  </div>
+              <div class="important center_content flex_column width-aviable">
+                <div class="box_important_content center_content flex_column">
+                  <h4>Importante</h4>
+                  <p>
+                    En la nota de la transferencia debe colocar su nombre,
+                    apellido y cual es la excursión que esta reservando, luego
+                    enviar el comprobante de pago a uno de los siguientes
+                    números para validar el proceso.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-          <!-- ========== CONTACT FORM ========== -->
-          <div class="center_content width-aviable">
-            <form
-              class="form center_content width-aviable"
-              action="https://formspree.io/f/xwkzkywo"
-              method="POST"
-            >
-              <div class="form_container width-aviable">
-                <h2 class="form_title bottom10px">Completa la información</h2>
-
-                <label for="Nombre y apellido">Nombre y apellido</label>
-                <input
-                  minlength="4"
-                  maxlength="22"
-                  type="text"
-                  class="form_input"
-                  placeholder="Nombre y apellido:"
-                  name="firstName lastName"
-                  required
-                  pattern="[a-zA-Z]+"
-                />
-                <label for="Cédula o pasaporte"
-                  >Cédula o pasaporte <br />
-                  <span
-                    >Información requerida para el seguro de viaje</span
-                  ></label
-                >
-                <input
-                  minlength="4"
-                  maxlength="15"
-                  type="text"
-                  class="form_input"
-                  placeholder="Cédula o pasaporte:"
-                  name="id"
-                  required
-                  pattern="[a-zA-Z0-9]+"
-                />
-                <label for="birthday"
-                  >Fecha de nacimiento <br />
-                  <span
-                    >Información requerida para el seguro de viaje</span
-                  ></label
-                >
-                <input
-                  type="date"
-                  class="form_input"
-                  name="birthday"
-                  required
-                />
-                <label for="phone_number">Número de télefono</label>
-                <input
-                  minlength="4"
-                  maxlength="15"
-                  type="tel"
-                  class="form_input"
-                  placeholder="Numero de telefono:"
-                  name="phone_number"
-                  required
-                  pattern="[0-9]+"
-                />
-                <label for="email">Email</label>
-                <input
-                  type="email"
-                  class="form_input"
-                  placeholder="Email:"
-                  name="email"
-                  required
-                />
-
-                <div class="selections">
-                  <h3>Seleccione su punto de partida</h3>
-                  <input
-                    id="SantoDomingo"
-                    type="radio"
-                    class="form_input"
-                    name="starting_point"
-                    value="SantoDomingo"
-                  />
-                  <label for="SantoDomingo"
-                    >Bravo La Esperilla, Santo Domingo</label
-                  >
-                  <br />
-                  <input
-                    id="SanCristóbal"
-                    type="radio"
-                    class="form_input"
-                    name="starting_point"
-                    value="SanCristóbal"
-                  />
-                  <label for="SanCristóbal"
-                    >Parque Central, San Cristóbal</label
-                  >
-                  <br />
-                  <input
-                    id="Otro"
-                    type="radio"
-                    class="form_input"
-                    name="starting_point"
-                    value="Otro"
-                  />
-                  <label for="Otro">Otro</label>
-                </div>
-
-                <h3>Contacto de emergencia</h3>
-                <input
-                  minlength="4"
-                  maxlength="22"
-                  type="text"
-                  class="form_input"
-                  name="emergency_contact"
-                  placeholder="Nombre y apellido:"
-                  pattern="[a-zA-Z]+"
-                />
-                <input
-                  minlength="4"
-                  maxlength="15"
-                  type="tel"
-                  class="form_input"
-                  name="emergency_phone_number"
-                  placeholder="Número de télefono:"
-                  pattern="[0-9]+"
-                />
-
-                <div class="selections_health">
-                  <h3 class="bottom10px">Condicion medica o alergia?</h3>
-                  <input
-                    id="Si"
-                    type="radio"
-                    class="form_input"
-                    name="health_condition"
-                    value="Si"
-                  />
-                  <label for="Si">Si</label>
-                  <input
-                    id="No"
-                    type="radio"
-                    class="form_input"
-                    name="health_condition"
-                    value="No"
-                  />
-                  <label for="No">No</label>
-                </div>
-
-                <p>Si? Especifique</p>
-                <textarea
-                  maxlength="150"
-                  class="form_input form_input--message"
-                  name="message"
-                  id=""
-                  cols="30"
-                  rows="2"
-                  placeholder="Condicion medica:"
-                ></textarea>
-
-                <p>
-                  Ha sentido fiebre, resfriado o algun sintoma relacionado al
-                  Covid19 en los ultimos 15 dias
-                </p>
-                <input
-                  maxlength="22"
-                  type="text"
-                  class="form_input"
-                  name="covid19_condition"
-                  placeholder="Especifique"
-                  pattern="[a-zA-Z]+"
-                />
-
-                <div class="selections">
-                  <h3>Como se entero?</h3>
-                  <input
-                    id="Instagram"
-                    type="radio"
-                    class="form_input"
-                    name="how_you_know"
-                    value="Instagram"
-                  />
-                  <label for="Instagram">Instagram</label>
-                  <br />
-                  <input
-                    id="Facebook"
-                    type="radio"
-                    class="form_input"
-                    name="how_you_know"
-                    value="Facebook"
-                  />
-                  <label for="Facebook">Facebook</label>
-                  <br />
-                  <input
-                    id="TikTok"
-                    type="radio"
-                    class="form_input"
-                    name="how_you_know"
-                    value="TikTok"
-                  />
-                  <label for="TikTok">Tik Tok</label>
-                  <br />
-                  <input
-                    id="WhatsApp"
-                    type="radio"
-                    class="form_input"
-                    name="how_you_know"
-                    value="WhatsApp"
-                  />
-                  <label for="WhatsApp">WhatsApp</label>
-                  <br />
-                  <input
-                    id="Referencia"
-                    type="radio"
-                    class="form_input"
-                    name="how_you_know"
-                    value="Referencia"
-                  />
-                  <label for="Referencia">Referencia de un amigo</label>
-                  <br />
-                  <input
-                    id="Otro2"
-                    type="radio"
-                    class="form_input"
-                    name="how_you_know"
-                    value="Otro"
-                  />
-                  <label for="Otro2">Otro</label>
-                </div>
-
-                <input type="submit" value="Enviar" class="form_cta" />
-              </div>
-            </form>
-          </div>
         </div>
+      </div>
+      
+        <!-- ========== CONTACT FORM ========== -->
+          <form
+            class="form center_content width-aviable"
+            action="https://formspree.io/f/xwkzkywo"
+            method="POST"
+          >
+            <div class="form_container width-aviable">
+              <h2 class="form_title bottom10px">Completa la información</h2>
+
+              <label for="Nombre y apellido">Nombre y apellido</label>
+              <input
+                minlength="4"
+                maxlength="22"
+                type="text"
+                class="form_input"
+                placeholder="Nombre y apellido:"
+                name="firstName lastName"
+                required
+                pattern="[a-zA-Z]+"
+              />
+              <label for="Cédula o pasaporte"
+                >Cédula o pasaporte <br />
+                <span
+                  >Información requerida para el seguro de viaje</span
+                ></label
+              >
+              <input
+                minlength="4"
+                maxlength="15"
+                type="text"
+                class="form_input"
+                placeholder="Cédula o pasaporte:"
+                name="id"
+                required
+                pattern="[a-zA-Z0-9]+"
+              />
+              <label for="birthday"
+                >Fecha de nacimiento <br />
+                <span
+                  >Información requerida para el seguro de viaje</span
+                ></label
+              >
+              <input
+                type="date"
+                class="form_input"
+                name="birthday"
+                required
+              />
+              <label for="phone_number">Número de télefono</label>
+              <input
+                minlength="4"
+                maxlength="15"
+                type="tel"
+                class="form_input"
+                placeholder="Numero de telefono:"
+                name="phone_number"
+                required
+                pattern="[0-9]+"
+              />
+              <label for="email">Email</label>
+              <input
+                type="email"
+                class="form_input"
+                placeholder="Email:"
+                name="email"
+                required
+              />
+
+              <div class="selections">
+                <h3>Seleccione su punto de partida</h3>
+                <input
+                  id="SantoDomingo"
+                  type="radio"
+                  class="form_input"
+                  name="starting_point"
+                  value="SantoDomingo"
+                />
+                <label for="SantoDomingo"
+                  >Bravo La Esperilla, Santo Domingo</label
+                >
+                <br />
+                <input
+                  id="SanCristóbal"
+                  type="radio"
+                  class="form_input"
+                  name="starting_point"
+                  value="SanCristóbal"
+                />
+                <label for="SanCristóbal"
+                  >Parque Central, San Cristóbal</label
+                >
+                <br />
+                <input
+                  id="Otro"
+                  type="radio"
+                  class="form_input"
+                  name="starting_point"
+                  value="Otro"
+                />
+                <label for="Otro">Otro</label>
+              </div>
+
+              <h3>Contacto de emergencia</h3>
+              <input
+                minlength="4"
+                maxlength="22"
+                type="text"
+                class="form_input"
+                name="emergency_contact"
+                placeholder="Nombre y apellido:"
+                pattern="[a-zA-Z]+"
+              />
+              <input
+                minlength="4"
+                maxlength="15"
+                type="tel"
+                class="form_input"
+                name="emergency_phone_number"
+                placeholder="Número de télefono:"
+                pattern="[0-9]+"
+              />
+
+              <div class="selections_health">
+                <h3 class="bottom10px">Condicion medica o alergia?</h3>
+                <input
+                  id="Si"
+                  type="radio"
+                  class="form_input"
+                  name="health_condition"
+                  value="Si"
+                />
+                <label for="Si">Si</label>
+                <input
+                  id="No"
+                  type="radio"
+                  class="form_input"
+                  name="health_condition"
+                  value="No"
+                />
+                <label for="No">No</label>
+              </div>
+
+              <p>Si? Especifique</p>
+              <textarea
+                maxlength="150"
+                class="form_input form_input--message"
+                name="message"
+                id=""
+                cols="30"
+                rows="2"
+                placeholder="Condicion medica:"
+              ></textarea>
+
+              <p>
+                Ha sentido fiebre, resfriado o algun sintoma relacionado al
+                Covid19 en los ultimos 15 dias
+              </p>
+              <input
+                maxlength="22"
+                type="text"
+                class="form_input"
+                name="covid19_condition"
+                placeholder="Especifique"
+                pattern="[a-zA-Z]+"
+              />
+
+              <div class="selections">
+                <h3>Como se entero?</h3>
+                <input
+                  id="Instagram"
+                  type="radio"
+                  class="form_input"
+                  name="how_you_know"
+                  value="Instagram"
+                />
+                <label for="Instagram">Instagram</label>
+                <br />
+                <input
+                  id="Facebook"
+                  type="radio"
+                  class="form_input"
+                  name="how_you_know"
+                  value="Facebook"
+                />
+                <label for="Facebook">Facebook</label>
+                <br />
+                <input
+                  id="TikTok"
+                  type="radio"
+                  class="form_input"
+                  name="how_you_know"
+                  value="TikTok"
+                />
+                <label for="TikTok">Tik Tok</label>
+                <br />
+                <input
+                  id="WhatsApp"
+                  type="radio"
+                  class="form_input"
+                  name="how_you_know"
+                  value="WhatsApp"
+                />
+                <label for="WhatsApp">WhatsApp</label>
+                <br />
+                <input
+                  id="Referencia"
+                  type="radio"
+                  class="form_input"
+                  name="how_you_know"
+                  value="Referencia"
+                />
+                <label for="Referencia">Referencia de un amigo</label>
+                <br />
+                <input
+                  id="Otro2"
+                  type="radio"
+                  class="form_input"
+                  name="how_you_know"
+                  value="Otro"
+                />
+                <label for="Otro2">Otro</label>
+              </div>
+
+              <input type="submit" value="Enviar" class="form_cta" />
+            </div>
+          </form>
       </section>
+
+          
 
       <!-- ========== Volver Atras Button =============== -->
       <section class="schedule_button regular_button center_content">
