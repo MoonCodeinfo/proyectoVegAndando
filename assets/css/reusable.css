@@ -1,50 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-:root{
-    /* =========== Basic Colors ========== */
-        
-        --vega-cofee:#41332B;
-        --vega-yellow:#FFCA2C;
-        --vega-red:#DF4949;
-        --vega-green:#5F9032;
-        --vega-light-blue:#267D97;
-        --white: #fff;
-        --black: #000;
-    
-    /* =========== Dark Theme ========== */
-    
-        --dark-blue:#252D38;
-        --dark-light-blue:#2a384a;
-        --very-dark-blue:#0A192E;
-        --dark-grey-old:#252D38;
-        --dark-grey-middle:#2C3644;
-        --dark-little-grey:#474C54;
-        --dark-grey-text: #858585;
-        --light-grey:#A4A4A4;
-        
-    }
+:root {
+  /* =========== Basic Colors ========== */
 
-    html {
-        scroll-behavior: smooth;
-    }
+  --vega-cofee: #41332b;
+  --vega-yellow: #ffca2c;
+  --vega-red: #df4949;
+  --vega-green: #5f9032;
+  --vega-light-blue: #267d97;
+  --white: #fff;
+  --black: #000;
 
-body{
-    background-color: var(--dark-blue);
-    font-family: 'Roboto', sans-serif;
-    width: 100%;
-    transition: .5s;
+  /* =========== Dark Theme ========== */
+
+  --dark-blue: #252d38;
+  --dark-light-blue: #2a384a;
+  --very-dark-blue: #0a192e;
+  --dark-grey-old: #252d38;
+  --dark-grey-middle: #2c3644;
+  --dark-little-grey: #474c54;
+  --dark-grey-text: #858585;
+  --light-grey: #a4a4a4;
 }
 
-::selection{
-    color: #fff;
-    background: var(--dark-light-blue);
-  }
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--dark-blue);
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  transition: 0.5s;
+}
+
+::selection {
+  color: #fff;
+  background: var(--dark-light-blue);
+}
 
 /* =========== Light Theme ========== */
 /* body.active {
@@ -53,91 +52,92 @@ body{
     --very-light-grey:#DADADA;
 } */
 
-a{
-    text-decoration: none;
-    color:var(--white);
-} 
-
-h1, h2, h3, h4{
-    color: var(--white);
+a {
+  text-decoration: none;
+  color: var(--white);
 }
-p{
-    color: var(--white);
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--white);
+}
+p {
+  color: var(--white);
 }
 
 /*=============== Margenes ===============*/
 /*=============== Top ===============*/
 .top8px {
-    margin-top: 8px;
+  margin-top: 8px;
 }
 .top15px {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 .top25px {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 .top45px {
-    margin-top: 45px;
+  margin-top: 45px;
 }
 .top60px {
-    margin-top: 60px;
+  margin-top: 60px;
 }
 /* Revisar hasta sacar su uso */
-.top_margin{
-    margin-top: 2rem;
+.top_margin {
+  margin-top: 2rem;
 }
 /*=============== Bottom ===============*/
 .bottom10px {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 .bottom15px {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 .bottom25px {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .bottom50px {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 /* //intercambiar */
 .bottom_margin {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
-
 
 /*=============== Align ===============*/
-.text_center{
-    text-align: center;
+.text_center {
+  text-align: center;
 }
-.text_justify{
-    text-align: justify;
+.text_justify {
+  text-align: justify;
 }
 
 /*=============== Flex Direction ===============*/
-.flex_column{
-    flex-direction: column;
+.flex_column {
+  flex-direction: column;
 }
-.flex_row{
-    flex-direction: row;
+.flex_row {
+  flex-direction: row;
 }
-
 
 /*=============== CENTER CONTENT ===============*/
-.center_content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.center_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*=============== width available ===============*/
 
-.width-aviable{
-    width:100%;
+.width-aviable {
+  width: 100%;
 }
 
-.width-90{
-    width: 90%;
+.width-90 {
+  width: 90%;
 }
 
 /*=============== LIGHT/DARK MODE ===============*/
@@ -175,183 +175,220 @@ p{
 
 /*=============== BUTTONS ===============*/
 .regular_button {
-    justify-content: space-evenly;
-    margin: 28px 0 28px 0;
-    width: 230px;
-    height: 42px;
-    border-radius: 50px;
-    outline: 3px solid var(--white);
+  justify-content: space-evenly;
+  margin: 28px 0 28px 0;
+  width: 230px;
+  height: 42px;
+  border-radius: 50px;
+  outline: 3px solid var(--white);
 }
 
 /*=============== BUTTONS InfoViaje ===============*/
-.schedule_button{
-    width: 190px;
-    height: 40px;
-    margin: 30px 0 70px 0; 
+.schedule_button {
+  width: 190px;
+  height: 40px;
+  margin: 30px 0 70px 0;
 }
-.schedule_button a{
-    color: var(--white);
-    font-size: 22px;
-    font-weight: 900;
-    text-decoration: none;
+.schedule_button a {
+  color: var(--white);
+  font-size: 22px;
+  font-weight: 900;
+  text-decoration: none;
 }
-.schedule_button a, img {
-    display: inline-flex;
-    align-items: center;
+.schedule_button a,
+img {
+  display: inline-flex;
+  align-items: center;
 }
 
 /*=============== POLITICA BUTTON ===============*/
-.link_politics{
-    width: 130px;
-    height: 45px;
-    border: solid 3px var(--vega-yellow);
-    border-radius: 45px;
-    margin-top: 20px;
+.link_politics {
+  width: 130px;
+  height: 45px;
+  border: solid 3px var(--vega-yellow);
+  border-radius: 45px;
+  margin-top: 20px;
 }
 
+/* ============= Top Nav ============= */
+.top_nav {
+  width: 90%;
+  justify-content: flex-end;
+  height: 28px;
+}
+
+.top_nav_social {
+  gap: 12px;
+}
+
+.social_icon {
+  height: 27px;
+  width: 22px;
+  font-size: 26px;
+  border-radius: 0 0 50px 50px;
+  align-items: flex-end;
+  transition: 0.4s ease-in-out;
+}
+.social_icon i {
+  margin-bottom: 7px;
+}
+.social_icon_instagram {
+  background: linear-gradient(
+    194.37deg,
+    #fedc15 -5.97%,
+    #f71f86 55%,
+    #9802d5 110.31%
+  );
+}
+.social_icon_whatsapp {
+  background-color: #29a71a;
+}
+.social_icon_envelope {
+  background-color: #c31010;
+}
 
 /*=============== Todos los tag  ===============*/
 
 /*=============== viajestag  ===============*/
-.tag-viaje{
-    margin-top: 10px;
+.tag-viaje {
+  margin-top: 10px;
 }
-.tag-viaje::after{
-    content: '';
-    position: relative;
-    left: 10px;
-    width: 75px;
-    height: 4px;
-    background-color: var(--vega-green);
-    border-radius: 3px;
+.tag-viaje::after {
+  content: "";
+  position: relative;
+  left: 10px;
+  width: 75px;
+  height: 4px;
+  background-color: var(--vega-green);
+  border-radius: 3px;
 }
-.tag-viaje::before{
-    content: '';
-    position: relative;
-    right: 10px;
-    width: 75px;
-    height: 4px;
-    background-color: var(--vega-green);
-    border-radius: 3px;
+.tag-viaje::before {
+  content: "";
+  position: relative;
+  right: 10px;
+  width: 75px;
+  height: 4px;
+  background-color: var(--vega-green);
+  border-radius: 3px;
 }
 
 .tag-viaje h4 {
-    color: var(--vega-green);
-    font-weight: 500;
+  color: var(--vega-green);
+  font-weight: 500;
 }
 
 /*=============== viajestag  ===============*/
 
-
 /*=============== excurcion tag  ===============*/
 
-.tag_excurtion{
-    margin-top: 20px;
+.tag_excurtion {
+  margin-top: 20px;
 }
-.tag_excurtion::after{
-    content: '';
-    position: relative;
-    left: 10px;
-    width: 75px;
-    height: 4px;
-    background-color: var(--vega-yellow);
-    border-radius: 3px;
+.tag_excurtion::after {
+  content: "";
+  position: relative;
+  left: 10px;
+  width: 75px;
+  height: 4px;
+  background-color: var(--vega-yellow);
+  border-radius: 3px;
 }
-.tag_excurtion::before{
-    content: '';
-    position: relative;
-    right: 10px;
-    width: 75px;
-    height: 4px;
-    background-color: var(--vega-yellow);
-    border-radius: 3px;
+.tag_excurtion::before {
+  content: "";
+  position: relative;
+  right: 10px;
+  width: 75px;
+  height: 4px;
+  background-color: var(--vega-yellow);
+  border-radius: 3px;
 }
 
 .tag_excurtion h4 {
-    color: var(--vega-yellow);
-    font-weight: 500;
+  color: var(--vega-yellow);
+  font-weight: 500;
 }
 
 /*=============== excurcion tag  ===============*/
 
 /*=============== Viajes privados tag  ===============*/
 
-.tag-viaje_privado{
-    margin-top: 10px;
+.tag-viaje_privado {
+  margin-top: 10px;
 }
-.tag-viaje_privado::after{
-    content: '';
-    position: relative;
-    left: 10px;
-    width: 75px;
-    height: 4px;
-    background-color: var(--vega-red);
-    border-radius: 3px;
+.tag-viaje_privado::after {
+  content: "";
+  position: relative;
+  left: 10px;
+  width: 75px;
+  height: 4px;
+  background-color: var(--vega-red);
+  border-radius: 3px;
 }
-.tag-viaje_privado::before{
-    content: '';
-    position: relative;
-    right: 10px;
-    width: 75px;
-    height: 4px;
-    background-color: var(--vega-red);
-    border-radius: 3px;
+.tag-viaje_privado::before {
+  content: "";
+  position: relative;
+  right: 10px;
+  width: 75px;
+  height: 4px;
+  background-color: var(--vega-red);
+  border-radius: 3px;
 }
 
 .tag-viaje_privado h4 {
-    color: var(--vega-red);
-    font-weight: 500;
+  color: var(--vega-red);
+  font-weight: 500;
 }
 
 /*=============== Viajes Privados tag  ===============*/
 
 /*=============== resort tag  ===============*/
 
-.tag-resort{
-    margin-top: 10px;
+.tag-resort {
+  margin-top: 10px;
 }
-.tag-resort::after{
-    content: '';
-    position: relative;
-    left: 10px;
-    width: 75px;
-    height: 4px;
-    background-color: var(--vega-light-blue);
-    border-radius: 3px;
+.tag-resort::after {
+  content: "";
+  position: relative;
+  left: 10px;
+  width: 75px;
+  height: 4px;
+  background-color: var(--vega-light-blue);
+  border-radius: 3px;
 }
-.tag-resort::before{
-    content: '';
-    position: relative;
-    right: 10px;
-    width: 75px;
-    height: 4px;
-    background-color: var(--vega-light-blue);
-    border-radius: 3px;
+.tag-resort::before {
+  content: "";
+  position: relative;
+  right: 10px;
+  width: 75px;
+  height: 4px;
+  background-color: var(--vega-light-blue);
+  border-radius: 3px;
 }
 
 .tag-resort h4 {
-    color: var(--vega-light-blue);
-    font-weight: 500;
+  color: var(--vega-light-blue);
+  font-weight: 500;
 }
 
 /*=============== resort tag  ===============*/
 
 /*=============== Aqui terminan todos los tag  ===============*/
 
-
-
 /* ============ Glass Morfismo =========== */
 
-.glass{
-    background: linear-gradient( to right bottom, rgb(255, 255, 255, 0.5), rgba(223, 223, 223, 0.2));
-    border: solid 2px rgba(255, 255, 255, 0.493);
-    backdrop-filter: blur(5px);
+.glass {
+  background: linear-gradient(
+    to right bottom,
+    rgb(255, 255, 255, 0.5),
+    rgba(223, 223, 223, 0.2)
+  );
+  border: solid 2px rgba(255, 255, 255, 0.493);
+  backdrop-filter: blur(5px);
 }
-
 
 /* ============ SCROLLBAR =========== */
 
- /* ::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     width: 10px;
     height: 10px;
     
@@ -367,117 +404,137 @@ p{
     background: rgba(250, 189, 6, 0.8);
   }  */
 
-  /* Style the button that is used to open and close the collapsible content */
+/* Style the button that is used to open and close the collapsible content */
 .collapsible {
-    background: none;
-    color: var(--vega-yellow);
-    cursor: pointer;
-    padding: 6px 14px;
-    border-color: var(--vega-yellow);
-    outline: none;
-    font-size: 15px;
-    border-radius: 50px;
-  }
+  background: none;
+  color: var(--vega-yellow);
+  cursor: pointer;
+  padding: 6px 14px;
+  border-color: var(--vega-yellow);
+  outline: none;
+  font-size: 15px;
+  border-radius: 50px;
+}
 
 /* =========== Iframe============ */
 
 iframe {
-    width: 100%;
-    height: 1300px;
-    /* margin-bottom: 88px; */
-    background-color: var(--very-dark-blue);
-    margin-top: 50px;
+  width: 100%;
+  height: 1300px;
+  /* margin-bottom: 88px; */
+  background-color: var(--very-dark-blue);
+  margin-top: 50px;
 }
 
-    @media only screen and (min-width: 400px) {
-
-        iframe{
-            height: 1204px;
-        }
-    }
-
-    @media only screen and (min-width: 447px) {
-
-        iframe{
-            height: 1165px;
-        }
-    }
-    
-    @media only screen and (min-width: 528px) {
-
-        iframe{
-            height: 1050px;
-        }
-    }
-
-  @media only screen and (min-width: 800px) {
-    iframe{
-        height: 725px;
-       margin-bottom: 0;
-       margin-top: 100px;
-      }
-    
-    
-}
-  @media only screen and (min-width: 1000px) {
-    iframe{
-        height: 550px;
-      }
-
-      .active_section{
-        display: none;
-    }
-    
-    
+@media only screen and (min-width: 400px) {
+  iframe {
+    height: 1204px;
+  }
 }
 
+@media only screen and (min-width: 447px) {
+  iframe {
+    height: 1165px;
+  }
+}
+
+@media only screen and (min-width: 528px) {
+  iframe {
+    height: 1050px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .social_icon i {
+    font-size: 26px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  iframe {
+    height: 725px;
+    margin-bottom: 0;
+    margin-top: 100px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .top_nav {
+    right: 30px;
+  }
+  .social_icon {
+    height: 60px;
+    width: 37px;
+    /* font-size: 22px; */
+    border-radius: 0 0 50px 50px;
+  }
+  .social_icon:hover {
+    height: 90px;
+  }
+  iframe {
+    height: 550px;
+  }
+
+  .active_section {
+    display: none;
+  }
+}
 
 /* =========== Iframe============ */
 
 /* =========== SCROLLDOWN============ */
-  .scrolldown {
-    animation-name: floating;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
+.scrolldown {
+  animation-name: floating;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes floating {
+  0% {
+    transform: translate(0, 0);
   }
-  @keyframes floating {
-    0% { transform: translate(0, 0); }
-    50%  { transform: translate(0, 15px); }
-    100%   { transform: translate(0, 0); }   
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
 
 /* =========== SCROLLRIGHT============ */
 
-  .scrolldown1 {
-    animation-name: floating1;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    
-  }
- 
-  @keyframes floating1 {
-    0% { transform: translate(0, 0); }
-    50%  { transform: translate(15px, 0); }
-    100%   { transform: translate(0, 0); }   
+.scrolldown1 {
+  animation-name: floating1;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 
+@keyframes floating1 {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(15px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
 
 /* ============= Etiqueta ViajeEnCurso============ */
 
 .viajeEnCurso::after {
-    content: "Viaje en Curso";
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: -591px;
-    width: 159px;
-    height: 26px;
-    background-color: var(--dark-blue);
-    font-size: 17px;
-    color: rgb(0, 128, 0);
-    border-radius: 20px;
-    margin-bottom: -30px;
+  content: "Viaje en Curso";
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -591px;
+  width: 159px;
+  height: 26px;
+  background-color: var(--dark-blue);
+  font-size: 17px;
+  color: rgb(0, 128, 0);
+  border-radius: 20px;
+  margin-bottom: -30px;
 }
