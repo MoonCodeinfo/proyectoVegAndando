@@ -45,14 +45,17 @@ main {
   top: -75px;
   left: -60px;
   width: 130px;
-  animation: spin 5s infinite;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 20s;
+  animation-name: spin;
 }
 @keyframes spin {
   0% {
     transform: rotate(0deg);
   }
-  100% {
-    transform: rotate(360deg);
+  to {
+    transform: rotate(1turn);
   }
 }
 #coco {
