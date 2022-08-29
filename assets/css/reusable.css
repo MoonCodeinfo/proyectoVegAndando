@@ -222,12 +222,15 @@ img {
 }
 
 .social_icon {
-  height: 27px;
-  width: 22px;
+  height: 52px;
+  width: 30px;
   font-size: 26px;
   border-radius: 0 0 50px 50px;
   align-items: flex-end;
   transition: 0.4s ease-in-out;
+}
+.social_icon:hover {
+  height: 90px;
 }
 .social_icon i {
   margin-bottom: 7px;
@@ -466,9 +469,6 @@ iframe {
     width: 37px;
     /* font-size: 22px; */
     border-radius: 0 0 50px 50px;
-  }
-  .social_icon:hover {
-    height: 90px;
   }
   iframe {
     height: 550px;
