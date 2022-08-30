@@ -57,8 +57,37 @@
     font-weight: 400;
 }
 
+.primary_info,
+.contact_go_info,
+.emergency_info,
+.covid_selections {
+    display: grid;
+    gap: 12px;
+    grid-auto-columns: 100%;
+    background-color: var(--dark-light-blue);
+    border-radius: 20px;
+    padding: 8px 4px;
+}
+
 @media only screen and (min-width: 450px) {
     .form {
-        padding: 25px 60px;
+        padding: 25px 15px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .form_container {
+        gap: 16px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .form {
+        width: 100%;
+        max-width: 95%;
+    }
+
+    .form .form_cta {
+        align-self: center;
+        width: 50%;
     }
 }
