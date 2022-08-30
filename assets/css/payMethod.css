@@ -1,32 +1,59 @@
-.title_pay_method {
-  font-size: 15px;
+
+
+
+
+.new_travel_title h2 {
+  font-size: 23px;
   font-weight: 100;
   margin-top: 10px;
-}
-.img_hero_paymethod {
-  margin-top: 40px;
-  max-width: 50%;
+  width: 50%;
 }
 
+/* .img_hero_paymethod {
+  margin-top: 40px;
+  max-width: 50%;
+} */
+.box_card_travel_section{
+  gap: 50px;
+}
 script p {
   color: var(--white);
 }
-.title_img img {
+/* 
+#zoid-paypal-buttons-uid_9da4422751_mde6mza6mza {
+  position: relative;
+  bottom: 52px;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  min-height: 25px;
+  min-width: 150px;
+  max-width: 750px;
+  font-size: 0;
+} */
+
+/* .title_img img {
   align-items: flex-start;
-}
-.img_flecha {
+} */
+/* .img_flecha {
   width: 39px;
-}
+} */
 
 /* Info pay card */
-.travel_contain_slider {
+/* .travel_contain_slider {
   justify-content: flex-end;
   gap: 20px;
+} */
+.travel_img_box{
+  width: 160px;
+  height: 160px;
+  overflow: hidden;
+  border-radius: 50%;
 }
-
-.img_viaje {
-  width: 60%;
-  border-radius: 18px;
+.img_viaje1 {
+  scale: 1.5;
+ max-width: 100%;
+ /*  border-radius: 50%; */
 }
 
 .travel_box {
@@ -71,6 +98,23 @@ script p {
   font-size: 14px;
   text-align: center;
 }
+.title_formas_de_pago{
+  height: 35px;
+}
+.title_formas_de_pago h3{
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.title_formas_de_pago::before{
+  content: '';
+  position: relative;
+  bottom: -51px;
+  left: 0;
+  width: 60%;
+  height: 2px;
+  background-color: var(--white);
+}
 
 .box_pay_descripton {
   /* width: 80%; */
@@ -88,6 +132,9 @@ script p {
 }
 .box_pay_info span {
   color: var(--dark-grey-text);
+}
+#smart-button-container{
+  margin-top: 80px;
 }
 
 .img_box_pay .img_hero {
@@ -119,17 +166,15 @@ script p {
   text-decoration: none;
 }
 
-.rating {
-  margin: 20px;
-  gap: 10px;
-}
+
 
 .box_pay_method {
-  width: 80%;
-  max-width: 400px;
-  background-color: var(--dark-light-blue);
-  border-top-right-radius: 30px;
-  border-bottom-left-radius: 30px;
+  gap: 40px;
+}
+.box_pay_method h3 {
+  color: var(--vega-yellow);
+  font-size: 20px;
+  font-weight: 900;
 }
 
 .information_paymethod {
@@ -137,6 +182,7 @@ script p {
   height: 90%;
   justify-content: space-evenly;
 }
+
 .information_paymethod h3 {
   font-size: 20px;
   font-weight: 600;
@@ -164,12 +210,23 @@ script p {
   background-color: var(--white);
   margin: 20px 0 20px 0;
 }
+
+
+
 .important {
-  height: 300px;
-  background-color: var(--very-dark-blue);
-  border-bottom-left-radius: 29px;
-  opacity: 0.8;
+  height: 200px;
+  background-color: var(--vega-cofee);
+  /* border-bottom-left-radius: 29px; */
+  /* opacity: 0.8; */
 }
+
+.img_frase_2 {
+  position: relative;
+  top: -85px;
+  margin-right: -80%;
+  right: 0;
+}
+
 .box_important_content {
   width: 90%;
 }
@@ -264,26 +321,23 @@ script p {
 .link_ws_infobox p {
   color: var(--vega-light-blue);
 }
+iframe{
+  margin-top: 0;
+}
 
-@media only screen and (min-width: 425px) {
-  .img_viaje {
+@media only screen and (min-width: 475px) {
+  /* .img_viaje {
     width: 70%;
-  }
+  } */
   .travel_box {
     max-width: 250px;
   }
+  .travel_description_price, .view_more_section, .view_more_content, .schedule_button {
+    margin-top: 45px;
+}
 }
 
 @media only screen and (min-width: 520px) {
-  .img_viaje {
-    width: 75%;
-  }
-
-  .box_pay_method {
-    /* width: 70%; */
-    /* height: 900px; */
-    /* margin: 50px 0 50px 0; */
-  }
 
   .information_paymethod {
     width: 90%;
@@ -318,12 +372,12 @@ script p {
     background-color: var(--white);
     margin: 20px 0 20px 0;
   }
-  .important {
+  /* .important {
     height: 300px;
     background-color: var(--very-dark-blue);
     border-bottom-left-radius: 29px;
     opacity: 0.8;
-  }
+  } */
   .box_important_content {
     width: 90%;
   }
@@ -361,13 +415,27 @@ script p {
 }
 
 @media only screen and (min-width: 768px) {
-  .box_pay_descripton {
-    flex-direction: row;
-    /* gap: 80px; */
+  .new_travel_title{
+    margin-bottom: 60px;
   }
-  .img_viaje {
-    width: 80%;
+  
+  .new_travel_title h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 10px;
+    width: 40%;
+   
   }
+ 
+  .information_paymethod{
+  width: 75%;
+  flex-direction: row;
+  /* justify-content: space-evenly; */
+ }
+
+.line_section{
+ transform: rotate(90deg);
+}
   .travel_box {
     max-height: 200px;
   }
@@ -386,13 +454,10 @@ script p {
 }
 
 @media only screen and (min-width: 1000px) {
-  .img_viaje {
+  .img_viaje1 {
     width: 90%;
   }
 
-  .box_pay_method {
-    /* width: 50%; */
-  }
 
   .info_box {
     width: 60%;
@@ -403,9 +468,9 @@ script p {
     gap: 20px;
   }
 
-  .img_viaje {
+/*   .img_viaje {
     height: 543px;
-  }
+  } */
 
   .travel_box {
     width: 253px;
@@ -419,9 +484,7 @@ script p {
 }
 
 @media only screen and (min-width: 1200px) {
-  .img_viaje {
-    height: 630px;
-  }
+  
 
   .travel_box {
     width: 282px;

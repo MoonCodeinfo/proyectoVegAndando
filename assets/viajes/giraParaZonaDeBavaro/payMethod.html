@@ -16,15 +16,14 @@
     <meta name="copyright" content="MooncoRD" />
     <link rel="stylesheet" href="/assets/css/reusable.css" />
     <link rel="stylesheet" href="/assets/css/menuMobile.css" />
+    <link rel="stylesheet" href="/assets/css/home.css" />
+    <link rel="stylesheet" href="/assets/css/infoViaje.css" />
     <link rel="stylesheet" href="/assets/css/politicaDePago.css" />
-    <link rel="stylesheet" href="/assets/css/payMethod.css" />
+    
     <link rel="stylesheet" href="/assets/css/cookie.css" />
     <link rel="stylesheet" href="/assets/css/formContact.css" />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="/assets/imagenes/png/Icono Logo VegAndando.png"
-    />
+    <link rel="stylesheet" href="/assets/css/payMethod.css" />
+    <link rel="icon" type="image/x-icon" href="/assets/imagenes/png/Icono Logo VegAndando.png"/>
     <link
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
       rel="stylesheet"
@@ -33,6 +32,8 @@
   </head>
   <body>
     <main class="width-aviable center_content flex_column">
+
+      <!-- ==== Top Nav ==== -->
       <section class="top_nav center_content">
         <div class="top_nav_social center_content">
           <a href="https://www.instagram.com/vegandandord/" target="_blank">
@@ -55,58 +56,165 @@
           </a>
         </div>
       </section>
-      <section
-        class="box_pay_descripton center_content flex_column width-aviable"
-      >
-      <div>
-        <div class="box_pay_info center_content flex_column">
-          <!-- <div class="title_img center_content width-aviable"> -->
-          <img
-            class="img_flecha"
-            src="/assets/imagenes/png/Icono Logo VegAndando.png"
-            alt=""
-          />
-          <h1>
-            Realiza tu pago y <br />
-            vamonos para Bávaro
-          </h1>
-          <!-- </div> -->
-          <span>Buggy familiar de 4 pasajeros</span>
-          <p>RD $3,200 p/p</p>
-          <span>Buggy de 2 pasajeros</span>
-          <p>RD $3,500 p/p</p>
-        </div>
-        <!-- ========= Viaje info & Como reservar ========= -->
-        <div class="pay_info">
+
+    <!-- ===== Title ===== -->
+    <section class="new_travel_title center_content width-aviable bottom50px top60px">
+      <img class="img_flecha" src="/assets/imagenes/png/Icono Logo VegAndando.png" alt=""/>
+      <h2 class="center_content">Realiza tu pago y vamonos para Bávaro</h2>
+
+    </section>
+   
+
+
+      <section class="box_pay_descripton center_content flex_column width-aviable">
+       
           <!-- ========= Viaje info ========= -->
-          <div
-            class="box_card_travel_section flex_column width-aviable center_content"
-          >
-            <div class="center_content">
-              <div class="travel_contain_slider center_content flex_column top15px">
-                <img
-                  class="img_viaje"
-                  src="/assets/viajes/giraParaZonaDeBavaro/img/recorrido-buggy.png"
-                  alt=""
-                />
-                <div class="travel_box flex_column center_content">
-                  <span>04 / 09 / 2022</span>
-                  <div class="title_travel_box center_content">
-                    <h2>Aventura en Buggy</h2>
-                    <p>RD$3,200</p>
-                  </div>
-                  <div
-                    class="paragraph_travel_box center_content flex_column width-aviable"
-                  >
+      <div class="box_card_travel_section flex_column width-aviable center_content">
+         <div class="travel_contain_slider center_content flex_column width-aviable bottom50px">
+            <div class="travel_img_box">
+                 <img class="img_viaje1" src="/assets/viajes/giraParaZonaDeBavaro/img/recorrido-buggy.png"
+                  alt=""/>
+            </div>
+      <div class="travel_description_price top45px center_content flex_column top25px">
+            <h3>Costo del viaje</h3>
+            <span>Buggy familiar de 4 pasajeros</span>
+            <p>RD $3,200 p/p</p>
+            <span>Buggy de 2 pasajeros</span>
+            <p>RD $3,500 p/p</p>
+          </div>
+        </div>
+
+        <div class="formas_de_pago width-aviable center_content flex_column">
+        <div class="title_formas_de_pago width-aviable center_content flex_column">
+          <h3>Formas de Pago</h3>
+        </div>
+            <div class="formas_de_pago_box width-aviable center_content flex_column">
+              
+            <!-- ============ Bottom paypal ========== -->
+        <div class="bottom_paypal">
+          <!-- ============ Box Pay Method paypal ========== -->
+        <div id="smart-button-container">
+          <div style="text-align: center">
+            <div id="paypal-button-container">
+              
+            </div>
+          </div>
+        </div>
+        <script
+          src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD"
+          data-sdk-integration-source="button-factory"
+        ></script>
+        <script> 
+          function initPayPalButton() {
+            paypal
+              .Buttons({
+                style: {
+                  shape: "pill",
+                  color: "gold",
+                  layout: "horizontal",
+                  label: "pay",
+                },
+
+                createOrder: function (data, actions) {
+                  return actions.order.create({
+                    purchase_units: [
+                      { amount: { currency_code: "USD", value: 1 } },
+                    ],
+                  });
+                },
+
+                onApprove: function (data, actions) {
+                  return actions.order
+                    .capture()
+                    .then(function (orderData) {
+                      // Full available details
+                      console.log(
+                        "Capture result",
+                        orderData,
+                        JSON.stringify(orderData, null, 2)
+                      );
+
+                      // Show a success message within this page, e.g.
+                      const element = document.getElementById(
+                        "paypal-button-container"
+                      );
+                      element.innerHTML = "";
+                      element.innerHTML =
+                        "<h3>Thank you for your payment!</h3>";
+
+                      // Or go to another URL:  actions.redirect('thank_you.html');
+                    });
+                },
+
+                onError: function (err) {
+                  console.log(err);
+                },
+              })
+              .render("#paypal-button-container");
+          }
+          initPayPalButton();
+        </script>
+        </div>
+        
+
+
+         <!-- ============ Pay Tranferemncia ========== -->
+        
+          
+          <div class="box_pay_method center_content flex_column width-aviable bottom15px top60px">
+            <h3>Pagos por Transferencia</h3>
+            <div class="information_paymethod center_content flex_column">
+              <div class="personal_contact center_content flex_column text_center" >
+                <p>
+                  A nombre de: <br />
+                  <span class="name_banck_account">Yenifer Vega</span>
+                </p>
+                <p></p>
+                <p class="banck_name">- BHD León</p>
+                <p class="banck_num">22800430014</p>
+                <div
+                  class="comprobante_pago center_content flex_column top15px"
+                >
+                  <a href="">
                     <p>
-                      Anímate a vivir la experiencia de este increíble y
-                      divertido recorrido, a través de los...
+                      Enviar comprobante de pago
+                      <i class="bx bxl-whatsapp"></i>
                     </p>
-                  </div>
+                  </a>
+                </div>
+              </div>
+              <span class="line_section"></span>
+              <div
+                class="personal_contact center_content flex_column text_center"
+              >
+                <p>
+                  A nombre de: <br />
+                  <span class="name_banck_account">Liz Franco Vega</span>
+                </p>
+                <p class="banck_name">- Popular</p>
+                <p class="banck_num">822970471</p>
+                <p class="banck_name">- Banreservas</p>
+                <p class="banck_num">9601606858</p>
+                <div
+                  class="comprobante_pago center_content flex_column top15px bottom15px"
+                >
+                  <a href="">
+                    <p>
+                      Enviar comprobante de pago
+                      <i class="bx bxl-whatsapp"></i>
+                    </p>
+                  </a>
                 </div>
               </div>
             </div>
-          </div>
+        </div>
+            </div>
+      
+      </div>
+
+          
+          
+        </div>
           <!-- ============ Como Reservar ========== -->
           <!-- <div class="reservar center_content flex_column text_center">
                 <h4>¿Como resevar?</h4>
@@ -116,136 +224,25 @@
                 <p class="text_center" style="width: 80%; margin-top: 10px; font-size: 12px;">El pago se puede realizar por transferencia o PayPal</p>
                 </p>
             </div> -->
-        </div>
-
-         <!-- ============ Pay ========== -->
-         <div class="pay center_content flex_column width-aviable">
-          <div class="center_content flex_column width-aviable">
-            <!-- ============ Box Pay Method ========== -->
-            <div id="smart-button-container">
-              <div style="text-align: center">
-                <div id="paypal-button-container"></div>
+            <div class="important center_content flex_column width-aviable top45px">
+              <div class="box_important_content center_content flex_column">
+                <h4>Importante</h4>
+                <p>
+                  En la nota de la transferencia debe colocar su nombre,
+                  apellido y cual es la excursión que esta reservando, luego
+                  enviar el comprobante de pago a uno de los siguientes
+                  números para validar el proceso.
+                </p>
               </div>
+              
             </div>
-            <script
-              src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD"
-              data-sdk-integration-source="button-factory"
-            ></script>
-            <script>
-              function initPayPalButton() {
-                paypal
-                  .Buttons({
-                    style: {
-                      shape: "pill",
-                      color: "gold",
-                      layout: "horizontal",
-                      label: "pay",
-                    },
+            <img class="img_frase_2" src="/assets/imagenes/svg+/chancletas.svg" alt=""/>
 
-                    createOrder: function (data, actions) {
-                      return actions.order.create({
-                        purchase_units: [
-                          { amount: { currency_code: "USD", value: 1 } },
-                        ],
-                      });
-                    },
-
-                    onApprove: function (data, actions) {
-                      return actions.order
-                        .capture()
-                        .then(function (orderData) {
-                          // Full available details
-                          console.log(
-                            "Capture result",
-                            orderData,
-                            JSON.stringify(orderData, null, 2)
-                          );
-
-                          // Show a success message within this page, e.g.
-                          const element = document.getElementById(
-                            "paypal-button-container"
-                          );
-                          element.innerHTML = "";
-                          element.innerHTML =
-                            "<h3>Thank you for your payment!</h3>";
-
-                          // Or go to another URL:  actions.redirect('thank_you.html');
-                        });
-                    },
-
-                    onError: function (err) {
-                      console.log(err);
-                    },
-                  })
-                  .render("#paypal-button-container");
-              }
-              initPayPalButton();
-            </script>
-
-            <div class="box_pay_method center_content flex_column">
-              <div class="information_paymethod center_content flex_column">
-                <h3>Pagos por Transferencia</h3>
-                <div
-                  class="personal_contact center_content flex_column text_center"
-                >
-                  <p>
-                    A nombre de: <br />
-                    <span class="name_banck_account">Yenifer Vega</span>
-                  </p>
-                  <p></p>
-                  <p class="banck_name">- BHD León</p>
-                  <p class="banck_num">22800430014</p>
-                  <div
-                    class="comprobante_pago center_content flex_column top15px"
-                  >
-                    <a href="">
-                      <p>
-                        Enviar comprobante de pago
-                        <i class="bx bxl-whatsapp"></i>
-                      </p>
-                    </a>
-                  </div>
-                </div>
-                <span class="line_section"></span>
-                <div
-                  class="personal_contact center_content flex_column text_center"
-                >
-                  <p>
-                    A nombre de: <br />
-                    <span class="name_banck_account">Liz Franco Vega</span>
-                  </p>
-                  <p class="banck_name">- Popular</p>
-                  <p class="banck_num">822970471</p>
-                  <p class="banck_name">- Banreservas</p>
-                  <p class="banck_num">9601606858</p>
-                  <div
-                    class="comprobante_pago center_content flex_column top15px bottom15px"
-                  >
-                    <a href="">
-                      <p>
-                        Enviar comprobante de pago
-                        <i class="bx bxl-whatsapp"></i>
-                      </p>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="important center_content flex_column width-aviable">
-                <div class="box_important_content center_content flex_column">
-                  <h4>Importante</h4>
-                  <p>
-                    En la nota de la transferencia debe colocar su nombre,
-                    apellido y cual es la excursión que esta reservando, luego
-                    enviar el comprobante de pago a uno de los siguientes
-                    números para validar el proceso.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      
       </section>
+
+
+      
 
 
 
