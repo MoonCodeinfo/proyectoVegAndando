@@ -97,6 +97,7 @@ main {
 .img_viaje {
   width: 90%;
   border-radius: 35px;
+  -webkit-border-radius: 35px;
 }
 
 .travel_box {
@@ -105,7 +106,9 @@ main {
   height: 266px;
   background-color: rgba(10, 25, 46, 0.78);
   border: solid 3px var(--white);
+  -webkit-border: solid 3px var(--white);
   border-radius: 30px;
+  -webkit-border-radius: 30px;
   margin-bottom: 25px;
 }
 .travel_box a {
@@ -177,6 +180,7 @@ main {
   width: 160px;
   height: 160px;
   border-radius: 16px;
+  -webkit-border-radius: 16px;
 }
 
 .last_card {
@@ -272,6 +276,7 @@ main {
   width: 70px;
   height: 70px;
   border: solid 3px var(--dark-little-grey);
+  -webkit-border: solid 3px var(--dark-little-grey);
   background-color: var(--dark-blue);
   flex-direction: column;
 }
@@ -281,10 +286,12 @@ main {
 
 .icon_1 {
   border-bottom-left-radius: 20px;
+  -webkit-border-bottom-left-radius: 20px;
 }
 
 .icon_3 {
   border-top-right-radius: 20px;
+  -webkit-border-top-right-radius: 20px;
 }
 
 .text_icon_home {
@@ -320,6 +327,7 @@ main {
   min-width: 160px;
   height: 230px;
   border-radius: 20px;
+  -webkit-border-radius: 20px;
   box-sizing: content-box;
   z-index: 10;
 }
@@ -330,6 +338,7 @@ main {
   width: 145px;
   margin: 7px 5px 14px 5px;
   border-radius: 13px;
+  -webkit-border-radius: 13px;
 }
 
 .circle_rate {
@@ -341,6 +350,7 @@ main {
   height: 170px;
   background-color: var(--vega-yellow);
   border-radius: 50%;
+  -webkit-border-radius: 50%;
 }
 
 .circle_rate::before {
@@ -352,6 +362,7 @@ main {
   height: 56px;
   background-color: var(--vega-yellow);
   border-radius: 50%;
+  -webkit-border-radius: 50%;
 }
 
 .circle_rate::after {
@@ -363,6 +374,7 @@ main {
   height: 130px;
   background-color: var(--vega-yellow);
   border-radius: 50%;
+  -webkit-border-radius: 50%;
 }
 
 /* ====== politica de calidad section ======  */
@@ -464,7 +476,9 @@ main {
 .circle_card {
   margin-bottom: 20px;
   border-radius: 50%;
+  -webkit-border-radius: 50%;
   border: solid 3px #fff;
+  -webkit-border: 3px #fff;
   width: 150px;
   height: 150px;
 }

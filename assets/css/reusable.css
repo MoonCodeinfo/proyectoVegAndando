@@ -180,6 +180,7 @@ p {
   width: 230px;
   height: 42px;
   border-radius: 50px;
+  -webkit-border-radius: 50px;
   outline: 3px solid var(--white);
 }
 
@@ -207,6 +208,7 @@ img {
   height: 45px;
   border: solid 3px var(--vega-yellow);
   border-radius: 45px;
+  -webkit-border-radius: 45px;
   margin-top: 20px;
 }
 
@@ -226,6 +228,7 @@ img {
   width: 30px;
   font-size: 26px;
   border-radius: 0 0 50px 50px;
+  -webkit-border-radius: 0 0 50px 50px;
   align-items: flex-end;
   transition: 0.4s ease-in-out;
 }
@@ -264,6 +267,7 @@ img {
   height: 4px;
   background-color: var(--vega-green);
   border-radius: 3px;
+  -webkit-border-radius: 3px;
 }
 .tag-viaje::before {
   content: "";
@@ -273,6 +277,7 @@ img {
   height: 4px;
   background-color: var(--vega-green);
   border-radius: 3px;
+  -webkit-border-radius: 3px;
 }
 
 .tag-viaje h4 {
@@ -295,6 +300,7 @@ img {
   height: 4px;
   background-color: var(--vega-yellow);
   border-radius: 3px;
+  -webkit-border-radius: 3px;
 }
 .tag_excurtion::before {
   content: "";
@@ -304,6 +310,7 @@ img {
   height: 4px;
   background-color: var(--vega-yellow);
   border-radius: 3px;
+  -webkit-border-radius: 3px;
 }
 
 .tag_excurtion h4 {
@@ -326,6 +333,7 @@ img {
   height: 4px;
   background-color: var(--vega-red);
   border-radius: 3px;
+  -webkit-border-radius: 3px;
 }
 .tag-viaje_privado::before {
   content: "";
@@ -335,6 +343,7 @@ img {
   height: 4px;
   background-color: var(--vega-red);
   border-radius: 3px;
+  -webkit-border-radius: 3px
 }
 
 .tag-viaje_privado h4 {
@@ -357,6 +366,7 @@ img {
   height: 4px;
   background-color: var(--vega-light-blue);
   border-radius: 3px;
+  -webkit-border-radius: 3px;
 }
 .tag-resort::before {
   content: "";
@@ -366,6 +376,7 @@ img {
   height: 4px;
   background-color: var(--vega-light-blue);
   border-radius: 3px;
+  -webkit-border-radius: 3px;
 }
 
 .tag-resort h4 {
@@ -386,6 +397,7 @@ img {
     rgba(223, 223, 223, 0.2)
   );
   border: solid 2px rgba(255, 255, 255, 0.493);
+  -webkit-border: solid 2px rgba(255, 255, 255, 0.493);
   backdrop-filter: blur(5px);
 }
 
@@ -414,9 +426,11 @@ img {
   cursor: pointer;
   padding: 6px 14px;
   border-color: var(--vega-yellow);
+  -webkit-border-color: var(--vega-yellow);
   outline: none;
   font-size: 15px;
   border-radius: 50px;
+  -webkit-border-radius: 50px;
 }
 
 /* =========== Iframe============ */
@@ -469,6 +483,7 @@ iframe {
     width: 37px;
     /* font-size: 22px; */
     border-radius: 0 0 50px 50px;
+    -webkit-border-radius: 0 0 50px 50px;
   }
   iframe {
     height: 550px;
@@ -536,5 +551,6 @@ iframe {
   font-size: 17px;
   color: rgb(0, 128, 0);
   border-radius: 20px;
+  -webkit-border-radius: 20px;
   margin-bottom: -30px;
 }
