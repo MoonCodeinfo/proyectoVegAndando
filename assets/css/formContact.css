@@ -1,93 +1,97 @@
 .form {
-    background-color: var(--very-dark-blue);
-    width: 80%;
-    max-width: 350px;
-    border-radius: 20px;
-    padding: 16px 16px;
+  background-color: var(--very-dark-blue);
+  width: 80%;
+  max-width: 350px;
+  border-radius: 20px;
+  padding: 16px 16px;
 }
 .form h3 {
-    font-size: 18px;
-    font-weight: 400;
+  font-size: 18px;
+  font-weight: 400;
 }
 .form_container {
-    display: grid;
-    gap: 12px;
-    grid-auto-columns: 100%;
+  display: grid;
+  gap: 12px;
+  grid-auto-columns: 100%;
 }
 .form_title {
-    text-align: center;
-    font-size: 22px;
+  text-align: center;
+  font-size: 22px;
 }
 .form_input {
-    font-size: 13.5px;
-    padding: 9px 16px;
-    outline: none;
-    border: none;
-    border: 2px solid var(--dark-light-blue);
-    border-radius: 16px;
+  font-size: 13.5px;
+  padding: 9px 16px;
+  outline: none;
+  border: none;
+  border: 2px solid var(--dark-light-blue);
+  border-radius: 16px;
 }
 .form_input--message {
-    resize: none;
-    padding: 28px 16px;
+  resize: none;
+  padding: 28px 16px;
 }
 .form_container label {
-    color: var(--white);
-    font-weight: 300;
+  color: var(--white);
+  font-weight: 300;
 }
 .form_container label span {
-    font-size: 14px;
-    font-weight: 500;
-    color: var(--light-grey);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--light-grey);
 }
 .selections input {
-    margin-top: 12px;
+  margin-top: 12px;
 }
 .selections_health label {
-    margin-right: 15px;
+  margin-right: 15px;
 }
 .form_cta {
-    font-size: 16px;
-    background-color: var(--vega-yellow);
-    color: var(--white);
-    border: none;
-    font-weight: 300;
-    padding: 11px 0;
-    border-radius: 16px;
-    cursor: pointer;
-    font-weight: 400;
+  font-size: 16px;
+  background-color: var(--vega-yellow);
+  color: var(--white);
+  border: none;
+  font-weight: 300;
+  padding: 11px 0;
+  border-radius: 16px;
+  cursor: pointer;
+  font-weight: 400;
 }
 
 .primary_info,
 .contact_go_info,
 .emergency_info,
 .covid_selections {
-    display: grid;
-    gap: 12px;
-    grid-auto-columns: 100%;
-    background-color: var(--dark-light-blue);
-    border-radius: 20px;
-    padding: 8px 4px;
+  display: grid;
+  gap: 12px;
+  grid-auto-columns: 100%;
+  /* background-color: var(--dark-light-blue); */
+  border-radius: 20px;
+  padding: 16px 16px;
 }
+.v-line {
+    outline: 4px solid var(--dark-blue);
+   }
 
 @media only screen and (min-width: 450px) {
-    .form {
-        padding: 25px 15px;
-    }
+  .form {
+    padding: 25px 15px;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
-    .form_container {
-        gap: 16px;
-        grid-template-columns: repeat(4, 1fr);
-    }
+  .form_container {
+    gap: 16px;
+    grid-template-columns: repeat(4, 1fr);
+  }
 
-    .form {
-        width: 100%;
-        max-width: 95%;
-    }
+  .form {
+    width: 100%;
+    max-width: 95%;
+  }
 
-    .form .form_cta {
-        align-self: center;
-        width: 50%;
-    }
+  .form .form_cta {
+    align-self: center;
+    width: 30%;
+  }
+  
 }
