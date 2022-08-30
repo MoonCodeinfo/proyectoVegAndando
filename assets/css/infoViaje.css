@@ -86,27 +86,8 @@
 }
 
 /* ============= Price Section ============= */
-.travel_description_price {
-    gap: 10px;
-}
-.travel_description_price h3 {
-    color: var(--white);
-    font-size: 16px;
-    font-weight: 100;
-}
- .travel_description_price p {
-    color: var(--vega-yellow);
-    font-size: 32px;
-    font-weight: 500;
-}
-.link_politics {
-    margin-top: 0;
-}
-.travel_description_price span {
-    width: 70%;
-    text-align: center;
-    color: var(--dark-grey-text);
-}
+/* Los estilos de esta section estan en  */
+/* ============= Price Section ============= */
 
 /* ============= Rutas de Salida ============= */
 .go_routes_content {

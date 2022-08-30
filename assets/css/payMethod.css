@@ -1,49 +1,16 @@
-
-
-
-
 .new_travel_title h2 {
   font-size: 23px;
   font-weight: 100;
-  margin-top: 10px;
-  width: 50%;
+  width: 80%;
 }
 
-/* .img_hero_paymethod {
-  margin-top: 40px;
-  max-width: 50%;
-} */
 .box_card_travel_section{
   gap: 50px;
 }
 script p {
   color: var(--white);
 }
-/* 
-#zoid-paypal-buttons-uid_9da4422751_mde6mza6mza {
-  position: relative;
-  bottom: 52px;
-  left: 0;
-  display: inline-block;
-  width: 100%;
-  min-height: 25px;
-  min-width: 150px;
-  max-width: 750px;
-  font-size: 0;
-} */
 
-/* .title_img img {
-  align-items: flex-start;
-} */
-/* .img_flecha {
-  width: 39px;
-} */
-
-/* Info pay card */
-/* .travel_contain_slider {
-  justify-content: flex-end;
-  gap: 20px;
-} */
 .travel_img_box{
   width: 160px;
   height: 160px;
@@ -422,9 +389,7 @@ iframe{
   .new_travel_title h2 {
     font-size: 30px;
     font-weight: 700;
-    margin-top: 10px;
     width: 40%;
-   
   }
  
   .information_paymethod{
@@ -464,6 +429,7 @@ iframe{
   }
 
   .box_card_travel_section {
+    max-width: 80%;
     flex-direction: row;
     gap: 20px;
   }

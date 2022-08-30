@@ -76,7 +76,7 @@ p {
   margin-top: 15px;
 }
 .top25px {
-  margin-top: 15px;
+  margin-top: 25px;
 }
 .top45px {
   margin-top: 45px;
@@ -343,7 +343,7 @@ img {
   height: 4px;
   background-color: var(--vega-red);
   border-radius: 3px;
-  -webkit-border-radius: 3px
+  -webkit-border-radius: 3px;
 }
 
 .tag-viaje_privado h4 {
@@ -387,6 +387,34 @@ img {
 /*=============== resort tag  ===============*/
 
 /*=============== Aqui terminan todos los tag  ===============*/
+
+.new_travel_title img {
+  width: 39px;
+}
+
+/* ============= Price Section ============= */
+.travel_description_price {
+  gap: 10px;
+}
+.travel_description_price h3 {
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 100;
+}
+.travel_description_price p {
+  color: var(--vega-yellow);
+  font-size: 32px;
+  font-weight: 500;
+}
+.link_politics {
+  margin-top: 0;
+}
+.travel_description_price span {
+  width: 70%;
+  text-align: center;
+  color: var(--dark-grey-text);
+}
+/* ============= Price Section ============= */
 
 /* ============ Glass Morfismo =========== */
 
@@ -491,6 +519,12 @@ iframe {
 
   .active_section {
     display: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .travel_description_price h3 {
+    font-size: 24px;
   }
 }
 
