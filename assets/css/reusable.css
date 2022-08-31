@@ -217,6 +217,7 @@ img {
   width: 90%;
   justify-content: flex-end;
   height: 28px;
+  z-index: 50;
 }
 
 .top_nav_social {
