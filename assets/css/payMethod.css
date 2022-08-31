@@ -382,6 +382,11 @@ iframe{
 }
 
 @media only screen and (min-width: 768px) {
+  .travel_description_price p {
+    color: var(--vega-yellow);
+    font-size: 25px;
+    font-weight: 500;
+}
   .new_travel_title{
     margin-bottom: 60px;
   }
@@ -419,9 +424,20 @@ iframe{
 }
 
 @media only screen and (min-width: 1000px) {
+  .personal_contact{
+    width: 560px;
+  }
+  .formas_de_pago{
+    max-width: 578px;
+  }
   .img_viaje1 {
     width: 90%;
   }
+  .information_paymethod {
+    width: 53%;
+    flex-direction: row;
+    /* justify-content: space-evenly; */
+}
 
 
   .info_box {
@@ -429,7 +445,7 @@ iframe{
   }
 
   .box_card_travel_section {
-    max-width: 80%;
+    max-width: 88%;
     flex-direction: row;
     gap: 20px;
   }
@@ -447,6 +463,14 @@ iframe{
   .title_travel_box {
     margin-bottom: 4px;
   }
+  .travel_contain_box{
+    padding: 40px;
+    border: solid 3px var(--white);
+    border-radius: 30px;
+  }
+  .name_banck_account {
+    font-size: 27px;
+}
 }
 
 @media only screen and (min-width: 1200px) {
