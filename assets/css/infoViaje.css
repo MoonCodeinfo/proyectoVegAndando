@@ -9,14 +9,16 @@
 
 /* ============= Hero Image ============= */
 .hero_image {
-    width: 50%;
+    max-width: 360px;
    /*  height: 85vh; */
+  
 }
 .hero_image img {
     border-radius: 25px;
     margin-top: 15px;
     width: 90%;
-    /* height: 100%; */
+    height: 600px;
+    margin-bottom: 10px;
 }
 
 /* ============= Title Viaje ============= */
@@ -509,8 +511,5 @@ font-size: 26px;
 }
 
 @media only screen and (min-width: 1200px) {
-    .hero_image img {
-        max-width: 50%;
-        /* height: 100%; */
-    }
+   
 }
