@@ -253,8 +253,7 @@ main {
 
 .title_icon_section h2 {
   font-weight: 400;
-  font-size: 20px;
-  margin-bottom: 40px;
+  font-size: 24px;
 }
 
 .title_icon_section::before {
@@ -264,6 +263,14 @@ main {
   width: 70%;
   height: 2px;
   background-color: var(--dark-little-grey);
+}
+
+.info_section {
+  margin-bottom: 40px;
+  gap: 12px;
+}
+.info_section i {
+  font-size: 22px;
 }
 
 .icon_contain {
