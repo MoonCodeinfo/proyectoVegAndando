@@ -1,224 +1,201 @@
 .heading h1 {
-    font-weight: 800;
+  font-weight: 800;
 }
 
- .img_hero_acercade{
-    width: 60%;
-    border-radius: 25px;
-    border: solid 3px rgba(255, 255, 255, 0.747);
-   /* box-shadow:
+.img_hero_acercade {
+  width: 60%;
+  border-radius: 25px;
+  border: solid 3px rgba(255, 255, 255, 0.747);
+  /* box-shadow:
    0 0 0 5px var(--vega-yellow), 0 0 0 10px rgba(255, 255, 255, 0.623); */
- }
+}
 
- .img_2{
-    display: none;
- }
+.img_2 {
+  display: none;
+}
 
 /* =========== CEO PROFILE ============ */
 .ceo_profile_contain {
-    width: 90%;
-    /* margin: 80px 0 50px 0; */
-    gap: 15px;
-   text-align: justify;
+  width: 90%;
+  /* margin: 80px 0 50px 0; */
+  gap: 15px;
 }
 
-.ceo_img img{
-    width: 190px;
-    box-shadow: 0 0 0 10px var(--dark-blue), 0 0 0 15px var(--vega-yellow);
-    /* clip-path: circle(40%); */
-    border-radius: 50%;
-    margin-bottom: 25px;
+.ceo_img img {
+  width: 190px;
+  box-shadow: 0 0 0 10px var(--dark-blue), 0 0 0 15px var(--vega-yellow);
+  /* clip-path: circle(40%); */
+  border-radius: 50%;
+  margin-bottom: 25px;
 }
 
 .profile_text {
-    gap: 15px;
+  gap: 15px;
 }
-.profile_text p{
-    font-size: 20px;
-    text-align: justify;
-    font-weight: 200;
+.profile_text p {
+  font-size: 20px;
+  font-weight: 200;
 }
 
 .ceo_profile_contain span {
-    color: var(--dark-grey-text);
+  color: var(--dark-grey-text);
 }
 
 .hobbies {
-    gap: 15px;
-    padding: 8px 0;
-    background: var(--dark-light-blue);
-    border-radius: 10px 0 10px 0;
+  gap: 15px;
+  padding: 8px 0;
+  background: var(--dark-light-blue);
+  border-radius: 10px 0 10px 0;
 }
 
 /* =========== NUESTRA HISTORIA ============ */
 .story {
-    width: 90%;
-    gap: 15px;
+  width: 90%;
+  gap: 15px;
 }
 .story_text {
-    width: 80%;
-    gap: 5px;
-    text-align: justify;
+  width: 80%;
+  gap: 5px;
+  text-align: justify;
 }
-.new_travel_title{
-    margin-bottom: 25px;
+.new_travel_title {
+  margin-bottom: 25px;
 }
-
 
 /* =========== Mision, Vision, Valores ============ */
-.empresa_contain{
-    text-align: center;
-    width: 80%;
-    gap: 85px;
-    margin: 38px 0 50px 0;
+.empresa_contain {
+  text-align: center;
+  width: 80%;
+  gap: 85px;
+  margin: 38px 0 50px 0;
 }
 
-.icontext_section img{
- margin-bottom: 25px;
- width: 80px;
+.icontext_section img {
+  margin-bottom: 25px;
+  width: 80px;
 }
 
-.icontext_section h2{
-    margin-bottom: 15px;
+.icontext_section h2 {
+  margin-bottom: 15px;
 }
 
-.icontext_section p{
-    font-size: 20px;
-    text-align: justify;
-    width: 90%;
+.icontext_section p {
+  font-size: 20px;
+  text-align: justify;
+  width: 90%;
 }
 
-.txt_cntr p{
-    text-align: center;
+.txt_cntr p {
+  text-align: center;
 }
-
 
 /* =========== CEO PROFILE ============ */
 .ceo_profile_contain {
-    width: 90%;
+  width: 90%;
 }
 
-.ceo_img img{
-    width: 190px;
-    box-shadow: 0 0 0 10px var(--dark-blue), 0 0 0 15px var(--vega-yellow);
-    /* clip-path: circle(40%); */
-    border-radius: 50%;
-    margin-bottom: 25px;
+.ceo_img img {
+  width: 190px;
+  box-shadow: 0 0 0 10px var(--dark-blue), 0 0 0 15px var(--vega-yellow);
+  /* clip-path: circle(40%); */
+  border-radius: 50%;
+  margin-bottom: 25px;
 }
-.ceo_profile_boxcard{
-   gap: 100px;
-}
-
-.profile_text {
-    gap: 15px;
-}
-
-.profile_text p{
-    font-size: 20px;
-    text-align: justify;
-    font-weight: 200;
+.ceo_profile_boxcard {
+  gap: 100px;
 }
 
 .ceo_profile_contain span {
-    color: var(--dark-grey-text);
+  color: var(--dark-grey-text);
 }
 
 .hobbies {
-    gap: 15px;
-    padding: 8px 0;
-    background: var(--dark-light-blue);
-    border-radius: 10px 0 10px 0;
+  gap: 15px;
+  padding: 8px 0;
+  background: var(--dark-light-blue);
+  border-radius: 10px 0 10px 0;
 }
-
 
 @media only screen and (min-width: 375px) {
-
-    
 }
 @media only screen and (min-width: 500px) {
-
-    .active_section{
-        display: none;
-    }
-    .img_2{
-        display: block;
-    }
-    
+  .active_section {
+    display: none;
+  }
+  .img_2 {
+    display: block;
+  }
 }
 @media only screen and (min-width: 1000px) {
+  .our_branding_box h2 {
+    font-size: 31px;
+  }
 
-    .our_branding_box h2 {
-        font-size: 31px;
-    }
+  .text_our_branding p {
+    font-size: 23px;
+  }
 
-    .text_our_branding p {
-        font-size: 23px;
-    }
+  .text_our_branding p:nth-child(2) {
+    width: 90%;
+    font-size: 22px;
+  }
+  .colors_desription img:nth-child(1) {
+    width: 100%;
+  }
+  .colors_desription img:nth-child(2) {
+    width: 132%;
+  }
 
-    .text_our_branding p:nth-child(2) {
-        width: 90%;
-        font-size: 22px;
-    }
-    .colors_desription img:nth-child(1) {
-        width: 100%;
-    }
-    .colors_desription img:nth-child(2) {
-        width: 132%;
-    }
+  /* =============================== */
+  .title_story {
+    width: 38%;
+    margin-bottom: 0px;
+  }
+  .story_box {
+    flex-direction: row-reverse;
+  }
 
+  .story_box h2 {
+    font-size: 35px;
+    width: 68%;
+    text-align: center;
+  }
+  .story_text {
+    font-size: 22px;
+    width: 80%;
+    gap: 5px;
+    text-align: left;
+    font-weight: 300;
+  }
 
-    /* =============================== */
-    .title_story{
-        width: 38%;
-        margin-bottom: 0px;
-    }
-    .story_box{
-        flex-direction: row-reverse;
-    }
-    
-    .story_box h2{
-        font-size: 35px;
-        width: 68%;
-        text-align: center;
-    }
-    .story_text {
-        font-size: 22px;
-        width: 80%;
-        gap: 5px;
-        text-align: left;
-        font-weight: 300;
-    }
+  /* =============================== */
+  .ceo_profile_contain {
+    margin-top: 60px;
+  }
 
-/* =============================== */
-    .ceo_profile_contain{
-        margin-top: 60px;
-    }
-    
-    .ceo_profile_contain h2{
-        font-size: 32px;
-    }
+  .ceo_profile_contain h2 {
+    font-size: 32px;
+  }
 
-    .ceo_profile_contain h3{
-        font-size: 26px;
-    }
+  .ceo_profile_contain h3 {
+    font-size: 26px;
+  }
 
-    .ceo_profile_boxcard {
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
+  .ceo_profile_boxcard {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 
-    .ceo_profile_card {
-     max-width: 450px;
-    }
+  .ceo_profile_card {
+    max-width: 450px;
+  }
 
-    /* =============================== */
+  /* =============================== */
 
-    .empresa_contain{
-        flex-direction: row;
-    }
-    .icontext_section p {
-        text-align: center;
-
-    }
-    
+  .empresa_contain {
+    flex-direction: row;
+  }
+  .icontext_section p {
+    text-align: center;
+  }
 }
