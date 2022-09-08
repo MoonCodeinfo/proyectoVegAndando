@@ -1,0 +1,2 @@
+document.write("<h3 class='important-note'>Nota: Es de vital importancia completar el formulario del viaje que está al final de esta página.<h3/>")
+document.write("<a href='#form'><img class='scrolldown' src='/assets/imagenes/svg+/downarrow.svg' /></a>")

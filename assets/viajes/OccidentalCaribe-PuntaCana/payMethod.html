@@ -16,7 +16,7 @@
     <meta name="copyright" content="MooncoRD" />
     <link rel="stylesheet" href="/assets/css/reusable.css" />
     <link rel="stylesheet" href="/assets/css/menuMobile.css" />
-    <link rel="stylesheet" href="/assets/css/politicaDePago.css" />
+    <link rel="stylesheet" href="/assets/css/politicadepago.css" />
     <link rel="stylesheet" href="/assets/css/cookie.css" />
     <link rel="stylesheet" href="/assets/css/formContact.css" />
     <link rel="stylesheet" href="/assets/css/payMethod.css" />
@@ -79,16 +79,17 @@
           <div
             class="travel_contain_slider center_content flex_column width-aviable bottom50px"
           >
-            <div class="travel_img_box">
-              <img
-                class="img_viaje1"
-                src="/assets/viajes/OccidentalCaribe-PuntaCana//img/OccidentalCaribe-PuntaCana (1).png"
-                alt=""
-              />
-            </div>
-            <div
-              class="travel_description_price top45px center_content flex_column top25px"
-            >
+            <div class="travel_contain_box center_content flex_column">
+              <div class="travel_img_box">
+                <img
+                  class="img_viaje1"
+                  src="/assets/viajes/OccidentalCaribe-PuntaCana/img/OccidentalCaribe-PuntaCana (1).png"
+                  alt=""
+                />
+              </div>
+              <div
+                class="travel_description_price top45px center_content flex_column top25px"
+              >
               <h3>Costo del viaje</h3>
               <span>Habitaciones dobles</span>
               <p>RD $11,000 p/p</p>
@@ -96,80 +97,67 @@
               <p>RD $10,500 p/p</p>
               <span>RD $6,000 niños de 2 a 12 años</span>
               <span>Segundo nino gratis</span>
+              </div>
             </div>
+            <script src="/assets/js/components/Nota.js"></script>
           </div>
 
-          <div class="formas_de_pago width-aviable center_content flex_column">
+          <div class="formas_de_pago center_content flex_column">
             <div
               class="title_formas_de_pago width-aviable center_content flex_column"
             >
               <h3>Formas de Pago</h3>
             </div>
-            <div
-              class="formas_de_pago_box width-aviable center_content flex_column"
-            >
+            <div class="formas_de_pago_box center_content flex_column">
               <!-- ============ Bottom paypal ========== -->
               <div class="bottom_paypal">
                 <!-- ============ Box Pay Method paypal ========== -->
                 <div id="smart-button-container">
-                  <div style="text-align: center">
+                  <div style="text-align: center;">
                     <div id="paypal-button-container"></div>
                   </div>
                 </div>
-                <script
-                  src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD"
-                  data-sdk-integration-source="button-factory"
-                ></script>
-                <script>
-                  function initPayPalButton() {
-                    paypal
-                      .Buttons({
-                        style: {
-                          shape: "pill",
-                          color: "gold",
-                          layout: "horizontal",
-                          label: "pay",
-                        },
-
-                        createOrder: function (data, actions) {
-                          return actions.order.create({
-                            purchase_units: [
-                              { amount: { currency_code: "USD", value: 1 } },
-                            ],
-                          });
-                        },
-
-                        onApprove: function (data, actions) {
-                          return actions.order
-                            .capture()
-                            .then(function (orderData) {
-                              // Full available details
-                              console.log(
-                                "Capture result",
-                                orderData,
-                                JSON.stringify(orderData, null, 2)
-                              );
-
-                              // Show a success message within this page, e.g.
-                              const element = document.getElementById(
-                                "paypal-button-container"
-                              );
-                              element.innerHTML = "";
-                              element.innerHTML =
-                                "<h3>Thank you for your payment!</h3>";
-
-                              // Or go to another URL:  actions.redirect('thank_you.html');
-                            });
-                        },
-
-                        onError: function (err) {
-                          console.log(err);
-                        },
-                      })
-                      .render("#paypal-button-container");
-                  }
-                  initPayPalButton();
-                </script>
+              <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
+              <script>
+                function initPayPalButton() {
+                  paypal.Buttons({
+                    style: {
+                      shape: 'pill',
+                      color: 'gold',
+                      layout: 'horizontal',
+                      label: 'paypal',
+                      
+                    },
+            
+                    createOrder: function(data, actions) {
+                      return actions.order.create({
+                        purchase_units: [{"description":"Balneario La Plaza","amount":{"currency_code":"USD","value":55}}]
+                      });
+                    },
+            
+                    onApprove: function(data, actions) {
+                      return actions.order.capture().then(function(orderData) {
+                        
+                        // Full available details
+                        console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+            
+                        // Show a success message within this page, e.g.
+                        const element = document.getElementById('paypal-button-container');
+                        element.innerHTML = '';
+                        element.innerHTML = '<h3>Thank you for your payment!</h3>';
+            
+                        // Or go to another URL:  actions.redirect('thank_you.html');
+                        
+                      });
+                    },
+            
+                    onError: function(err) {
+                      console.log(err);
+                    }
+                  }).render('#paypal-button-container');
+                }
+                initPayPalButton();
+              </script>
               </div>
 
               <!-- ============ Pay Tranferemncia ========== -->
@@ -260,6 +248,7 @@
         class="form center_content flex_column"
         action="https://formspree.io/f/xwkzkywo"
         method="POST"
+        id="form"
       >
         <h2 class="form_title bottom10px">Completa la información</h2>
         <div class="form_container width-aviable">
