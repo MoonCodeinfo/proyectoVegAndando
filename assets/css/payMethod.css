@@ -471,12 +471,20 @@ iframe{
   .name_banck_account {
     font-size: 27px;
 }
-.banck_num {
-  font-size: 24px;
-}
-.banck_name {
-  font-size: 19px; 
-}
+    .banck_num {
+      font-size: 24px;
+    }
+    .banck_name {
+      font-size: 19px; 
+    }
+
+    .travel_contain_slider{
+      width: 80%;
+    }
+
+    .formas_de_pago_box {
+      max-width: 125%;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
