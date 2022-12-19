@@ -84,7 +84,7 @@ script p {
 .title_formas_de_pago::before{
   content: '';
   position: relative;
-  bottom: -51px;
+  bottom: -145px;
   left: 0;
   width: 60%;
   height: 2px;

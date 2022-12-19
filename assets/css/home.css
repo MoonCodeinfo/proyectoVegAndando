@@ -118,12 +118,12 @@ main {
 }
 
 .travel_box span {
-  /* position: relative; */
+  text-align: center;
+  max-width: 150px;
+  margin-top: 8px;
   color: var(--white);
   font-size: 16px;
-  opacity: 0.5;
-  /* top: -70px; */
-  /* left: 90px; */
+  /*opacity: 0.5;*/
 }
 
 .travel_box h4 {
