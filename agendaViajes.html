@@ -1,249 +1,411 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Agenda de Viajes | VegAndando"/>
-    <meta name="description" content="Te acompañamos a explorar los rincones mas bellos de la República Dominicana para vivir las mejores experiencias."/>
-    <meta property="og:description" content="Te acompañamos a explorar los rincones mas bellos de la República Dominicana para vivir las mejores experiencias."/>
-    <meta name="image" property="og:image" content="./assets/imagenes/ogimg.jpg">
-    <meta property="og:image:width" content="1200"/>
-    <meta property="og:image:height" content="630"/>
-    <meta name="author" content="MooncoRD"/>
-    <meta name="copyright" content="MooncoRD"/>
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="./assets/css/reusable.css">
-    <link rel="stylesheet" href="./assets/css/menuMobile.css">
-    <link rel="stylesheet" href="./assets/css/home.css">
-    <link rel="stylesheet" href="./assets/css/agendaViajes.css">
-    <link rel="stylesheet" href="./assets/css/cookie.css">
-    <link rel="icon" type="image/x-icon" href="./assets/imagenes/png/Icono Logo VegAndando.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Agenda de Viajes | VegAndando" />
+    <meta
+      name="description"
+      content="Te acompañamos a explorar los rincones mas bellos de la República Dominicana para vivir las mejores experiencias."
+    />
+    <meta
+      property="og:description"
+      content="Te acompañamos a explorar los rincones mas bellos de la República Dominicana para vivir las mejores experiencias."
+    />
+    <meta
+      name="image"
+      property="og:image"
+      content="./assets/imagenes/ogimg.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="author" content="MooncoRD" />
+    <meta name="copyright" content="MooncoRD" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/reusable.css" />
+    <link rel="stylesheet" href="./assets/css/menuMobile.css" />
+    <link rel="stylesheet" href="./assets/css/home.css" />
+    <link rel="stylesheet" href="./assets/css/agendaViajes.css" />
+    <link rel="stylesheet" href="./assets/css/cookie.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/imagenes/png/Icono Logo VegAndando.png"
+    />
     <title>Agenda de Viajes | VegAndando</title>
-</head>
-<body>
+  </head>
+  <body>
     <main class="center_content width-aviable flex_column">
-        <section class="top_nav center_content">
-            <div class="top_nav_social center_content">
-              <a href="https://www.instagram.com/vegandandord/" target="_blank">
-                <div class="social_icon center_content social_icon_instagram">
-                  <i class="bx bxl-instagram instagram"></i>
-                </div>
-              </a>
-              <a
-                href="https://api.whatsapp.com/send?phone=18294544509&text=Hola%20%F0%9F%99%8C%20quiero%20mas%20informaci%C3%B3n%20sobre%20sus%20excursiones"
-                target="_blank"
-              >
-                <div class="social_icon center_content social_icon_whatsapp">
-                  <i class="bx bxl-whatsapp whatsapp"></i>
-                </div>
-              </a>
-              <a href="mailto:info@vegandando.com" target="_blank">
-                <div class="social_icon center_content social_icon_envelope">
-                  <i class="bx bx-envelope envelope"></i>
-                </div>
-              </a>
+      <section class="top_nav center_content">
+        <div class="top_nav_social center_content">
+          <a href="https://www.instagram.com/vegandandord/" target="_blank">
+            <div class="social_icon center_content social_icon_instagram">
+              <i class="bx bxl-instagram instagram"></i>
             </div>
-          </section>
-        <!-- ============ Travel contain slider ============ -->
-        <section class="new_travel_contain center_content top30px width-aviable flex_column">
-            <div class="new_travel_title center_content width-aviable">
-                <img class="img_flecha" src="./assets/imagenes/png/Icono Logo VegAndando.png" alt=""><h2 class="center_content">Viajes Disponibles</h2>
+          </a>
+          <a
+            href="https://api.whatsapp.com/send?phone=18294544509&text=Hola%20%F0%9F%99%8C%20quiero%20mas%20informaci%C3%B3n%20sobre%20sus%20excursiones"
+            target="_blank"
+          >
+            <div class="social_icon center_content social_icon_whatsapp">
+              <i class="bx bxl-whatsapp whatsapp"></i>
             </div>
-            <!-- ============ Primer Grupo ============ -->
-            <div class="box_card_travel_section flex_column width-aviable top30px center_content">
-                <!-- ========= Travel box ========= -->
-                <div class="new_travel_section center_content top30px">
-                    <div class="travel_contain_slider center_content flex_column">
-                    <img
-                        class="img_viaje"
-                        src="./assets/viajes/moca/img/rio-jamao-1.png"
-                        alt=""
-                    />
-                    <div class="travel_box flex_column center_content">
-                        <span style="color:#DF4949">POSPUESTO POR LLUVIA HASTA NUEVO AVISO</span>
-                        <div class="title_travel_box center_content width-aviable">
-                        <h2>Camping en Jamao + City tours Moca</h2>
-                        <p>RD$5,500</p>
-                        </div>
-                        <div
-                        class="paragraph_travel_box center_content flex_column width-aviable"
-                        >
-                        <p>
-                            Acompáñanos a vivir la experiencia de acampar con vista al hermoso y refrescante río Jamao ...
-                        </p>
-                        </div>
-                        <a
-                        class="link_politics center_content"
-                        href="./assets/viajes/moca/index.html"
-                        >Visitar Viaje</a
-                        >
-                    </div>
-                    </div>
+          </a>
+          <a href="mailto:info@vegandando.com" target="_blank">
+            <div class="social_icon center_content social_icon_envelope">
+              <i class="bx bx-envelope envelope"></i>
+            </div>
+          </a>
+        </div>
+      </section>
+      <!-- ============ Travel contain slider ============ -->
+      <section
+        class="new_travel_contain center_content top30px width-aviable flex_column"
+      >
+        <div class="new_travel_title center_content width-aviable">
+          <img
+            class="img_flecha"
+            src="./assets/imagenes/png/Icono Logo VegAndando.png"
+            alt=""
+          />
+          <h2 class="center_content">Viajes Disponibles</h2>
+        </div>
+        <!-- ============ Primer Grupo ============ -->
+        <div
+          class="box_card_travel_section flex_column width-aviable top30px center_content"
+        >
+          <!-- ========= Travel box ========= -->
+          <div class="new_travel_section center_content top30px">
+            <div class="travel_contain_slider center_content flex_column">
+              <img
+                class="img_viaje"
+                src="./assets/viajes/jarabacoa-01/img/jarabacoa-01.png"
+                alt=""
+              />
+              <div class="travel_box flex_column center_content">
+                <span>15 / 01 / 2023</span>
+                <div class="title_travel_box center_content width-aviable">
+                  <h2>Excursión Jarabacoa</h2>
+                  <p>RD$2,500</p>
                 </div>
+                <div
+                  class="paragraph_travel_box center_content flex_column width-aviable"
+                >
+                  <p>
+                    Acompáñanos a disfrutar de la ciudad de la eterna primavera,
+                    Jarabacoa.
+                  </p>
+                </div>
+                <a
+                  class="link_politics center_content"
+                  href="./assets/viajes/jarabacoa-01/index.html"
+                  >Visitar Viaje</a
+                >
+              </div>
+            </div>
+          </div>
 
-                <!-- ========= Travel box ========= -->
-                <div class="new_travel_section center_content top30px">
-                    <div class="travel_contain_slider center_content flex_column">
-                    <img
-                        class="img_viaje"
-                        src="./assets/viajes/Excursion_Ocoa/img/ocoa (1).jpg"
-                        alt=""
-                    />
-                    <div class="travel_box flex_column center_content">
-                        <span>27 / 11 / 2022</span>
-                        <div class="title_travel_box center_content width-aviable">
-                        <h2>Excursión Ocoa</h2>
-                        <p>RD$2,500</p>
-                        </div>
-                        <div
-                        class="paragraph_travel_box center_content flex_column width-aviable"
-                        >
-                        <p>Acompáñanos a disfrutar de este destino entre montañas.</p>
-                        </div>
-                        <a
-                        class="link_politics center_content"
-                        href="./assets/viajes/Excursion_Ocoa/index.html"
-                        >Visitar Viaje</a
-                        >
-                    </div>
-                    </div>
+          <!-- ========= Travel box ========= -->
+          <div class="new_travel_section center_content top30px">
+            <div class="travel_contain_slider center_content flex_column">
+              <img
+                class="img_viaje"
+                src="./assets/viajes/constanza-02/img/constanza-01.png"
+                alt=""
+              />
+              <div class="travel_box flex_column center_content">
+                <span>28-29 / 01 / 2023</span>
+                <div class="title_travel_box center_content width-aviable">
+                  <h2>Dos dias pa´ Constanza</h2>
+                  <p>RD$6,500</p>
                 </div>
+                <div
+                  class="paragraph_travel_box center_content flex_column width-aviable"
+                >
+                  <p>
+                    En esta excursión podremos disfrutar de la Suiza del caribe
+                    en todas sus versiones.
+                  </p>
+                </div>
+                <a
+                  class="link_politics center_content"
+                  href="./assets/viajes/constanza-02/index.html"
+                  >Visitar Viaje</a
+                >
+              </div>
             </div>
+          </div>
 
-            <!-- ============ Segundo Grupo ============ -->
-            <!-- ============ Viajes Expirados ============ -->
-            <div class="box_card_travel_section flex_column width-aviable top60px center_content">
-                <div class="new_travel_title center_content width-aviable">
-                    <img class="img_flecha" src="./assets/imagenes/png/Icono Logo VegAndando.png" alt=""><h2 class="center_content">Viajes Anteriores</h2>
+          <!-- ========= Travel box ========= -->
+          <div class="new_travel_section center_content top30px">
+            <div class="travel_contain_slider center_content flex_column">
+              <img
+                class="img_viaje"
+                src="./assets/viajes/picoDuarte-01/img/pico-duarte-01.png"
+                alt=""
+              />
+              <div class="travel_box flex_column center_content">
+                <span>16-19 / 02 / 2023</span>
+                <div class="title_travel_box center_content width-aviable">
+                  <h2>Pico Duarte</h2>
+                  <p>RD$8,200</p>
                 </div>
-
-             <!-- ========= Travel box 1 ========= -->
-             <div class="new_travel_section expired_filter center_content top30px">
-                <div class="travel_contain_slider center_content flex_column">
-                    <img class="img_viaje" src="./assets/viajes/OccidentalCaribe-PuntaCana/img/OccidentalCaribe-PuntaCana (1).png" alt="">
-                    <div class="travel_box flex_column center_content">
-                        <span>28-30 / 10 / 2022</span>
-                        <div class="title_travel_box center_content width-aviable">
-                            <h2>Resort Occidental Caribe</h2>
-                            <p>RD$11,000</p>
-                        </div>
-                        <div class="paragraph_travel_box center_content flex_column width-aviable">
-                            <p>Nos vamos de resort por 3 dias y dos noches con transporte incluido.</p>
-                        </div>
-                    </div>
+                <div
+                  class="paragraph_travel_box center_content flex_column width-aviable"
+                >
+                  <p>
+                    Atrévete a vivir una de las aventuras mas emocionantes del
+                    ecoturismo dominicano, conquistar la cima más alta del
+                    Caribe.
+                  </p>
                 </div>
+                <a
+                  class="link_politics center_content"
+                  href="./assets/viajes/picoDuarte-01/index.html"
+                  >Visitar Viaje</a
+                >
+              </div>
             </div>
-
-            <!-- ========= Travel box 1 ========= -->
-            <div class="new_travel_section expired_filter center_content top30px">
-                <div class="travel_contain_slider center_content flex_column">
-                    <img class="img_viaje" src="./assets/viajes/giraParaZonaDeBavaro/img/recorrido-buggy.png" alt="">
-                    <div class="travel_box flex_column center_content">
-                        <span>04 / 09 / 2022</span>
-                        <div class="title_travel_box center_content width-aviable">
-                            <h2>Gira para Bavaro</h2>
-                            <p>RD$3,200</p>
-                        </div>
-                        <div class="paragraph_travel_box center_content flex_column width-aviable">
-                            <p>Anímate a vivir la experiencia de este increíble y divertido recorrido, a través de los... <!-- exóticos paisajes que nos ofrece la zona de Bávaro. --></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- ========= Travel box 2 ========= -->
-            <div class="new_travel_section expired_filter center_content top30px">
-                <div class="travel_contain_slider center_content flex_column">
-                    <img class="img_viaje" src="./assets/viajes/constanza/img/Cosechando en Fresas Ariyama 1.png" alt="">
-                    <div class="travel_box flex_column center_content">
-                        <span>21 / 08 / 2022</span>
-                        <div class="title_travel_box center_content width-aviable">
-                            <h2>Constanza</h2>
-                            <p>RD$2,650</p>
-                        </div>
-                        <div class="paragraph_travel_box center_content flex_column width-aviable">
-                            <p>Nos vamos para la Suiza del caribe, a disfrutar de sus paisajes, gastronomía y agricultura.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- ========= Travel box 3 ========= -->
-            <div class="new_travel_section expired_filter center_content top30px">
-                <div class="travel_contain_slider center_content flex_column">
-                    <img class="img_viaje" src="./assets/imagenes/png/excurcion5playas/Playa-el-Cortecito-(1).png" alt="">
-
-                    <div class="travel_box flex_column center_content width-aviable">
-                        <span>07/08/2022</span>
-                        <div class="title_travel_box center_content width-aviable">
-                            <h2>Excursión 5 Playas</h2>
-                            <p>RD$3,500</p>
-                        </div>
-                        <div class="paragraph_travel_box center_content flex_column width-aviable">
-                            <p>En este viaje disfrutaremos de unos de los recorridos marítimos mas exóticos de nuestro pais.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
 
-        </section>
+        <!-- ============ Segundo Grupo ============ -->
+        <!-- ============ Viajes Expirados ============ -->
+        <div
+          class="box_card_travel_section flex_column width-aviable top60px center_content"
+        >
+          <div class="new_travel_title center_content width-aviable">
+            <img
+              class="img_flecha"
+              src="./assets/imagenes/png/Icono Logo VegAndando.png"
+              alt=""
+            />
+            <h2 class="center_content">Viajes Anteriores</h2>
+          </div>
 
-        <section>
-            <div class="wrapper">
-                <img src="./assets/imagenes/png/cookie.png" alt="cookies">
-                <div class="content">
-                  <header>Política sobre cookies</header>
-                  <p>Utilizamos cookies propias y de terceros para ofrecerte una mejor experiencia y servicio, de acuerdo a tus hábitos de navegación.</p>
-                  <p>Si coninuas navegando, consideramos que aceptas su uso.</p>
-                  <div class="buttons">
-                    <button class="item">Acepto</button>
-                    <a href="./cookie.html" target="_blank" class="item">Política de cookies</a>
-                  </div>
+          <!-- ========= Travel box ========= -->
+          <div class="new_travel_section expired_filter center_content top30px">
+            <div class="travel_contain_slider center_content flex_column">
+              <img
+                class="img_viaje"
+                src="./assets/viajes/Excursion_Ocoa/img/ocoa (1).jpg"
+                alt=""
+              />
+              <div class="travel_box flex_column center_content">
+                <span>27 / 11 / 2022</span>
+                <div class="title_travel_box center_content width-aviable">
+                  <h2>Excursión Ocoa</h2>
+                  <p>RD$2,500</p>
+                </div>
+                <div
+                  class="paragraph_travel_box center_content flex_column width-aviable"
+                >
+                  <p>Acompáñanos a disfrutar de este destino entre montañas.</p>
                 </div>
               </div>
-        </section>
-
-         <!-- ============ Footer ============ -->
-         <iframe src="generalFooter.html" frameborder="0"></iframe>
-
-        <!-- ========== MENU ========== -->
-        <nav class="nav container center_content">
-            <div class="nav__menu">
-                <ul class="nav_list">
-                    <li class="nav__item">
-                        <a href="./home.html" class="nav__link">
-                            <i class='bx bx-home-alt'></i>
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="./blog.html" target="_blank" class="nav__link">
-                            <i class='bx bx-book'></i>
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="https://www.google.com/calendar" target="_blank" class="nav__link">
-                            <i class='bx bxs-calendar'></i>
-                        </a>
-                    </li>
-                    <li class="dropdown">
-                        <div class="select nav__link">
-                        <span class="span1 selected"></span>
-                            <span class="span2"></span>
-                            <span class="span3"></span>
-                        </div>
-                        <ul class="menu_dropdown">
-                            <li><a href="./politicadepago.html">Politicas</a></li>
-                            <li><a href="./acercade.html">Acerca de nosotras</a></li>
-                            <li><a href="./agendaViajes.html">Agenda de viajes</a></li>
-                        </ul>
-                    </li>
-                </ul>
             </div>
-        </nav>
+          </div>
+
+          <!-- ========= Travel box ========= -->
+          <div class="new_travel_section expired_filter center_content top30px">
+            <div class="travel_contain_slider center_content flex_column">
+              <img
+                class="img_viaje"
+                src="./assets/viajes/moca/img/rio-jamao-1.png"
+                alt=""
+              />
+              <div class="travel_box flex_column center_content">
+                <span></span>
+                <div class="title_travel_box center_content width-aviable">
+                  <h2>Camping en Jamao + City tours Moca</h2>
+                  <p>RD$5,500</p>
+                </div>
+                <div
+                  class="paragraph_travel_box center_content flex_column width-aviable"
+                >
+                  <p>
+                    Acompáñanos a vivir la experiencia de acampar con vista al
+                    hermoso y refrescante río Jamao ...
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ========= Travel box ========= -->
+          <div class="new_travel_section expired_filter center_content top30px">
+            <div class="travel_contain_slider center_content flex_column">
+              <img
+                class="img_viaje"
+                src="./assets/viajes/OccidentalCaribe-PuntaCana/img/OccidentalCaribe-PuntaCana (1).png"
+                alt=""
+              />
+              <div class="travel_box flex_column center_content">
+                <span>28-30 / 10 / 2022</span>
+                <div class="title_travel_box center_content width-aviable">
+                  <h2>Resort Occidental Caribe</h2>
+                  <p>RD$11,000</p>
+                </div>
+                <div
+                  class="paragraph_travel_box center_content flex_column width-aviable"
+                >
+                  <p>
+                    Nos vamos de resort por 3 dias y dos noches con transporte
+                    incluido.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ========= Travel box ========= -->
+          <div class="new_travel_section expired_filter center_content top30px">
+            <div class="travel_contain_slider center_content flex_column">
+              <img
+                class="img_viaje"
+                src="./assets/viajes/giraParaZonaDeBavaro/img/recorrido-buggy.png"
+                alt=""
+              />
+              <div class="travel_box flex_column center_content">
+                <span>04 / 09 / 2022</span>
+                <div class="title_travel_box center_content width-aviable">
+                  <h2>Gira para Bavaro</h2>
+                  <p>RD$3,200</p>
+                </div>
+                <div
+                  class="paragraph_travel_box center_content flex_column width-aviable"
+                >
+                  <p>
+                    Anímate a vivir la experiencia de este increíble y divertido
+                    recorrido, a través de los...
+                    <!-- exóticos paisajes que nos ofrece la zona de Bávaro. -->
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ========= Travel box 2 ========= -->
+          <div class="new_travel_section expired_filter center_content top30px">
+            <div class="travel_contain_slider center_content flex_column">
+              <img
+                class="img_viaje"
+                src="./assets/viajes/constanza/img/Cosechando en Fresas Ariyama 1.png"
+                alt=""
+              />
+              <div class="travel_box flex_column center_content">
+                <span>21 / 08 / 2022</span>
+                <div class="title_travel_box center_content width-aviable">
+                  <h2>Constanza</h2>
+                  <p>RD$2,650</p>
+                </div>
+                <div
+                  class="paragraph_travel_box center_content flex_column width-aviable"
+                >
+                  <p>
+                    Nos vamos para la Suiza del caribe, a disfrutar de sus
+                    paisajes, gastronomía y agricultura.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ========= Travel box 3 ========= -->
+          <div class="new_travel_section expired_filter center_content top30px">
+            <div class="travel_contain_slider center_content flex_column">
+              <img
+                class="img_viaje"
+                src="./assets/imagenes/png/excurcion5playas/Playa-el-Cortecito-(1).png"
+                alt=""
+              />
+
+              <div class="travel_box flex_column center_content width-aviable">
+                <span>07/08/2022</span>
+                <div class="title_travel_box center_content width-aviable">
+                  <h2>Excursión 5 Playas</h2>
+                  <p>RD$3,500</p>
+                </div>
+                <div
+                  class="paragraph_travel_box center_content flex_column width-aviable"
+                >
+                  <p>
+                    En este viaje disfrutaremos de unos de los recorridos
+                    marítimos mas exóticos de nuestro pais.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="wrapper">
+          <img src="./assets/imagenes/png/cookie.png" alt="cookies" />
+          <div class="content">
+            <header>Política sobre cookies</header>
+            <p>
+              Utilizamos cookies propias y de terceros para ofrecerte una mejor
+              experiencia y servicio, de acuerdo a tus hábitos de navegación.
+            </p>
+            <p>Si coninuas navegando, consideramos que aceptas su uso.</p>
+            <div class="buttons">
+              <button class="item">Acepto</button>
+              <a href="./cookie.html" target="_blank" class="item"
+                >Política de cookies</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ Footer ============ -->
+      <iframe src="generalFooter.html" frameborder="0"></iframe>
+
+      <!-- ========== MENU ========== -->
+      <nav class="nav container center_content">
+        <div class="nav__menu">
+          <ul class="nav_list">
+            <li class="nav__item">
+              <a href="./home.html" class="nav__link">
+                <i class="bx bx-home-alt"></i>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="./blog.html" target="_blank" class="nav__link">
+                <i class="bx bx-book"></i>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a
+                href="https://www.google.com/calendar"
+                target="_blank"
+                class="nav__link"
+              >
+                <i class="bx bxs-calendar"></i>
+              </a>
+            </li>
+            <li class="dropdown">
+              <div class="select nav__link">
+                <span class="span1 selected"></span>
+                <span class="span2"></span>
+                <span class="span3"></span>
+              </div>
+              <ul class="menu_dropdown">
+                <li><a href="./politicadepago.html">Politicas</a></li>
+                <li><a href="./acercade.html">Acerca de nosotras</a></li>
+                <li><a href="./agendaViajes.html">Agenda de viajes</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </main>
 
     <script src="./assets/js/cookie.js"></script>
     <script src="./assets/js/menuMobile.js"></script>
-
-</body>
+  </body>
 </html>

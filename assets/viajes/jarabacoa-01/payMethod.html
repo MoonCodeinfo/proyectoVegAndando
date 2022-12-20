@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Métodos de Pago | VegAndando" />
+    <meta
+      name="image"
+      property="og:image"
+      content="./assets/imagenes/ogimg.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="author" content="MooncoRD" />
+    <meta name="copyright" content="MooncoRD" />
+    <link rel="stylesheet" href="/assets/css/reusable.css" />
+    <link rel="stylesheet" href="/assets/css/menuMobile.css" />
+    <link rel="stylesheet" href="/assets/css/politicaDePago.css" />
+    <link rel="stylesheet" href="/assets/css/cookie.css" />
+    <link rel="stylesheet" href="/assets/css/formContact.css" />
+    <link rel="stylesheet" href="/assets/css/payMethod.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/assets/imagenes/png/Icono Logo VegAndando.png"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Métodos de Pago | VegAndando</title>
+  </head>
+  <body>
+    <main class="width-aviable center_content flex_column">
+      <!-- TOP NAVBAR -->
+      <script src="../../js/components/TopNavbar.js"></script>
+
+      <!-- ===== Title ===== -->
+      <section
+        class="new_travel_title center_content width-aviable bottom50px top25px"
+      >
+        <img
+          class="img_flecha"
+          src="/assets/imagenes/png/Icono Logo VegAndando.png"
+          alt=""
+        />
+        <h2 class="center_content">Realiza tu pago y vamonos para Jarabacoa</h2>
+      </section>
+
+      <section
+        class="box_pay_descripton center_content flex_column width-aviable"
+      >
+        <!-- ========= Viaje info ========= -->
+        <div
+          class="box_card_travel_section flex_column width-aviable center_content"
+        >
+          <div
+            class="travel_contain_slider center_content flex_column width-aviable bottom50px"
+          >
+            <div class="travel_contain_box center_content flex_column">
+              <div class="travel_img_box">
+                <img
+                  class="img_viaje1"
+                  src="/assets/viajes/jarabacoa-01/img/jarabacoa-01.png"
+                  alt=""
+                />
+              </div>
+              <div
+                class="travel_description_price top45px center_content flex_column top25px"
+              >
+                <h3>Costo del viaje</h3>
+                <p>RD $2,500 p/p</p>
+                <span>Niños de 8 a 12 años RD $2,000 p/p</span>
+              </div>
+            </div>
+            <script src="/assets/js/components/Nota.js"></script>
+          </div>
+
+          <div class="formas_de_pago center_content flex_column">
+            <div
+              class="title_formas_de_pago width-aviable center_content flex_column"
+            >
+              <h3>Formas de Pago</h3>
+            </div>
+            <div class="formas_de_pago_box center_content flex_column">
+              <!-- ============ Bottom paypal ========== -->
+              <div class="bottom_paypal">
+                <!-- ============ Box Pay Method paypal ========== -->
+                <form
+                  action="https://www.paypal.com/cgi-bin/webscr"
+                  method="post"
+                  target="_top"
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 12px;
+                    margin-top: 8px;
+                  "
+                >
+                  <h3>Pagar con PayPal</h3>
+                  <input type="hidden" name="cmd" value="_s-xclick" />
+                  <input
+                    type="hidden"
+                    name="hosted_button_id"
+                    value="YA3NE78W6VNMU"
+                  />
+                  <input
+                    type="image"
+                    src="https://www.paypalobjects.com/es_ES/ES/i/btn/btn_paynow_LG.gif"
+                    border="0"
+                    name="submit"
+                    alt="PayPal, la forma rápida y segura de pagar en Internet."
+                  />
+                  <img
+                    alt=""
+                    border="0"
+                    src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif"
+                    width="1"
+                    height="1"
+                  />
+                </form>
+              </div>
+
+              <!-- ============ Pay Tranferemncia ========== -->
+
+              <div
+                class="box_pay_method center_content flex_column width-aviable bottom15px top60px"
+              >
+                <h3>Pagos por Transferencia</h3>
+                <div class="information_paymethod center_content flex_column">
+                  <div
+                    class="personal_contact center_content flex_column text_center"
+                  >
+                    <p>
+                      A nombre de: <br />
+                      <span class="name_banck_account">Yenifer Vega</span>
+                    </p>
+                    <p></p>
+                    <p class="banck_name">- BHD León</p>
+                    <p class="banck_num">22800430014</p>
+                    <div
+                      class="comprobante_pago center_content flex_column top15px"
+                      id="invoice_button_moca"
+                    >
+                      <!-- Button code injected from JavaScript -->
+                    </div>
+                  </div>
+                  <span class="line_section"></span>
+                  <div
+                    class="personal_contact center_content flex_column text_center"
+                  >
+                    <p>
+                      A nombre de: <br />
+                      <span class="name_banck_account">Liz F Vega</span>
+                    </p>
+                    <p class="banck_name">- Popular</p>
+                    <p class="banck_num">822970471</p>
+                    <p class="banck_name">- Banreservas</p>
+                    <p class="banck_num">9601606858</p>
+                    <div
+                      class="comprobante_pago center_content flex_column top15px"
+                      id="invoice_button_moca"
+                    >
+                      <!-- Button code injected from JavaScript -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ============ Como Reservar ========== -->
+        <!-- <div class="reservar center_content flex_column text_center">
+                <h4>¿Como resevar?</h4>
+                <p class="text_center">Se reserva con $1000 pesos <br>
+                    *NO REEMBOLSABLES*
+                <br>
+                <p class="text_center" style="width: 80%; margin-top: 10px; font-size: 12px;">El pago se puede realizar por transferencia o PayPal</p>
+                </p>
+            </div> -->
+        <div class="important center_content flex_column width-aviable top45px">
+          <div class="box_important_content center_content flex_column">
+            <h4>Importante</h4>
+            <p>
+              En la nota de la transferencia debe colocar su nombre, apellido y
+              cual es la excursión que esta reservando, luego enviar el
+              comprobante de pago a uno de los siguientes números para validar
+              el proceso.
+            </p>
+          </div>
+        </div>
+        <img
+          class="img_frase_2"
+          src="/assets/imagenes/svg+/chancletas.svg"
+          alt=""
+        />
+      </section>
+
+      <!-- ========== CONTACT FORM ========== -->
+      <form
+        class="form center_content flex_column"
+        action="https://formspree.io/f/myyveqzb"
+        method="POST"
+        id="form"
+      >
+        <!-- Code injected from JavaScript -->
+      </form>
+
+      <!-- ========== Volver Atras Button =============== -->
+      <section class="schedule_button regular_button center_content">
+        <a href="/assets/viajes/jarabacoa-01/index.html">Volver atrás</a>
+      </section>
+
+      <!-- ========== COOKIES ========== -->
+      <section>
+        <div class="wrapper">
+          <img src="/assets/imagenes/png/cookie.png" alt="cookies" />
+          <div class="content">
+            <header>Política sobre cookies</header>
+            <p>
+              Utilizamos cookies propias y de terceros para ofrecerte una mejor
+              experiencia y servicio, de acuerdo a tus hábitos de navegación.
+            </p>
+            <p>Si coninuas navegando, consideramos que aceptas su uso.</p>
+            <div class="buttons">
+              <button class="item">Acepto</button>
+              <a href="/cookie.html" target="_blank" class="item"
+                >Política de cookies</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== footer ========== -->
+      <iframe src="/generalFooter.html" frameborder="0"></iframe>
+
+      <!-- ========== MENU ========== -->
+      <nav class="nav container center_content">
+        <div class="nav__menu">
+          <ul class="nav_list">
+            <li class="nav__item">
+              <a href="/home.html" class="nav__link">
+                <i class="bx bx-home-alt"></i>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="/blog.html" target="_blank" class="nav__link">
+                <i class="bx bx-book"></i>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a
+                href="https://www.google.com/calendar"
+                target="_blank"
+                class="nav__link"
+              >
+                <i class="bx bxs-calendar"></i>
+              </a>
+            </li>
+            <li class="dropdown">
+              <div class="select nav__link">
+                <span class="span1 selected"></span>
+                <span class="span2"></span>
+                <span class="span3"></span>
+                <!-- <div class="caret"></div> -->
+              </div>
+              <ul class="menu_dropdown">
+                <li class=""><a href="/politicadepago.html">Politicas</a></li>
+                <li><a href="/acercade.html">Acerca de nosotras</a></li>
+                <li><a href="/agendaViajes.html">Agenda de viajes</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </main>
+
+    <script src="/assets/js/cookie.js"></script>
+    <script src="/assets/js/menuMobile.js"></script>
+    <script src="/assets/js/components/SendInvoiceButtonMoca.js"></script>
+    <script src="/assets/js/components/Form.js"></script>
+  </body>
+</html>
