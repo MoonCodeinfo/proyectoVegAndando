@@ -120,10 +120,9 @@ main {
 .travel_box span {
   text-align: center;
   max-width: 150px;
-  margin-top: 8px;
   color: var(--white);
   font-size: 16px;
-  /*opacity: 0.5;*/
+  opacity: 0.8;
 }
 
 .travel_box h4 {
@@ -144,6 +143,11 @@ main {
   text-align: center;
   gap: 6px;
 }
+.title_travel_box span {
+  font-weight: 800;
+  font-size: 1.8rem;
+  color: var(--vega-red);
+}
 
 .title_travel_box h2 {
   width: 100%;
@@ -151,6 +155,9 @@ main {
   font-weight: 700;
   line-height: 26px;
   align-items: flex-end;
+}
+.title_travel_box h4 {
+  font-weight: 700;
 }
 
 .title_travel_box p {
@@ -659,8 +666,12 @@ main {
     max-width: 80%;
   }
   .box_card_travel_section {
-    flex-direction: row;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    /* gap: 20px; */
   }
   .img_viaje {
     height: 543px;
@@ -706,9 +717,9 @@ main {
     margin-bottom: 4px;
   }
 
-.link_politics {
+  .link_politics {
     margin-top: 20px;
-}
+  }
 }
 
 @media only screen and (min-width: 1200px) {
